@@ -1,0 +1,19 @@
+.tab-menu {
+	.inline-list {
+		font-size: .85em;
+		line-height: 3em;	
+		margin-bottom: 0;
+	}	
+}
+
+.side-nav {
+	font-weight: 600;
+}
+
+.social {
+	[class^="icon-"], [class*=" icon-"] {
+		color: rgba(#fff, .6);	
+		font-size: 1.5em;
+		margin-left: .25em;
+	}
+}

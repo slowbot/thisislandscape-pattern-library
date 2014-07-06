@@ -1,0 +1,5 @@
+.excerpt {
+	&.project {
+		@extend %bordered-list;
+	}
+}

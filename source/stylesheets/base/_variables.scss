@@ -1,0 +1,33 @@
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+//@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
+
+// $BaseType
+// -------------------------------------//
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$h1-font-size: rem-calc(44) !default;
+$h2-font-size: rem-calc(37) !default;
+$h3-font-size: rem-calc(27) !default;
+$h4-font-size: rem-calc(23) !default;
+$h5-font-size: rem-calc(18) !default;
+$h6-font-size: 1rem !default;
+
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$sans-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; // Custom font-face stack, if set will be added to the $font-family
+$sans-font-family-2: "proxima-nova", Helvetica, Arial, sans-serif; // Custom font-face stack, if set will be added to the $font-family
+
+$sans-condensed-font-family:'proxima-nova-condensed', Helvetica, Arial, sans-serif;
+$sans-condensed-font-family-2: "proxima-nova-alt-ext-cond", Helvetica, Arial, sans-serif; 
+
+
+// $Brand Colors
+
+$primary-color:     #005e83;
+$secondary-color:   #aec935;
+$wash-color:        #e2ebf1;
+$alert-color:       #e16e28;
+$success-color:     #0e4a77;

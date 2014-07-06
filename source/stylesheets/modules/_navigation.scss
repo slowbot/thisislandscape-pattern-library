@@ -1,0 +1,132 @@
+a.menu-link {
+    float: right;
+    display: block;
+    padding: 1em;
+}
+
+.full-nav {
+	float: none;
+}
+
+.menu, .menu > ul ul {
+	@include transition(all, 0.3s, ease-in-out);
+	background: rgba($primary-color, .9);
+	clear: both;
+	margin: 0;
+	max-height: 0;
+	overflow: hidden;
+	
+	&.active {
+		max-height: 55em;
+	}
+}
+
+.menu {
+
+	&> ul {
+		border-top: 1px solid $primary-color;
+		margin: 0;
+	}
+	
+	li {
+		list-style: none;
+	}
+
+	li a {
+		color: #fff;
+		display: block;
+		font-size: .725em;
+		font-weight: 500;
+		padding: 1em;
+		border-bottom: 1px solid darken($primary-color, 2%);
+		position: relative;
+		text-transform: uppercase;
+	}
+
+	li.has-subnav > a:after {
+		content: '+';
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		font-size: 1.5em;
+		padding: 0.25em 0.5em;
+	}
+
+	li.has-subnav > a.active:after {
+		content: "-";
+	}
+}
+
+@media #{$medium-up} {
+	.full-nav {
+		float: right;
+		position: relative;
+		overflow: visible;
+		z-index: 999;
+	}
+
+	a.menu-link {
+	   display: none;
+	}
+
+	.menu, .menu > ul ul {
+		max-height: none;
+		overflow: visible;
+		background: none;
+	}
+
+	.menu > ul ul {
+		@include box-shadow(0 8px 10px rgba(0, 0, 0, 0.075));
+		background: rgba(#fff, .85);
+		display: none;
+	}
+
+	.menu > ul li:hover > ul {
+		display: block;
+	}
+
+	.menu {
+		float: right;
+
+		ul {
+			margin: 0 0 0 -0.25em;
+			border: 0;
+		}
+
+		li a {
+			color: $primary-color;
+			border: 0;
+		}
+
+		li.has-subnav > a {
+			padding-right: 2em;
+		}
+
+		li.has-subnav > a:after {
+			content: "";
+			font-size: 1em;
+			padding: 0.8em 0.5em;
+		}
+
+		&> ul li {
+			margin: 0 0.25em;
+		}
+
+		&> ul > li {
+			display: inline-block;
+			position: relative;
+		}
+
+		&> ul ul {
+			position: absolute;
+			top: remCalc(42px);
+			left: 0;
+			width: 12em;
+		}
+
+		&> ul ul li {
+			position: relative;
+		}
+	}
+}

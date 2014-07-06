@@ -1,0 +1,12 @@
+.sidebar {
+	margin-top: 1em;
+
+	a {
+		color: $success-color;
+	}
+	
+	.inner p {
+		@extend %small-text;
+		margin-bottom: 0;
+	}
+}

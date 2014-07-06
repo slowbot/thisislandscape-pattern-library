@@ -1,0 +1,23 @@
+.hero {
+	position: relative;
+
+	.offset {
+		background-color: rgba(#fff, .6);
+		color: #333;
+		padding-top: 1em;
+		
+		@media #{$medium-up} {
+			top: 0;	
+			height: 400px;
+			width: 400px;
+			position: absolute;
+			padding: 1em;
+			z-index: 999;
+			@include border-bottom-right-radius (2000px);
+		}
+	}
+
+	.shape {
+		
+	}
+}

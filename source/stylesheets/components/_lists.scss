@@ -1,0 +1,16 @@
+%bordered-list {		
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 1em;
+	padding-top: .5em;
+	list-style: none;
+}
+
+.bordered-list {
+	margin: 0;
+	margin-bottom: 1em;
+
+	li {
+		@extend %bordered-list;
+		padding-top: 2em;
+	}
+}

@@ -1,0 +1,142 @@
+$h1-font-size: rem-calc(37);
+$h2-font-size: rem-calc(27);
+$h3-font-size: rem-calc(23);
+$h4-font-size: rem-calc(18);
+$h5-font-size: 1rem;
+$h6-font-size: rem-calc(14);
+
+%hN {
+  	font-family: $font-family;
+	text-rendering: optimizeLegibility; 
+	display: block;
+	font-weight: 600;
+//	line-height: 1.125em;
+	margin-bottom: .5em;
+
+	a {
+		color: $primary-color;
+	}
+}
+
+h1,
+.alpha {
+	@extend %hN;
+	font-size: $h2-font-size;
+
+	@media #{$medium-up} {
+		font-size: $h1-font-size;
+	}
+}
+
+h2,
+.beta {
+	@extend %hN;
+	font-size: $h3-font-size;
+
+	@media #{$medium-up} {
+		font-size: $h2-font-size;
+	}
+}
+
+h3,
+.gamma {
+	@extend %hN;
+	font-size: $h4-font-size;
+
+	@media #{$medium-up} {
+		font-size: $h3-font-size;
+	}
+}
+
+h4,
+.delta {
+	@extend %hN;
+	font-size: $h5-font-size;
+
+	@media #{$medium-up} {
+		font-size: $h4-font-size;
+	}
+}
+
+h5,
+.epsilon {
+	@extend %hN;
+	font-size: $h6-font-size;
+
+	@media #{$medium-up} {
+		font-size: $h5-font-size;
+	}
+}
+
+h6,
+.zeta {
+	@extend %hN;
+	font-size: $h6-font-size;
+}
+
+p {
+	@extend %post-text;
+}
+
+a {
+	color: $secondary-color;
+}
+
+blockquote {
+	margin-bottom: 2em;
+	
+	p {
+		font-size: 2em;
+		line-height: 1.5em;
+		margin-bottom: 2em;
+	}
+}
+
+.serif {
+	font-family:$font-family;
+}
+
+.sans {
+	font-family:$sans-font-family-2;
+}
+
+.normal {
+	font-weight: 500;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.light {
+	font-weight: 100;
+}
+
+.no-margin {
+	margin-bottom: .5em;
+}
+
+.rhythm {
+	margin-bottom: 1em;
+}
+
+%small-text {
+	font-family: $sans-font-family-2;
+	font-size: .825em;
+	line-height: 1.5em;		
+	color: #999;
+}
+
+%small-link {
+	color: $primary-color;
+	font-weight: 500;
+	font-size: .725rem;
+	text-transform: uppercase;
+}	
+
+%post-text {
+	font-family: $sans-font-family;
+	font-size: .9em;
+	font-weight: 300;
+	color: #656868;	
+}		

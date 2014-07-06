@@ -1,0 +1,37 @@
+.panel {
+	background: #e2eaee;
+	border: none;
+	font-size: .9em;
+	
+	li a {
+		font-size: .725em;
+	}
+
+	.button {
+		background-color: #fff;
+		color: #333;
+		text-transform: uppercase;
+		font-weight: 600;
+		width: 100%;
+	}
+	
+	&.bright {
+		background-color: $primary-color;
+		%hN, p {
+			color: #fff;
+			text-align: center;
+		}
+	}	
+	
+	&.dark {
+		background-color: $primary-color;
+		%hN, p {
+			color: #fff;
+			text-align: center;
+		}
+	}
+	
+	&.bright p, &.dark p {
+		color: rgba(#fff, .5);
+	}
+}	

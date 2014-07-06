@@ -1,0 +1,44 @@
+.footer {
+	background-color: $success-color;
+	color: #fff;
+	margin-top: 2em;
+	padding-top: 2em;
+	
+	%hN, p, a {
+		color: #fff;
+	}
+	
+	.sock {
+		background-color: darken($success-color, 3%);
+		padding-top: 1em;
+	}
+	
+	.serif {
+		font-weight: 300;	
+	}
+}
+
+.footer-menu {
+	margin: 2em 0 3em 0;
+	overflow: hidden;
+	
+	ul {
+		margin: 0;
+	}
+	
+	li {
+		font-size: .925em;
+		list-style: none;
+		line-height: 2em;
+		
+		&.column {
+			@media #{$medium-up} {
+				@include grid-column($columns:2);
+			}
+		}
+		
+		a {
+			font-weight: 400;
+		}
+	}
+}

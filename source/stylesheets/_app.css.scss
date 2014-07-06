@@ -1,0 +1,29 @@
+.swatches {
+	margin-left: 0;
+	margin-right: 0;
+}
+	
+.swatch {
+	min-height: 3em;
+	width: 20%;
+
+	&:nth-child(1) {
+		background-color: $primary-color;
+	}
+	
+	&:nth-child(2) {
+		background-color: $secondary-color;
+	}
+	
+	&:nth-child(3) {
+		background-color: $wash-color;
+	}
+	
+	&:nth-child(4) {
+		background-color: $alert-color;
+	}
+	
+	&:nth-child(5) {
+		background-color: $success-color;
+	}
+}
