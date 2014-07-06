@@ -1,4 +1,4 @@
-esd-pattern-library
+portfolio-pattern-library
 ==========================
 
-Static front-end pattern library for Earth Sciences Division
+Static front-end pattern library for responsive portfolio
