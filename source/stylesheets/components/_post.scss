@@ -1,10 +1,6 @@
 .post {
 	p {
-		letter-spacing: .5px;
 
-		strong {
-			letter-spacing: 0;
-		}
 	}
 
 	ul {
@@ -12,18 +8,10 @@
 	}
 
 	li {
-		@extend %post-text;
-		letter-spacing: .5px;
-		margin-bottom: 1em;
-	}
 
-	%hN {
-		a {
-			text-decoration: none;
-		}
 	}
 
 	a {
-		text-decoration: underline;
+
 	}
 }

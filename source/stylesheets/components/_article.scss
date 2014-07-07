@@ -12,35 +12,26 @@
 	
 	// byline and meta
 	.byline {
-		font-size: .925em;
 		
 		time {
-			font-family: $sans-font-family;
-			color: lighten(#333, 50%);
-			margin-left: .5em;
+
 		}
 	}
 	
 	.meta {
-		font-size: .725em;
-		margin-bottom: .75em;
+		
 	}
 	
 	.type {
-		display: inline-block;
+
 	}
 	
 	a.more {
-		@extend %small-link
+
 	}
 
 	// excerpt format
 	&.excerpt {
-		@extend %small-text;
-
-		%hN {
-			font-weight: 600;
-		}
 
 		.inner {
 			padding: 1em;
@@ -51,7 +42,7 @@
 	// aside format
 	&.aside {
 		p {
-			@extend %small-text;
+
 		}
 	
 		figure {
@@ -61,7 +52,7 @@
 	}
 
 	&.archived {
-		@extend %bordered-list;
+
 	}
 }
 	

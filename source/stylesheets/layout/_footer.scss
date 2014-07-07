@@ -1,5 +1,5 @@
 .footer {
-	background-color: $success-color;
+	background-color: #000;
 	color: #fff;
 	margin-top: 2em;
 	padding-top: 2em;
@@ -9,7 +9,6 @@
 	}
 	
 	.sock {
-		background-color: darken($success-color, 3%);
 		padding-top: 1em;
 	}
 	

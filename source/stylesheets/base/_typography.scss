@@ -24,6 +24,7 @@ $rem-with-px-fallback: true;
 html, body {
     font-size: 16px;
     font-family: $font-family;
+    background-color: $wash-color;
 }
 
 @media #{$medium-up} {
@@ -163,7 +164,8 @@ small {
 }
 
 a {
-	color: $secondary-color;
+	color: $primary-color;
+    text-decoration: none;
 }
 
 blockquote {
