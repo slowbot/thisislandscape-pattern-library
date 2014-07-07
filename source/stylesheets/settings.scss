@@ -4,8 +4,8 @@ $wash-color:        #e2ebf1;
 $alert-color:       #e16e28;
 $success-color:     #0e4a77;
 
-$base-font-size: 16px;
-$base-line-height: 26px;
+$base-font-size: 20px;
+$base-line-height: 32px;
 //
 // FOUNDATION SETTINGS
 //
@@ -24,10 +24,10 @@ $base-line-height: 26px;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-$base-font-size: 16px;
+$base-font-size: 20px;
 
 // The $base-line-height is 100% while $base-font-size is 150%
-$base-line-height: 26px;
+$base-line-height: 32px;
 
 // We use this to control whether or not CSS classes come through in the gem files.
 // $include-html-classes: true;

@@ -16,14 +16,18 @@
 }
 
 // Compass Vertical Rhythm setup 
-$base-font-size: 16px;
-$base-line-height: 26px;
+$base-font-size: 20px;
+$base-line-height: 32px;
 $rhythm-unit: "rem";
 $rem-with-px-fallback: true;
 
+html, body {
+    font-size: 16px;
+}
+
 @media #{$medium-up} {
 	html, body {
-		font-size: 18px;
+		font-size: 20px;
 	}
 }
 
@@ -33,32 +37,32 @@ $rem-with-px-fallback: true;
 $type-prefix: "t-";
 $type-scale: (
     tiny: (
-        font-size: 11px,
+        font-size: 10px,
         base-lines: 0.5
     ),
     small: (
-        font-size: 14px,
+        font-size: 15px,
         base-lines: 0.75
     ),
     base: (
         font-size: $base-font-size,
-        base-lines: 1.25
+        base-lines: 1
     ),
     medium: (
-        font-size: 26px,
-        base-lines: 1.25
+        font-size: 25px,
+        base-lines: 1
     ),
     large: (
-        font-size: 29px,
+        font-size: 30px,
         base-lines: 1.5
     ),
     xlarge: (
-        font-size: 42px,
-        base-lines: 1.75
+        font-size: 40px,
+        base-lines: 1.5
     ),
     xxlarge: (
-        font-size: 68px,
-        base-lines: 2.25
+        font-size: 50px,
+        base-lines: 2
     )
 );
 
