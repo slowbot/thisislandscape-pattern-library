@@ -4,19 +4,8 @@ $wash-color:        #e2ebf1;
 $alert-color:       #e16e28;
 $success-color:     #0e4a77;
 
-$tiny-font-size: 12px;
-$tiny-font-leading: 0.75;
-$small-font-size: 14px;
-$small-font-leading: 0.75;
 $base-font-size: 16px;
-$base-font-leading: 1;
-$medium-font-size: 24px;
-$medium-font-leading: 1.25;
-$large-font-size: 32px;
-$large-font-leading: 1.25;
-$xlarge-font-size: 43px;
-$xlarge-font-leading: 1.5;
-
+$base-line-height: 26px;
 //
 // FOUNDATION SETTINGS
 //
@@ -38,7 +27,7 @@ $xlarge-font-leading: 1.5;
 $base-font-size: 16px;
 
 // The $base-line-height is 100% while $base-font-size is 150%
-$base-line-height: 24px;
+$base-line-height: 26px;
 
 // We use this to control whether or not CSS classes come through in the gem files.
 // $include-html-classes: true;

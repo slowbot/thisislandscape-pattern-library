@@ -1,20 +1,3 @@
-// $h1-font-size: rem-calc(37);
-// $h2-font-size: rem-calc(27);
-// $h3-font-size: rem-calc(23);
-// $h4-font-size: rem-calc(18);
-// $h5-font-size: 1rem;
-// $h6-font-size: rem-calc(14);
-
-// $ms-base: 1em;
-// $ms-ratio: $major-third;
-
-// $h1-font-size: ms(6);
-// $h2-font-size: ms(5);
-// $h3-font-size: ms(4);
-// $h4-font-size: ms(3);
-// $h5-font-size: ms(2);
-// $h6-font-size: ms(1);
-
 @include establish-baseline;
 
 @function map-fetch($map, $keys) {
@@ -33,10 +16,16 @@
 }
 
 // Compass Vertical Rhythm setup 
-$base-font-size: 20px;
-$base-line-height: 32px;
+$base-font-size: 16px;
+$base-line-height: 26px;
 $rhythm-unit: "rem";
 $rem-with-px-fallback: true;
+
+@media #{$medium-up} {
+	html, body {
+		font-size: 18px;
+	}
+}
 
 // The type-scale Map contains the whole type scale.
 // Add your own sizes or modify these, they will be available in the type-scale mixin for use.
@@ -44,32 +33,32 @@ $rem-with-px-fallback: true;
 $type-prefix: "t-";
 $type-scale: (
     tiny: (
-        font-size: 13px,
+        font-size: 11px,
         base-lines: 0.5
     ),
     small: (
-        font-size: 16px,
+        font-size: 14px,
         base-lines: 0.75
     ),
     base: (
         font-size: $base-font-size,
-        base-lines: 1
+        base-lines: 1.25
     ),
     medium: (
-        font-size: 25px,
-        base-lines: 1
+        font-size: 26px,
+        base-lines: 1.25
     ),
     large: (
-        font-size: 31px,
+        font-size: 29px,
         base-lines: 1.5
     ),
     xlarge: (
-        font-size: 39px,
-        base-lines: 1.5
+        font-size: 42px,
+        base-lines: 1.75
     ),
     xxlarge: (
-        font-size: 49px,
-        base-lines: 2 
+        font-size: 68px,
+        base-lines: 2.25
     )
 );
 
@@ -128,7 +117,7 @@ $type-weight: (
 }
 
 // Headings
-#{h1, h2, h3, h4, h5} {
+#{h1, h2, h3, h4, h5, h6} {
     font-family: $base-font-family;
     margin-top: 0;
     @include type-weight(black);
@@ -149,6 +138,9 @@ h4 {
 }
 h5 {
     @include type-scale(base);
+}
+h5 {
+    @include type-scale(tiny);
 }
 
 // Paragraphs

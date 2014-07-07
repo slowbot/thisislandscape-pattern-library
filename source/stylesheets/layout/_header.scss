@@ -1,11 +1,4 @@
 .header {
-	@include box-shadow(0 8px 10px rgba(0, 0, 0, 0.075));
-	background-color: #fff;
-	border-top: 5px solid $secondary-color;
-	
-	%hN, a {
-
-	}
 	
 	.logo {
 		position: relative;
@@ -39,19 +32,4 @@
 
 		}
 	}	
-
-	.actions {
-		position: absolute;
-		top: .425em;
-		right: 1em;
-		
-		@media #{$large-up} {
-		
-		}
-		
-		.button {
-			padding: .75em 1.25em;
-			background: $success-color;
-		}
-	}
 }
