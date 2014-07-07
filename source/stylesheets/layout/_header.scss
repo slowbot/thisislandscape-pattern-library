@@ -4,19 +4,12 @@
 		position: relative;
 		padding-top: 2em;
 		
-		.icon {
-			max-height: 110px;
-		}
-
 		.name {
-			margin-top: 2em;
-			max-height: 60px;
-			padding: 0 2em;
+
 		}	
 	}
 	
 	.tool-bar {
-		
 		@media #{$large-up} {
 			
 		}

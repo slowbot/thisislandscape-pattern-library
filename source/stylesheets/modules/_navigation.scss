@@ -36,11 +36,9 @@ a.menu-link {
 		color: #fff;
 		display: block;
 		font-size: .725em;
-		font-weight: 500;
 		padding: 1em;
 		border-bottom: 1px solid darken($primary-color, 2%);
 		position: relative;
-		text-transform: uppercase;
 	}
 
 	li.has-subnav > a:after {
@@ -60,7 +58,6 @@ a.menu-link {
 
 @media #{$medium-up} {
 	.full-nav {
-		float: right;
 		position: relative;
 		overflow: visible;
 		z-index: 999;
@@ -87,7 +84,6 @@ a.menu-link {
 	}
 
 	.menu {
-		float: right;
 
 		ul {
 			margin: 0 0 0 -0.25em;
@@ -114,7 +110,6 @@ a.menu-link {
 		}
 
 		&> ul > li {
-			display: inline-block;
 			position: relative;
 		}
 
