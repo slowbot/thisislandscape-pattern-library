@@ -15,181 +15,154 @@
 // $h5-font-size: ms(2);
 // $h6-font-size: ms(1);
 
-$base-line-height: 20px;
-$rhythm-unit: “rem”;
+@include establish-baseline;
 
-$tiny-font-size: 12px;
-$tiny-font-leading: 0.75;
-$small-font-size: 14px;
-$small-font-leading: 0.75;
-$base-font-size: 16px;
-$base-font-leading: 1;
-$medium-font-size: 24px;
-$medium-font-leading: 1.25;
-$large-font-size: 24px;
-$large-font-leading: 1.25;
-$xlarge-font-size: 36px;
-$xlarge-font-leading: 1.25;
-
-@mixin typeSize($size) {
- @if $size == "tiny" {
-  @include adjust-font-size-to($tiny-font-size);
-  @include adjust-leading-to($tiny-font-leading);
- }
- @if $size == "small" {
-  @include adjust-font-size-to($tiny-font-size);
-  @include adjust-leading-to($tiny-font-leading);
-  @media #{$medium-up} {
-  @include adjust-font-size-to($small-font-size);
-  @include adjust-leading-to($small-font-leading);
-  }
- }
- @if $size == "base" {
-  @include adjust-font-size-to($small-font-size);
-  @include adjust-leading-to($small-font-leading);
-  @media #{$medium-up} {
-  @include adjust-font-size-to($base-font-size);
-  @include adjust-leading-to($base-font-leading);
-  }	
- }
- @if $size == "medium" {
-  @include adjust-font-size-to($base-font-size);
-  @include adjust-leading-to($base-font-leading);
-  @media #{$medium-up} {
-  @include adjust-font-size-to($medium-font-size);
-  @include adjust-leading-to($medium-font-leading);
-  }	
- }
- @if $size == "large" {
-  @include adjust-font-size-to($medium-font-size);
-  @include adjust-leading-to($medium-font-leading);
-  @media #{$medium-up} {
-  @include adjust-font-size-to($large-font-size);
-  @include adjust-leading-to($large-font-leading);
-  }	
- }
- @if $size == "xlarge" {
-  @include adjust-font-size-to($large-font-size);
-  @include adjust-leading-to($large-font-leading);
-  @media #{$medium-up} {
-  @include adjust-font-size-to($xlarge-font-size);
-  @include adjust-leading-to($xlarge-font-leading);
-  }	
- }
-}
-
-
-// Type weights
-%t-ultrastrong {
- font-weight: 900;
-}
-%t-strong {
- font-weight: 700;
-}
-%t-regular {
- font-weight: 400;
-}
-%t-light {
- font-weight: 300;
-}
-%t-ultralight {
- font-weight: 200;
-}
-
-// Type size variants 
-%t-tiny {
- @include typeSize(tiny);
-}
-%t-small {
- @include typeSize(small);
-}
-%t-base {
- @include typeSize(base);
-}
-%t-medium {
- @include typeSize(medium);
-}
-%t-large {
- @include typeSize(large);
-}
-%t-xlarge {
- @include typeSize(xlarge);
-}
-.t-tiny {
- @include typeSize(tiny);
-}
-.t-small {
- @include typeSize(small);
-}
-.t-base {
- @include typeSize(base);
-}
-.t-medium {
- @include typeSize(medium);
-}
-.t-large {
- @include typeSize(large);
-}
-.t-xlarge {
- @include typeSize(xlarge);
-}
-
-
-
-%hN {
-  	font-family: $font-family;
-	text-rendering: optimizeLegibility; 
-	display: block;
-//	font-weight: 600;
-//	line-height: 1.125em;
-	margin: 0;
-	padding: 0;
-
-	@extend %t-strong;
-
-	a {
-		color: $primary-color;
+@function map-fetch($map, $keys) {
+	$key: nth($keys, 1);
+	$length: length($keys);
+	$value: map-get($map, $key);
+	@if ($length > 1) {
+		$rest: ();
+		@for $i from 2 through $length {
+			$rest: append($rest, nth($keys, $i))
+		}
+		@return map-fetch($value, $rest)
+	} @else {
+		@return $value;
 	}
 }
 
-h1,
-.alpha {
-	@extend %hN;
-	@extend %t-xlarge;
+// Compass Vertical Rhythm setup 
+$base-font-size: 20px;
+$base-line-height: 32px;
+$rhythm-unit: "rem";
+$rem-with-px-fallback: true;
+
+// The type-scale Map contains the whole type scale.
+// Add your own sizes or modify these, they will be available in the type-scale mixin for use.
+
+$type-prefix: "t-";
+$type-scale: (
+    tiny: (
+        font-size: 13px,
+        base-lines: 0.5
+    ),
+    small: (
+        font-size: 16px,
+        base-lines: 0.75
+    ),
+    base: (
+        font-size: $base-font-size,
+        base-lines: 1
+    ),
+    medium: (
+        font-size: 25px,
+        base-lines: 1
+    ),
+    large: (
+        font-size: 31px,
+        base-lines: 1.5
+    ),
+    xlarge: (
+        font-size: 39px,
+        base-lines: 1.5
+    ),
+    xxlarge: (
+        font-size: 49px,
+        base-lines: 2 
+    )
+);
+
+$type-weight: (
+    thin: 200,
+    light: 300,
+    regular: 400,
+    bold: 700,
+    black: 900
+);
+
+// A type scaling utility $type-scale map with the predefined values
+
+ // Each loop that outputs all of the type scales as placeholders with their type-prefix
+ // ex. %t-tiny, %t-small
+@each $scale in map-keys($type-scale) {
+    %#{$type-prefix}#{$scale} {
+        @include adjust-font-size-to (
+            map-fetch($type-scale, $scale font-size),   
+            map-fetch($type-scale, $scale base-lines)
+        );
+    }
 }
 
-h2,
-.beta {
-	@extend %hN;
-	@extend %t-large;
+// A mixin for using type scale
+// Parameters: 
+// $scale (tiny, small...) 
+// $extend (boolean) - true by default, if needed inside media query use false to @include the content instead of @extend
+// ex. @include type-scale(small) or @include type-scale(small, false) for use inside media queries. 
+
+@mixin type-scale($scale, $extend: true, $map: $type-scale) {
+    @if $extend {
+        @extend %#{$type-prefix}#{$scale};
+    }
+    @else {
+        @include adjust-font-size-to(
+            map-fetch($map, $scale font-size),
+            map-fetch($map, $scale base-lines)
+        );
+    }
 }
 
-h3,
-.gamma {
-	@extend %hN;
-	@extend %t-medium;
+// A simple type-weight mixin
+// ex. @include type-weight(strong);
+@mixin type-weight($weight) {
+    font-weight: map-get($type-weight, $weight);
 }
 
-h4,
-.delta {
-	@extend %hN;
-	@extend %t-base;
+// A quick ligature mixin, to be updated with a more modular one
+@mixin type-ligatures() {
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
 }
 
-h5,
-.epsilon {
-	@extend %hN;
-	@extend %t-small;
+// Headings
+#{h1, h2, h3, h4, h5} {
+    font-family: $base-font-family;
+    margin-top: 0;
+    @include type-weight(black);
+    @include margin-trailer(1);
+    @include type-ligatures;
+}
+h1 {
+    @include type-scale(xxlarge);
+}
+h2 {
+    @include type-scale(xlarge);
+}
+h3 {
+    @include type-scale(large);
+}
+h4 {
+    @include type-scale(medium);
+}
+h5 {
+    @include type-scale(base);
 }
 
-h6,
-.zeta {
-	@extend %hN;
-	@extend %t-tiny;
-}
-
+// Paragraphs
 p {
-	@extend %post-text;
+    @include margin-trailer(1);
+    @include word-break(break-word);
+    @include hyphens(auto);
+    @include type-ligatures;
+    font-family: $font-family;
+}
+
+// Small
+small {
+    @include type-scale(small);
 }
 
 a {
@@ -209,7 +182,7 @@ blockquote {
 }
 
 .sans {
-	font-family:$sans-font-family-2;
+	font-family:$sans-font-family;
 }
 
 .normal {
@@ -233,7 +206,7 @@ blockquote {
 }
 
 %small-text {
-	font-family: $sans-font-family-2;
+	font-family: $sans-font-family;
 	color: #999;
 }
 

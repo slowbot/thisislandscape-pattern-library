@@ -70,10 +70,6 @@
 	@extend %inverse-type;
 	padding-bottom: 1.5em;
 
-	.circle {
-		@extend %washed-circle;
-	}
-
 	.button, button {
 		@extend %inverse-button;
 	}

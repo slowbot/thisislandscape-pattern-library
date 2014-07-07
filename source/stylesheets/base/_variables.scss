@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'CalibreWeb-Light';
+    src: url('../fonts/CalibreWeb-Light.eot');
+    src: url('../fonts/CalibreWeb-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CalibreWeb-Light.woff') format('woff'),
+         url('../fonts/CalibreWeb-Light.ttf') format('truetype'),
+         url('../fonts/CalibreWeb-Light.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'CalibreWeb-Bold';
+    src: url('../fonts/CalibreWeb-Bold.eot');
+    src: url('../fonts/CalibreWeb-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CalibreWeb-Bold.woff') format('woff'),
+         url('../fonts/CalibreWeb-Bold.ttf') format('truetype'),
+         url('../fonts/CalibreWeb-Bold.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 //@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 //@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 //@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
@@ -15,14 +37,11 @@ $h4-font-size: rem-calc(23) !default;
 $h5-font-size: rem-calc(18) !default;
 $h6-font-size: 1rem !default;
 
-$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-$sans-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; // Custom font-face stack, if set will be added to the $font-family
-$sans-font-family-2: "proxima-nova", Helvetica, Arial, sans-serif; // Custom font-face stack, if set will be added to the $font-family
-
-$sans-condensed-font-family:'proxima-nova-condensed', Helvetica, Arial, sans-serif;
-$sans-condensed-font-family-2: "proxima-nova-alt-ext-cond", Helvetica, Arial, sans-serif; 
-
+$font-family: "CalibreWeb-Light", Helvetica, Arial, sans-serif;
+$base-font-family: $font-family;
+$sans-font-family: $font-family;
+$sans-font-family-bold: "CalibreWeb-Bold", Helvetica, Arial, sans-serif; // Custom font-face stack, if set will be added to the $font-family
+$alt-font-family: $sans-font-family-bold;
 
 // $Brand Colors
 
