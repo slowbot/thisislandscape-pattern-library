@@ -176,12 +176,29 @@ blockquote {
 	}
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+}
+
 .serif {
 	font-family:$font-family;
 }
 
 .sans {
 	font-family:$sans-font-family;
+}
+
+.large {
+    @include type-scale(large);
+}
+
+.medium {
+    @include type-scale(medium);
+}
+
+.base {
+    @include type-scale(base);
 }
 
 .normal {
@@ -201,7 +218,11 @@ blockquote {
 }
 
 .rhythm {
+    @include margin-trailer(1);
+}
 
+.h-sub {
+    color: $primary-color;
 }
 
 %small-text {

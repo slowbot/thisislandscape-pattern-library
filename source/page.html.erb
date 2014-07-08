@@ -1,24 +1,44 @@
 <div class="content">
-
-	<section class="single-article rhythm">
+	<section class="single-project rhythm">
 		<%= partial "partials/_figure-hero" %>
 
 		<div class="row">
 			
-			<div class="medium-10 medium-centered columns">
-				<article class="post">
-				<%= partial "partials/_header-page" %>
-				
-				<%= partial "partials/_entry-blog" %>
+			<div class="medium-14 medium-centered columns">
+				<section class="leader row">
+					<div class="large-8 columns">
+						<%= partial "partials/_header-introduction" %>
+					</div>
 
-				<%= partial "partials/_figure" %>
+					<div class="large-8 columns">
+						<%= partial "partials/_page" %>
+					</div>
+				</section>
 
-				<%= partial "partials/_profile" %>
-				</article>
+				<section>
+					<h3 class="h-sub base">Indenity</h3>
+					<%= partial "partials/_figure" %>
+					<%= partial "partials/_figure" %>
+				</section>
 
 				<%= partial "partials/_aside-panel" %>
+
+				<section class="row">
+					<div class="large-11 columns">
+						<%= partial "partials/_entry" %>
+					</div>
+
+					<div class="large-5 columns">
+						<%= partial "partials/_aside-awards" %>
+					</div>
+				</section>	
+
+				<section>
+					<h3 class="h-sub base">Indenity</h3>
+					<%= partial "partials/_figure" %>
+					<%= partial "partials/_figure" %>
+				</section>
 			</div>
 		</div>
 	</section>
-
 </div>

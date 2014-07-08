@@ -1,7 +1,6 @@
 .header {
 	
 	.logo {
-		position: relative;
 		padding-top: 2em;
 		
 		.name {
@@ -14,15 +13,4 @@
 			
 		}
 	}
-	
-	.social {
-		position: absolute;
-		top: auto;
-		bottom: .5em;
-		right: 1em;
-	
-		@media #{$large-up} {
-
-		}
-	}	
 }
