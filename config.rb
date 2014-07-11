@@ -111,7 +111,7 @@ end
 activate :deploy do |deploy|
   deploy.method   = :rsync
   deploy.host     = "mistermachineshop.com"
-  deploy.path     = "/var/www/esd-patterns"
+  deploy.path     = "/var/www/thisislandscape-patterns"
   deploy.user     = "root"
   # Optional Settings
   # deploy.port  = 5309 # ssh port, default: 22
