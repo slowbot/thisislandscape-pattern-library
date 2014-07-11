@@ -31,7 +31,6 @@
 	position: relative;
 	top: 50%;
 	height: 60%;
-	font-size: 54px;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
@@ -53,7 +52,7 @@
 }
 
 .overlay ul li a {
-	font-weight: 300;
+	@include type-scale(xxlarge);
 	display: block;
 	color: #fff;
 	-webkit-transition: color 0.2s;
@@ -107,7 +106,6 @@
 @media screen and (max-height: 30.5em) {
 	.overlay nav {
 		height: 70%;
-		font-size: 34px;
 	}
 	.overlay ul li {
 		min-height: 34px;
