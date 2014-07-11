@@ -3,9 +3,8 @@ $(document).foundation();
 $(document).ready(function() {
   $('body').addClass('js');
   
-  var $menu = $('#menu'),
-  	  $menulink = $('.menu-link'),
-  	  $menuTrigger = $('.has-subnav > a');
+  var $menu = $('#header'),
+  	  $menulink = $('#trigger-overlay');
 	
 	$menulink.click(function(e) {
 		e.preventDefault();
@@ -13,27 +12,15 @@ $(document).ready(function() {
 		$menu.toggleClass('active');
 	});
 	
-	$menuTrigger.click(function(e) {
-		e.preventDefault();
-		var $this = $(this);
-		$this.toggleClass('active').next('ul').toggleClass('active');
-	});
 
 	// Dock the header to the top of the window when scrolled past the banner.
     // This is the default behavior.
 
     $('.header').scrollToFixed({
-            limit: $('.header').offset().top - $('.header').outerHeight() - 10,
+            limit: $('.header').offset().top - $('.header').outerHeight(),
         zIndex: 1000,
         removeOffsets: true,
     });     
-    
-    $('.sticky').scrollToFixed({
-        marginTop: $('.header').outerHeight() + 20,
-        limit: $('.header').offset().top - $('.header').outerHeight() - 10,
-        zIndex: 999,
-        removeOffsets: true
-    });
 
     // This is the default behavior.
 
