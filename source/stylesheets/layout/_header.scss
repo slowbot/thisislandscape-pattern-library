@@ -1,16 +1,9 @@
-.header {
-	
+header.header {
+	z-index: 1000 !important;
+	position: relative;
+	cursor: pointer;
+
 	.logo {
 		padding-top: 2em;
-		
-		.name {
-
-		}	
-	}
-	
-	.tool-bar {
-		@media #{$large-up} {
-			
-		}
 	}
 }

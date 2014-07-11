@@ -28,12 +28,14 @@ $(document).ready(function() {
         removeOffsets: true,
     });     
     
-    $('.header').scrollToFixed({
+    $('.sticky').scrollToFixed({
         marginTop: $('.header').outerHeight() + 20,
         limit: $('.header').offset().top - $('.header').outerHeight() - 10,
         zIndex: 999,
         removeOffsets: true
     });
+
+    // This is the default behavior.
 
 	var triggerBttn = document.getElementById( 'trigger-overlay' ),
 		overlay = document.querySelector( 'div.overlay' ),
