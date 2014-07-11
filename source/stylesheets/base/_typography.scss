@@ -237,4 +237,20 @@ ul {
 %post-text {
 	font-family: $sans-font-family;
 	color: #656868;	
-}		
+}
+
+.two-column {
+    @media #{$medium-up} {
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+
+        p {
+            -webkit-column-break-inside: avoid;
+            -moz-column-break-inside: avoid;
+            -moz-page-break-inside: avoid;
+            page-break-inside: avoid;
+        }
+    }
+}	
