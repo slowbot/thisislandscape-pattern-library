@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// Dock the header to the top of the window when scrolled past the banner.
     // This is the default behavior.
 
-    $('.header').scrollToFixed({
+    $('.logo').scrollToFixed({
             limit: $('.header').offset().top - $('.footer').outerHeight() - 10,
         zIndex: 1000,
         removeOffsets: true,

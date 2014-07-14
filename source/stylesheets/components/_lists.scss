@@ -14,3 +14,16 @@
 		padding-top: 2em;
 	}
 }
+
+.underlined {
+	h4 {
+		margin-bottom: 0;
+		border-bottom: 1px solid #333;
+		display: inline-block;
+		@include type-scale(base);
+	}
+
+	ul {
+		@include margin-trailer(1);
+	}
+}

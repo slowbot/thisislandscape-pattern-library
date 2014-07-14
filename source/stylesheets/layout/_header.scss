@@ -1,10 +1,24 @@
+body {
+	padding-top: 1em;
+}
+
 header.header {
-	z-index: 1000 !important;
 	cursor: pointer;
+	position: relative;
 	width: 100%;
+	z-index: 1000 !important;
 
 	.logo {
+		&.scroll-to-fixed-fixed {
+			.logo-svg {
+				background-color: $primary-color;
+				margin-top: 0;
 
+				.letter {
+				fill: #fff;
+				}
+			}		
+		}
 	}
 
 	.logo-svg {
@@ -12,6 +26,7 @@ header.header {
 		width: 160px;
 		height: 50px;
 		margin: 2em 0 2em -1em;
+		z-index: 1000 !important;
 	}
 
 	&.active {
@@ -19,21 +34,12 @@ header.header {
 			fill: #fff;
 		}
 	}
-
-	&.scroll-to-fixed-fixed {
-		.logo-svg {
-			background-color: $primary-color;
-			margin-top: 0;
-
-			.letter {
-				fill: #fff;
-			}
-		}	
-	}
 }
 
 
-.single {
+body.single {
+	padding-top: 0;
+
 	header.header {
 		position: absolute;
 	}	

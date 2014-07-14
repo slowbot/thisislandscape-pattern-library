@@ -1,12 +1,38 @@
 <div class="content">
-
-	<section class="single-article rhythm">
-		<div class="row">			
-			<div class="large-14 large-centered columns">
+	<section class="single-article">
+		<div class="row">
+			<div class="medium-14 medium-centered columns">
 				<%= partial "partials/_figure" %>
-				<%= partial "partials/_page" %>
 			</div>
 		</div>
+
+		<div class="row">	
+			<div class="medium-14 medium-centered columns">
+				<section class="leader row">
+					<div class="large-8 columns">
+					<%= partial "partials/_header-introduction" %>
+					</div>
+
+					<div class="large-8 columns">
+					<%= partial "partials/_page" %>
+					</div>
+				</section>
+			</div>
+		</div>	
 	</section>
 
+	<section class="bright page-section">
+		<div class="row">
+			<div class="medium-14 medium-centered columns">
+				<div class="row">
+					<div class="large-8 columns">
+						<%= partial "partials/_figure-1x1" %>
+					</div>
+					<div class="large-8 columns">
+						<%= partial "partials/_aside-list" %>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
 </div>

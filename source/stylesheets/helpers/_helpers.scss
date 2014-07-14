@@ -24,8 +24,8 @@
 
 }
 
-.wash {
-	background-color: #efefef;
+.bright {
+	background-color: #fff;
 }
 
 .columns.collapse {
@@ -46,40 +46,15 @@
 	border: 2px solid #fff;
 }
 
-.page-header {
-	padding-top: 1.5em;
-}
-
-.primary-container {
-	background-color: $primary-color;
-
-	p, .dim {
-		color: darken($primary-color, 15%);
-	}
-}
-
-.secondary-container {
-	background-color: $secondary-color;
-
-	p, .dim {
-		color: darken($secondary-color, 15%);
-	}
-}
-
-.primary-container, .secondary-container {
-	@extend %inverse-type;
-	padding-bottom: 1.5em;
-
-	.button, button {
-		@extend %inverse-button;
-	}
-}
-
-.wash-container {
-	background-color: $wash-color;
+.bright-container {
+	background-color: #fff;
 }
 
 .featured-section {
 	border-top: 2px solid $primary-color;
 	padding-top: 2em;
+}
+
+.page-section {
+	padding: 4rem 0;
 }
