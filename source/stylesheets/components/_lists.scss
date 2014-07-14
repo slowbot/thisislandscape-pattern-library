@@ -16,6 +16,12 @@
 }
 
 .underlined {
+	border-bottom: 1px solid #333;
+	display: inline-block;
+	@include type-scale(base);
+}	
+
+.lined-list {
 	h4 {
 		margin-bottom: 0;
 		border-bottom: 1px solid #333;
@@ -25,5 +31,12 @@
 
 	ul {
 		@include margin-trailer(1);
+	}
+}
+
+.rhythm-list {
+	
+	li {
+		@include margin-trailer(.75);
 	}
 }
