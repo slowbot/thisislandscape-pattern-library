@@ -17,7 +17,7 @@ $(document).ready(function() {
     // This is the default behavior.
 
     $('.header').scrollToFixed({
-            limit: $('.header').offset().top - $('.header').outerHeight(),
+            limit: $('.header').offset().top - $('.footer').outerHeight() - 10,
         zIndex: 1000,
         removeOffsets: true,
     });     

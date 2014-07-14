@@ -1,7 +1,7 @@
 header.header {
 	z-index: 1000 !important;
-	position: relative;
 	cursor: pointer;
+	width: 100%;
 
 	.logo {
 
@@ -11,7 +11,7 @@ header.header {
 		padding: 0 1em;
 		width: 160px;
 		height: 50px;
-		margin-left: -1em;
+		margin: 2em 0 2em -1em;
 	}
 
 	&.active {
@@ -23,10 +23,18 @@ header.header {
 	&.scroll-to-fixed-fixed {
 		.logo-svg {
 			background-color: $primary-color;
+			margin-top: 0;
 
 			.letter {
 				fill: #fff;
 			}
 		}	
 	}
+}
+
+
+.single {
+	header.header {
+		position: absolute;
+	}	
 }
