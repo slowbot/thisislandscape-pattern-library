@@ -39,11 +39,11 @@ html, body {
 $type-prefix: "t-";
 $type-scale: (
     tiny: (
-        font-size: 10px,
+        font-size: 14px,
         base-lines: 0.5
     ),
     small: (
-        font-size: 15px,
+        font-size: 18px,
         base-lines: 0.75
     ),
     base: (
@@ -130,23 +130,23 @@ $type-weight: (
     @include margin-trailer(1);
     @include type-ligatures;
 }
-h1 {
+h1, .alpha {
     @include type-scale(xxlarge);
 }
-h2 {
+h2, .beta {
     @include type-scale(xlarge);
 }
-h3 {
+h3, .gamma {
     @include type-scale(large);
 }
-h4 {
+h4, .delta {
     @include type-scale(medium);
 }
-h5 {
+h5, .epsilon {
     @include type-scale(base);
 }
-h5 {
-    @include type-scale(tiny);
+h6, .zeta {
+    @include type-scale(small);
 }
 
 // Paragraphs
@@ -166,6 +166,10 @@ small {
 a {
 	color: $primary-color;
     text-decoration: none;
+
+    &.dim {
+        color: #333;
+    }
 }
 
 blockquote {
