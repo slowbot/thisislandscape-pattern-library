@@ -13,7 +13,7 @@ header.header {
 			.logo-svg {
 				background-color: $primary-color;
 				margin-top: 0;
-
+				margin-left: 0;
 				.letter {
 				fill: #fff;
 				}
@@ -49,4 +49,8 @@ body.single {
 			fill: #fff;
 		}
 	}	
+}
+
+#p1, #p2, #p3 {
+	float: left;
 }

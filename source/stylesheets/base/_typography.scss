@@ -257,4 +257,12 @@ ul, ul li ul {
             page-break-inside: avoid;
         }
     }
-}	
+}
+
+.flip {
+    @include rotate(-90deg);
+    position: absolute;
+    display: inline-block;
+    margin-left: -4em;
+    height: 1em;
+}

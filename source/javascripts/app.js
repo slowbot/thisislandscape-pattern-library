@@ -20,7 +20,7 @@ $(document).ready(function() {
             limit: $('.header').offset().top - $('.footer').outerHeight() - 10,
         zIndex: 1000,
         removeOffsets: true,
-    });     
+    });  
 
     // This is the default behavior.
 
