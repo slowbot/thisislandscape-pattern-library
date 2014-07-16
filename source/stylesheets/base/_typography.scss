@@ -260,9 +260,17 @@ ul, ul li ul {
 }
 
 .flip {
-    @include rotate(-90deg);
-    position: absolute;
-    display: inline-block;
-    margin-left: -4em;
-    height: 1em;
+    @media #{$medium-up} {
+        @include rotate(-90deg);
+        position: absolute;
+        display: inline-block;
+        width: 1em;
+        left: -2em;
+        top: 2em;
+        margin: 0;
+    }
+
+    @media #{$large-up} {
+        left: -4em;
+    }    
 }
