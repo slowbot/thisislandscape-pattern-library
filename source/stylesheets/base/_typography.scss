@@ -310,7 +310,7 @@ ul, ul li ul {
 
 .flip {
     @media #{$medium-up} {
-        @include rotate(-90deg);
+        @include rotate(90deg);
         position: absolute;
         display: inline-block;
         width: 1em;
@@ -322,6 +322,17 @@ ul, ul li ul {
     @media #{$large-up} {
         left: -4em;
     }    
+}
+
+.leader {
+    .flip {
+        left: -1em;
+        top: .5em;
+
+        @media #{$large-up} {
+            left: -2.95em;
+        }    
+    }
 }
 
 .more {
