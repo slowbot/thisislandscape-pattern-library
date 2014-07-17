@@ -38,7 +38,7 @@
 
 		.nav-projects {
 			height: 100%;
-			padding-top: 7em;
+			padding-top: 3em;
 
 			li {
 				display: block;
@@ -46,7 +46,6 @@
 				min-height: 54px;
 
 				a {
-					@include type-scale(xlarge);
 					display: block;
 					color: #fff;
 					-webkit-transition: color 0.2s;
@@ -62,9 +61,7 @@
 
 			li {
 
-
 				a {
-					@include type-scale(base);
 					display: block;
 					color: #fff;
 					-webkit-transition: color 0.2s;

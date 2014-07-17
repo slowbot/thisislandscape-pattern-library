@@ -22,15 +22,9 @@ $rhythm-unit: "rem";
 $rem-with-px-fallback: true;
 
 html, body {
-    font-size: 16px;
+    font-size: 20px;
     font-family: $font-family;
     background-color: $wash-color;
-}
-
-@media #{$medium-up} {
-	html, body {
-		font-size: 20px;
-	}
 }
 
 // The type-scale Map contains the whole type scale.
@@ -39,32 +33,32 @@ html, body {
 $type-prefix: "t-";
 $type-scale: (
     tiny: (
-        font-size: 14px,
+        font-size: 12px,
         base-lines: 0.5
     ),
     small: (
-        font-size: 18px,
+        font-size: 16px,
         base-lines: 0.75
     ),
     base: (
-        font-size: $base-font-size,
+        font-size: 18px,
         base-lines: 1
     ),
     medium: (
-        font-size: 25px,
+        font-size: 20px,
         base-lines: 1
     ),
     large: (
-        font-size: 30px,
-        base-lines: 1.5
+        font-size: 22px,
+        base-lines: 1
     ),
     xlarge: (
-        font-size: 40px,
+        font-size: 28px,
         base-lines: 1.5
     ),
     xxlarge: (
-        font-size: 50px,
-        base-lines: 2
+        font-size: 33px,
+        base-lines: 1.25
     )
 );
 
@@ -147,6 +141,61 @@ h5, .epsilon {
 }
 h6, .zeta {
     @include type-scale(small);
+}
+
+@media #{$medium-up} {
+
+    $type-scale: (
+        tiny: (
+            font-size: 14px,
+            base-lines: 0.5
+        ),
+        small: (
+            font-size: 18px,
+            base-lines: 0.75
+        ),
+        base: (
+            font-size: $base-font-size,
+            base-lines: 1
+        ),
+        medium: (
+            font-size: 25px,
+            base-lines: 1
+        ),
+        large: (
+            font-size: 30px,
+            base-lines: 1.5
+        ),
+        xlarge: (
+            font-size: 40px,
+            base-lines: 1.5
+        ),
+        xxlarge: (
+            font-size: 50px,
+            base-lines: 2
+        )
+    );
+
+
+    h1, .alpha, .xxlarge {
+        @include type-scale(xxlarge, false);
+    }
+    h2, .beta, .xlarge {
+        @include type-scale(xlarge, false);
+    }
+    h3, .gamma, .large {
+        @include type-scale(large, false);
+    }
+    h4, .delta, .medium {
+        @include type-scale(medium, false);
+    }
+    h5, .epsilon, .base{
+        @include type-scale(base, false);
+    }
+    h6, .zeta, .small {
+        @include type-scale(small, false);
+    }
+
 }
 
 // Paragraphs

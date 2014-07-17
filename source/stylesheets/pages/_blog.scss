@@ -3,12 +3,10 @@ body.blog {
 	height: auto;
 
 	.meta, .meta a {
-		@include type-scale(small);
 		color: #96a7b1;
 	}
 
 	.share {
-		@include type-scale(small);
 		border-bottom: 1px solid $primary-color;
 		padding-bottom: .25em;
 	}

@@ -4,7 +4,12 @@
 	margin-top: 2em;
 	padding-top: 2em;
 	
-	%hN, p, a {
+	#{h1, h2, h3, h4, h5, h6} {
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+	a {
 		color: #fff;
 	}
 	
@@ -22,26 +27,23 @@
 }
 
 .footer-menu {
-	margin: 2em 0 3em 0;
-	overflow: hidden;
-	
-	ul {
-		margin: 0;
-	}
-	
-	li {
-		font-size: .925em;
-		list-style: none;
-		line-height: 2em;
+	margin: 2em 1em;
+
+	.footer-list {
+		margin-bottom: 2em;
 		
-		&.column {
-			@media #{$medium-up} {
-				@include grid-column($columns:2);
+		li {
+			list-style: none;
+			
+			&.column {
+				@media #{$medium-up} {
+					@include grid-column($columns:2);
+				}
 			}
-		}
-		
-		a {
-			font-weight: 400;
+			
+			a {
+				font-weight: 400;
+			}
 		}
 	}
 }

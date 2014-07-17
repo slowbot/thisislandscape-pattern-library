@@ -18,8 +18,8 @@
 		}
 	}
 	
-	.meta {
-		
+	.meta, .meta a {
+		color: #959595;
 	}
 	
 	.type {
@@ -52,7 +52,15 @@
 	}
 
 	&.archived {
+		margin-bottom: 3em;
 
+		p {
+			font-size: 80%;
+
+			@media #{$large-up} {
+				font-size: 100%;
+			}
+		}
 	}
 }
 	
