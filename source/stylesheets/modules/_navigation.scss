@@ -4,8 +4,8 @@
 	margin: 2em 0;
 	color: #333;
 	display: inline-block;
+}
 
-	.icon-down {
-		@include type-scale(xlarge);
-	}
+.pager-down {
+	@include type-scale(xlarge);
 }
