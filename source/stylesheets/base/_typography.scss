@@ -120,7 +120,7 @@ $type-weight: (
 #{h1, h2, h3, h4, h5, h6} {
     font-family: $base-font-family;
     margin-top: 0;
-    @include type-weight(black);
+//    @include type-weight(black);
     @include margin-trailer(1);
     @include type-ligatures;
 }
