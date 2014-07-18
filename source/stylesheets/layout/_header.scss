@@ -8,36 +8,41 @@ header.header {
 	width: 100%;
 	z-index: 1000 !important;
 
-	.logo {
-		&.scroll-to-fixed-fixed {
-			.logo-svg {
-				background-color: $primary-color;
-				margin-top: 0;
-				margin-left: 0;
-				.letter {
-				fill: #fff;
-				}
-			}		
-		}
-	}
-
 	.logo-svg {
 		padding: 0 1em;
 		width: 128px;
-		height: 40px;
-		margin: .5em 0 1.5em 0;
+		min-height: 40px;
+		margin: 2em 0 1.5em 0;
 		z-index: 1000 !important;
 
 		@media #{$medium-up} {
 			margin: 4em 0 2em -1em;
 			width: 160px;
-			height: 50px;	
+			min-height: 50px;	
 		}	
 	}
 
 	&.active {
 		.letter {
 			fill: #fff;
+		}
+	}
+
+	.logo {
+		&.scroll-to-fixed-fixed {
+			.logo-svg {
+				background-color: $primary-color;
+				display: inline-block;
+				margin-top: 0;
+				margin-left: 0;
+				padding: .75em;
+				width: 120px;
+				min-height: 40px;
+
+				.letter {
+					fill: #fff;
+				}
+			}		
 		}
 	}
 }
