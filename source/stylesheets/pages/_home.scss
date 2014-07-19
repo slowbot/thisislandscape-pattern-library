@@ -4,10 +4,35 @@
 		position: absolute;
 	}
 
+	.cover {
+		@media #{$large-up} {	
+			position: fixed;
+			height: 100%;
+			width: 100%;
+		}	
+	}
+
+	.footer {
+		@media #{$large-up} {	
+			z-index: 1000;
+			position: absolute;
+			width: 100%;
+			bottom: -150%;
+		}
+	}
+
 	.overlay-navigation {
 		opacity: 1;
 		visibility: visible;
 	
+		.nav-primary {
+			position: relative;
+
+			@media #{$large-up} {
+				position: fixed;
+			}
+		}
+
 		.nav-secondary {
 		-webkit-perspective: 1200px;
 		perspective: 1200px;
