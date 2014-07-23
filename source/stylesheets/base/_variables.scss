@@ -9,6 +9,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'CalibreWeb-Semibold';
+    src: url('../fonts/CalibreWeb-Semibold.eot');
+    src: url('../fonts/CalibreWeb-Semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'CalibreWeb-Bold';
@@ -20,9 +27,7 @@
     font-weight: normal;
     font-style: normal;
 }
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
-//@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
+
 
 // $BaseType
 // -------------------------------------//
@@ -40,7 +45,8 @@ $h6-font-size: 1rem !default;
 $font-family: "CalibreWeb-Light", Helvetica, Arial, sans-serif;
 $base-font-family: $font-family;
 $sans-font-family: $font-family;
-$sans-font-family-bold: "CalibreWeb-Bold", Helvetica, Arial, sans-serif; // Custom font-face stack, if set will be added to the $font-family
+$sans-font-family-semibold: "CalibreWeb-Semibold", Helvetica, Arial, sans-serif;
+$sans-font-family-bold: "CalibreWeb-Bold", Helvetica, Arial, sans-serif;
 $alt-font-family: $sans-font-family-bold;
 
 // $Brand Colors

@@ -63,3 +63,11 @@ $(document).ready(function() {
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
 });
+
+$(function(){
+    $(document).scroll(function(){
+        $('#wrapper').stop().animate({
+            scrollTop : $(this).scrollTop()
+        });            
+    });
+});
