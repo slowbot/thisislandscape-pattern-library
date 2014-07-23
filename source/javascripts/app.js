@@ -5,11 +5,12 @@ $(document).ready(function() {
   
   var $menu = $('#header'),
   	  $menulink = $('#trigger-overlay');
+  	  $content = $('body');
 	
 	$menulink.click(function(e) {
 		e.preventDefault();
 		$menulink.toggleClass('active');
-		$menu.toggleClass('active');
+		$content.toggleClass('open');
 	});
 	
 

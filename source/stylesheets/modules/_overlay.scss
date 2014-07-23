@@ -8,7 +8,7 @@
 	background: rgba(4, 87, 167,0.9);
 	z-index: 999;
 	color: #fff;
-	
+
 	.overlay-close {
 		width: 80px;
 		height: 80px;
@@ -122,6 +122,15 @@
 		-webkit-perspective: 1200px;
 		perspective: 1200px;
 		
+		/* Masking effect: currently causing a double scroll event */
+		@media #{$large-up} {
+			position: fixed;
+			right: 0;
+			overflow-y: scroll;
+			height: 80%;
+			margin-top: 6em;
+		}
+
 		ul {
 			opacity: 0.4;
 			-webkit-transform: translateY(-25%) rotateX(35deg);
@@ -159,5 +168,25 @@
 
 	.overlay ul li {
 		min-height: 34px;
+	}
+}
+
+.open {
+	.content {
+		position: fixed;
+	}
+
+	.footer {
+		display: none;
+	}
+
+	.pagination {
+		display: none;
+	}
+}
+
+.active {
+	.logo {
+		position: fixed;
 	}
 }
