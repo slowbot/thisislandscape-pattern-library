@@ -109,7 +109,20 @@
 				}	
 			}	
 		}
-	}	
+	}
+
+	.scroll-arrows {
+		position: absolute;
+		bottom: 2em;
+		left: 0;
+		z-index: 1000;
+
+		.arrow {
+			color: #fff;
+			font-size: 32px;
+			padding: 1em;
+		}
+	}
 }	
 
 
@@ -126,11 +139,16 @@
 		
 		/* Masking effect: currently causing a double scroll event */
 		@media #{$large-up} {
-			position: fixed;
-			right: 0;
-			overflow-y: scroll;
-			height: 80%;
-			margin-top: 6em;
+		position: relative;
+
+			.nav-projects-mask {
+				position: fixed;
+				right: 0;
+				overflow-y: scroll;
+				height: 80%;
+				margin-top: 6em;
+				width: 100%;
+			}
 		}
 
 		ul {
