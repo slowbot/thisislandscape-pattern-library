@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+	content: "\e602";
+}
 .icon-up:before {
 	content: "\e600";
 }
