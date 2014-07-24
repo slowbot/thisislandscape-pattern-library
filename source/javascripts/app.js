@@ -5,19 +5,17 @@ $(document).ready(function() {
   
   var $menu = $('#header'),
   	  $menulink = $('#trigger-overlay');
-  	  $content = $('body');
 	
 	$menulink.click(function(e) {
 		e.preventDefault();
 		$menulink.toggleClass('active');
-		$content.toggleClass('open');
 	});
 	
 
 	// Dock the header to the top of the window when scrolled past the banner.
     // This is the default behavior.
 
-    $('.logo').scrollToFixed({
+    $('.sticky').scrollToFixed({
             limit: $('.header').offset().top - $('.footer').outerHeight() - 10,
         zIndex: 1000,
         removeOffsets: true,
@@ -27,7 +25,7 @@ $(document).ready(function() {
 
 	var triggerBttn = document.getElementById( 'trigger-overlay' ),
 		overlay = document.querySelector( 'div.overlay' ),
-		closeBttn = overlay.querySelector( 'button.overlay-close' );
+		closeBttn = overlay.querySelector( 'a.overlay-close' );
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
 			'MozTransition': 'transitionend',
