@@ -52,15 +52,11 @@
 	}
 
 	&.archived {
-		//margin-bottom: 0;
 
 		p {
 			font-size: .7rem;
 			margin-bottom: 0;
 
-			// @media #{$large-up} {
-			// 	font-size: 100%;
-			// }
 		}
 	}
 }

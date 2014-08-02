@@ -89,7 +89,7 @@ $type-weight: (
 // $extend (boolean) - true by default, if needed inside media query use false to @include the content instead of @extend
 // ex. @include type-scale(small) or @include type-scale(small, false) for use inside media queries. 
 
-@mixin type-scale($scale, $extend: true, $map: $type-scale) {
+@mixin type-scale($scale, $extend: false, $map: $type-scale) {
     @if $extend {
         @extend %#{$type-prefix}#{$scale};
     }
@@ -141,6 +141,160 @@ h5, .epsilon {
 }
 h6, .zeta {
     @include type-scale(small);
+}
+
+// Paragraphs
+p {
+    @include margin-trailer(1);
+    @include word-break(break-word);
+    @include hyphens(auto);
+    @include type-ligatures;
+    font-family: $font-family;
+}
+
+// Small
+small {
+    @include type-scale(small);
+}
+
+a {
+	color: $primary-color;
+    text-decoration: none;
+
+    &.dim {
+        color: #333;
+    }
+}
+
+blockquote {
+	
+	p {
+
+	}
+}
+
+ul, ul li ul {
+    list-style: none;
+    margin: 0;
+    @include type-scale(base);
+}
+
+dl dt, dl dd {
+    margin: 0;
+}
+
+.serif {
+	font-family:$font-family;
+}
+
+.sans {
+	font-family:$sans-font-family;
+}
+
+.large {
+    @include type-scale(large);
+}
+
+.medium {
+    @include type-scale(medium);
+}
+
+.base {
+    @include type-scale(base);
+}
+
+.normal {
+
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.light {
+
+}
+
+.no-margin {
+
+}
+
+.rhythm {
+    @include margin-trailer(1);
+}
+
+.rhythm-2 {
+    @include margin-trailer(2);
+}
+
+.rhythm-3 {
+    @include margin-trailer(3);
+}
+
+.h-sub {
+    color: $primary-color;
+}
+
+%small-text {
+	font-family: $sans-font-family;
+	color: #999;
+}
+
+%small-link {
+	color: $primary-color;
+	text-transform: uppercase;
+}	
+
+%post-text {
+	font-family: $sans-font-family;
+	color: #656868;	
+}
+
+.two-column {
+    @media #{$medium-up} {
+        -moz-column-count: 2;
+        -moz-column-gap: 50px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 50px;
+
+        p, ul, dl {
+            -webkit-column-break-inside: avoid;
+            -moz-column-break-inside: avoid;
+            -moz-page-break-inside: avoid;
+            page-break-inside: avoid;
+        }
+    }
+}
+
+.flip {
+    @media #{$medium-up} {
+        @include rotate(90deg);
+        position: absolute;
+        display: inline-block;
+        width: 1em;
+        left: -2em;
+        top: 2em;
+        margin: 0;
+    }
+
+    @media #{$large-up} {
+        left: -4em;
+    }    
+}
+
+.leader {
+    .flip {
+        left: -1em;
+        top: .5em;
+
+        @media #{$large-up} {
+            left: -2.95em;
+        }    
+    }
+}
+
+.more {
+    white-space: nowrap;
 }
 
 @media #{$medium-up} {
@@ -196,145 +350,8 @@ h6, .zeta {
         @include type-scale(small, false);
     }
 
-}
-
-// Paragraphs
-p {
-    @include margin-trailer(1);
-    @include word-break(break-word);
-    @include hyphens(auto);
-    @include type-ligatures;
-    font-family: $font-family;
-}
-
-// Small
-small {
-    @include type-scale(small);
-}
-
-a {
-	color: $primary-color;
-    text-decoration: none;
-
-    &.dim {
-        color: #333;
-    }
-}
-
-blockquote {
-	
-	p {
-
-	}
-}
-
-ul, ul li ul {
-    list-style: none;
-    margin: 0;
-}
-
-.serif {
-	font-family:$font-family;
-}
-
-.sans {
-	font-family:$sans-font-family;
-}
-
-.large {
-    @include type-scale(large);
-}
-
-.medium {
-    @include type-scale(medium);
-}
-
-.base {
-    @include type-scale(base);
-}
-
-.normal {
-
-}
-
-.caps {
-	text-transform: uppercase;
-}
-
-.light {
-
-}
-
-.no-margin {
-
-}
-
-.rhythm {
-    @include margin-trailer(1);
-}
-
-.h-sub {
-    color: $primary-color;
-}
-
-%small-text {
-	font-family: $sans-font-family;
-	color: #999;
-}
-
-%small-link {
-	color: $primary-color;
-	text-transform: uppercase;
-}	
-
-%post-text {
-	font-family: $sans-font-family;
-	color: #656868;	
-}
-
-.two-column {
-    @media #{$medium-up} {
-        -moz-column-count: 2;
-        -moz-column-gap: 50px;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 50px;
-
-        p, ul {
-            -webkit-column-break-inside: avoid;
-            -moz-column-break-inside: avoid;
-            -moz-page-break-inside: avoid;
-            page-break-inside: avoid;
-        }
-    }
-}
-
-.flip {
-    @media #{$medium-up} {
-        @include rotate(90deg);
-        position: absolute;
-        display: inline-block;
-        width: 1em;
-        left: -2em;
-        top: 2em;
-        margin: 0;
+    ul, ul li ul {
+        @include type-scale(base);
     }
 
-    @media #{$large-up} {
-        left: -4em;
-    }    
-}
-
-.leader {
-    .flip {
-        left: -1em;
-        top: .5em;
-
-        @media #{$large-up} {
-            left: -2.95em;
-        }    
-    }
-}
-
-.more {
-    white-space: nowrap;
 }

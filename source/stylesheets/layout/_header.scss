@@ -68,7 +68,7 @@ header.header {
 	}
 }
 
-body.single, body.home {
+body.single, body.home, body.page, body.cover-article {
 	padding-top: 0;
 
 	header.header {
@@ -79,9 +79,20 @@ body.single, body.home {
 		.letter {
 			fill: #fff;
 		}
-	}	
+	}
 }
 
-#p1, #p2, #p3 {
-	float: left;
+@media #{$large-up} {
+	body.page, body.cover-article {
+		
+		header.header {
+			position: relative;
+		}
+	
+		.logo-svg {
+			.letter {
+				fill: #333;
+			}
+		}
+	}
 }

@@ -24,3 +24,14 @@ body.home {
 		height: 100vh;
 	}
 }
+
+@media #{$large-up} {
+	.single-article {
+		.hero {
+			@include grid-column(14, true, true, false);
+			.cover {
+
+			}
+		}
+	}
+}

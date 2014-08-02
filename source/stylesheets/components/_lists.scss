@@ -18,7 +18,6 @@
 .underlined {
 	border-bottom: 1px solid #333;
 	display: inline-block;
-	@include type-scale(base);
 }	
 
 .lined-list {
@@ -26,11 +25,14 @@
 		margin-bottom: 0;
 		border-bottom: 1px solid #333;
 		display: inline-block;
-		@include type-scale(base);
 	}
 
-	ul {
+	ul, dl {
 		@include margin-trailer(1);
+	}
+
+	li, dt, dd {
+		line-height: 1.375em;
 	}
 }
 

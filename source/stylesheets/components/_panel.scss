@@ -1,7 +1,7 @@
 .panel {
 	background: $alert-color;
 	border: none;
-	padding: 3em;
+	padding: 2em;
 	
 	li a {
 
@@ -26,4 +26,12 @@
 	&.bright p, &.dark p {
 		color: rgba(#fff, .5);
 	}
+
+	@media #{$medium-up} {
+
+	}		
+
+	@media #{$large-up} {
+		padding: 3em;
+	}	
 }	
