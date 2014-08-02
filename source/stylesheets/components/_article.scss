@@ -52,10 +52,11 @@
 	}
 
 	&.archived {
-		margin-bottom: 3em;
+		//margin-bottom: 0;
 
 		p {
-			font-size: 80%;
+			font-size: .7rem;
+			margin-bottom: 0;
 
 			// @media #{$large-up} {
 			// 	font-size: 100%;

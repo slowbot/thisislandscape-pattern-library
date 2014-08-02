@@ -1,13 +1,21 @@
-body.blog {
+.blog {
 	background-color: #ddebf3;
 	height: auto;
 
-	.meta, .meta a {
-		color: #96a7b1;
+	.meta {
+		margin-top: -.6rem;
 	}
 
-	.share {
-		border-bottom: 1px solid $primary-color;
-		padding-bottom: .25em;
+	.meta, .meta a {
+		color: #96a7b1;
+		font-size: .7rem;
+
+		&.share {
+			color: $primary-color;
+		}
+	}
+
+	.blog-row {
+		margin-bottom: 1em;
 	}
 }
