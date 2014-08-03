@@ -2,6 +2,12 @@
 	background-color: #ddebf3;
 	height: auto;
 
+	.alpha {
+		@media #{$medium-up} {
+			@include type-scale(large);
+		}
+	}
+
 	.meta {
 		margin-top: -.6rem;
 	}
@@ -10,12 +16,21 @@
 		color: #96a7b1;
 		font-size: .7rem;
 
+		@media #{$medium-up} {
+			@include type-scale(small);
+			font-size: .85rem;
+		}	
+
 		&.share {
 			color: $primary-color;
 		}
 	}
 
 	.blog-row {
-		margin-bottom: 1em;
+		margin-bottom: 1rem;
+
+		@media #{$medium-up} {
+			margin-bottom: 5rem;
+		}	
 	}
 }
