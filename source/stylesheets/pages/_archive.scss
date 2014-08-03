@@ -2,6 +2,16 @@
 	&-block {
 		figure {
 			margin-bottom: 1em;
+
+			@media #{$medium-up} {
+				margin-bottom: 1.5em;
+			}	
+		}
+
+		.article {
+			@media #{$medium-up} {
+				margin-bottom: 1.625em;
+			}
 		}
 	}
 }
