@@ -1,11 +1,35 @@
 .single {
 
 	.leader {
-		margin-bottom: 1em;
+		padding-bottom: 1em;
+		
+		@media #{$medium-up} {
+			padding-top: 1.5em;
+			padding-bottom: 2.5em;
+			
+			.alpha {
+				@include type-scale(xlarge);
+			}
+		}
 	}
 
 	.section {
 		margin-bottom: 3em;
 	}
 
+	.two-column {
+    	@media #{$medium-up} {
+        -moz-column-count: 1;
+        -moz-column-gap: 0;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0;
+    	}
+
+    	@media #{$large-up} {
+        -moz-column-count: 2;
+        -moz-column-gap: 50px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 50px;
+    	}
+    }	
 }
