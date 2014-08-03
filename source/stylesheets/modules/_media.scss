@@ -55,6 +55,20 @@ figure {
 
 		background-color: rgba($alert-color, .8);
 
+		&.centered {
+			background-color: rgba($primary-color, .8);
+			padding: 0;
+			text-align: center;
+
+			p { 
+				color: #fff;	
+				position: absolute;
+  				top: 50%;
+  				transform: translateY(-50%);
+  				width: 100%;
+			}	
+		}
+
 		&:hover {
 			opacity: 1;
 		}

@@ -1,71 +1,78 @@
-.max-block-grid {
-	.archive-block {
-		@media #{$medium-up} {
-			max-width: 360px;
-		}
-	}
-}
+// .max-block-grid {
+// 	.archive-block {
+// 		@media #{$medium-up} {
+// 			max-width: 360px;
+// 		}
+// 	}
+// }
 
 // $medium-range: (40.063em, 64em);
 // $large-range: (64.063em, 90em);
 // $xlarge-range: (90.063em, 120em);
 // $xxlarge-range: (120.063em);
 
-@media only screen 
-and (min-width : 36em) 
-and (max-width : 55em) {
-	.base-block-grid-2 > li{
+@media #{$medium-up} {
+	.medium-block-grid-2 > li{
 		width: 50%;
 	}
 
-	.base-block-grid-2 > li:nth-of-type(n) {
+	.medium-block-grid-2 > li:nth-of-type(n) {
 		clear: none;
+	}
+
+	.medium-block-grid-2 > li:nth-of-type(odd) {
+		padding-right: 1.75rem;
+	}
+
+	.medium-block-grid-2 > li:nth-of-type(even) {
+		padding-left: 1.75rem;
 	}
 }
 
-@media only screen 
-and (min-width : 55.063em) 
-and (max-width : 70em) {
-	.medium-block-grid-3 > li{
+@media #{$xlarge-up} {
+	.xlarge-block-grid-3 > li{
 		width: 33.333%;
 	}
 
-	.medium-block-grid-3 > li:nth-of-type(n) {
+	.xlarge-block-grid-3 > li:nth-of-type(n) {
 		clear: none;
+		padding: 0 1.5rem 1.25rem;
 	}
+
+	[class*="block-grid-"] {
+		margin: 0 -1.5rem;
+	}	
 }
 
-@media only screen 
-and (min-width : 70.063em)
-and (max-width : 95em) {
-	.large-block-grid-4 > li {
+@media #{$xxlarge-up} {
+	.xxlarge-block-grid-4 > li {
 		width: 25%;
 	}
 
-	.large-block-grid-4 > li:nth-of-type(n) {
+	.xxlarge-block-grid-4 > li:nth-of-type(n) {
 		clear: none;
 	}
 }
 
-@media only screen 
-and (min-width : 95.063em) 
-and (max-width : 120.063em) {
-	.xlarge-block-grid-5 > li {
-		width: 20%;
-	}
+// @media only screen 
+// and (min-width : 95.063em) 
+// and (max-width : 120.063em) {
+// 	.xlarge-block-grid-5 > li {
+// 		width: 20%;
+// 	}
 
-	.xlarge-block-grid-5 > li:nth-of-type(n) {
-		clear: none;
-	}
-}
+// 	.xlarge-block-grid-5 > li:nth-of-type(n) {
+// 		clear: none;
+// 	}
+// }
 
-@media only screen 
-and (min-width : 120.063em) {
-	.xxlarge-block-grid-6 > li {
-		width: 16.667%;
-	}
+// @media only screen 
+// and (min-width : 120.063em) {
+// 	.xxlarge-block-grid-6 > li {
+// 		width: 16.667%;
+// 	}
 
-	.xxlarge-block-grid-6 > li:nth-of-type(n) {
-		clear: none;
-	}
-}
+// 	.xxlarge-block-grid-6 > li:nth-of-type(n) {
+// 		clear: none;
+// 	}
+// }
