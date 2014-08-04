@@ -1,8 +1,9 @@
 .pager {
 	@include type-scale(medium);
+	@include margin-leader(3);
+	@include margin-trailer(2);
 	font-family: $sans-font-family-semibold;
 	font-weight: normal;
-	margin: 2em 0;
 	color: #333;
 	display: inline-block;
 }

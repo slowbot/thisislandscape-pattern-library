@@ -272,13 +272,13 @@ dl dt, dl dd {
         position: absolute;
         display: inline-block;
         width: 1em;
-        left: -2em;
-        top: 2em;
+        left: -2.5em;
+        top: 0;
         margin: 0;
     }
 
     @media #{$large-up} {
-        left: -4em;
+        left: -3em;
     }    
 }
 
@@ -354,4 +354,71 @@ dl dt, dl dd {
         @include type-scale(base);
     }
 
+    p {
+        @include type-scale(small, false);
+    }
+
 }
+
+@media #{$large-up} {
+
+    $type-scale: (
+        tiny: (
+            font-size: 14px,
+            base-lines: 0.5
+        ),
+        small: (
+            font-size: 18px,
+            base-lines: 0.75
+        ),
+        base: (
+            font-size: $base-font-size,
+            base-lines: 1
+        ),
+        medium: (
+            font-size: 25px,
+            base-lines: 1
+        ),
+        large: (
+            font-size: 30px,
+            base-lines: 1.17
+        ),
+        xlarge: (
+            font-size: 40px,
+            base-lines: 1.5
+        ),
+        xxlarge: (
+            font-size: 50px,
+            base-lines: 2
+        )
+    ) !global;
+
+
+    h1, .alpha, .xxlarge {
+        @include type-scale(xxlarge, false);
+    }
+    h2, .beta, .xlarge {
+        @include type-scale(xlarge, false);
+    }
+    h3, .gamma, .large {
+        @include type-scale(large, false);
+    }
+    h4, .delta, .medium {
+        @include type-scale(medium, false);
+    }
+    h5, .epsilon, .base{
+        @include type-scale(base, false);
+    }
+    h6, .zeta, .small {
+        @include type-scale(small, false);
+    }
+
+    ul, ul li ul {
+        @include type-scale(base);
+    }
+
+    p {
+        @include type-scale(base, false);
+    }
+}
+

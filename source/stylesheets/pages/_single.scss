@@ -33,3 +33,13 @@
     	}
     }	
 }
+
+.single-entry {
+	figure {
+		&.rhythm {
+			@media #{$medium-up} {
+				@include margin-trailer(2);
+			}
+		}
+	}
+}

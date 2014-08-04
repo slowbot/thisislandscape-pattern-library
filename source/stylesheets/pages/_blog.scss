@@ -2,8 +2,26 @@
 	background-color: #ddebf3;
 	height: auto;
 
+	.content {
+		@media #{$medium-up} {
+			margin-top: 2em;
+		}
+	}
+
+	.blog-row {
+		margin-bottom: 1rem;
+
+		@media #{$medium-up} {
+			margin-bottom: 5rem;
+		}	
+	}
+
 	.alpha {
 		@media #{$medium-up} {
+			@include type-scale(medium);
+		}
+
+		@media #{$large-up} {
 			@include type-scale(large);
 		}
 	}
@@ -24,13 +42,5 @@
 		&.share {
 			color: $primary-color;
 		}
-	}
-
-	.blog-row {
-		margin-bottom: 1rem;
-
-		@media #{$medium-up} {
-			margin-bottom: 5rem;
-		}	
 	}
 }
