@@ -54,7 +54,9 @@
 	&.archived {
 
 		p {
-			font-size: .7rem;
+			@include type-scale(tiny);
+
+			//font-size: .7rem;
 			margin-bottom: 0;
 
 		}

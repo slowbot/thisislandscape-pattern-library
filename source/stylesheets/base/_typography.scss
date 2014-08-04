@@ -33,7 +33,7 @@ html, body {
 $type-prefix: "t-";
 $type-scale: (
     tiny: (
-        font-size: 12px,
+        font-size: 14px,
         base-lines: 0.5
     ),
     small: (
@@ -304,7 +304,7 @@ dl dt, dl dd {
     $type-scale: (
         tiny: (
             font-size: 14px,
-            base-lines: 0.5
+            base-lines: 1
         ),
         small: (
             font-size: 18px,
@@ -367,11 +367,11 @@ dl dt, dl dd {
     $type-scale: (
         tiny: (
             font-size: 14px,
-            base-lines: 0.5
+            base-lines: 1
         ),
         small: (
             font-size: 18px,
-            base-lines: 0.75
+            base-lines: 1
         ),
         base: (
             font-size: $base-font-size,
