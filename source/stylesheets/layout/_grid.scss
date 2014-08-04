@@ -20,6 +20,10 @@
 		clear: none;
 	}
 
+	.medium-block-grid-2 > li:nth-of-type(2n+1) {
+      clear: both; 
+  	}
+
 	.medium-block-grid-2 > li:nth-of-type(odd) {
 		padding-right: 1.75rem;
 	}
@@ -39,6 +43,10 @@
 		padding: 0 1.5rem 1.25rem;
 	}
 
+	.xlarge-block-grid-2 > li:nth-of-type(3n+1) {
+      clear: both; 
+  	}
+
 	[class*="block-grid-"] {
 		margin: 0 -1.5rem;
 	}	
@@ -52,6 +60,10 @@
 	.xxlarge-block-grid-4 > li:nth-of-type(n) {
 		clear: none;
 	}
+
+	.xxlarge-block-grid-2 > li:nth-of-type(4n+1) {
+      clear: both; 
+  	}
 }
 
 // @media only screen 
