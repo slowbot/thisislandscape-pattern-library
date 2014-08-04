@@ -17,7 +17,7 @@
 
 // Compass Vertical Rhythm setup 
 $base-font-size: 20px;
-$base-line-height: 32px;
+$base-line-height: 25px;
 $rhythm-unit: "rem";
 $rem-with-px-fallback: true;
 
@@ -50,7 +50,7 @@ $type-scale: (
     ),
     large: (
         font-size: 22px,
-        base-lines: 1
+        base-lines: 1.25
     ),
     xlarge: (
         font-size: 28px,
@@ -58,7 +58,7 @@ $type-scale: (
     ),
     xxlarge: (
         font-size: 33px,
-        base-lines: 1.25
+        base-lines: 1.75
     )
 );
 
@@ -149,6 +149,7 @@ p {
     @include word-break(break-word);
     @include hyphens(auto);
     @include type-ligatures;
+    @include type-scale(base);
     font-family: $font-family;
 }
 
@@ -181,6 +182,7 @@ ul, ul li ul {
 
 dl dt, dl dd {
     margin: 0;
+    @include type-scale(base);
 }
 
 .serif {
@@ -306,23 +308,23 @@ dl dt, dl dd {
         ),
         small: (
             font-size: 18px,
-            base-lines: 0.75
+            base-lines: 1
         ),
         base: (
             font-size: $base-font-size,
-            base-lines: 1
+            base-lines: 1.125
         ),
         medium: (
             font-size: 25px,
-            base-lines: 1
+            base-lines: 1.25
         ),
         large: (
             font-size: 30px,
-            base-lines: 1.17
+            base-lines: 1.5
         ),
         xlarge: (
             font-size: 40px,
-            base-lines: 1.5
+            base-lines: 1.75
         ),
         xxlarge: (
             font-size: 50px,
@@ -350,12 +352,12 @@ dl dt, dl dd {
         @include type-scale(small, false);
     }
 
-    ul, ul li ul {
+    ul, ul li ul, dl dt, dl dd{
         @include type-scale(base);
     }
 
     p {
-        @include type-scale(small, false);
+        @include type-scale(base, false);
     }
 
 }
@@ -373,19 +375,19 @@ dl dt, dl dd {
         ),
         base: (
             font-size: $base-font-size,
-            base-lines: 1
+            base-lines: 1.125
         ),
         medium: (
             font-size: 25px,
-            base-lines: 1
+            base-lines: 1.25
         ),
         large: (
             font-size: 30px,
-            base-lines: 1.17
+            base-lines: 1.5
         ),
         xlarge: (
             font-size: 40px,
-            base-lines: 1.5
+            base-lines: 1.75
         ),
         xxlarge: (
             font-size: 50px,
@@ -413,7 +415,7 @@ dl dt, dl dd {
         @include type-scale(small, false);
     }
 
-    ul, ul li ul {
+    ul, ul li ul, dl dt, dl dd {
         @include type-scale(base);
     }
 

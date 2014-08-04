@@ -64,5 +64,7 @@
 }
 
 .gutter-right {
-	padding-right: 2.25rem;
+	@media #{$medium-up} {
+		padding-right: 2.25rem;
+	}
 }
