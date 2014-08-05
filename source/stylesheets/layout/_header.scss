@@ -68,7 +68,7 @@ header.header {
 	}
 }
 
-body.single-project, body.home, body.page, body.cover-article {
+body.single-project, body.home, body.cover-article {
 	padding-top: 0;
 
 	header.header {
@@ -83,7 +83,7 @@ body.single-project, body.home, body.page, body.cover-article {
 }
 
 @media #{$large-up} {
-	body.page, body.cover-article {
+	body.cover-article {
 		
 		header.header {
 			position: relative;
