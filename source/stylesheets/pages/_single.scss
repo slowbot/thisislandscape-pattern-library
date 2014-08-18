@@ -16,21 +16,27 @@
 		margin-bottom: 3em;
 	}
 
-	.two-column {
-    	@media #{$medium-up} {
-        -moz-column-count: 1;
-        -moz-column-gap: 0;
-        -webkit-column-count: 1;
-        -webkit-column-gap: 0;
-    	}
+  .awards {
+    @media #{$large-up} {
+      padding-left: 1em;
+    }
+  }
 
-    	@media #{$large-up} {
-        -moz-column-count: 2;
-        -moz-column-gap: 50px;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 50px;
-    	}
-    }	
+	.two-column {
+  	@media #{$medium-up} {
+      -moz-column-count: 1;
+      -moz-column-gap: 0;
+      -webkit-column-count: 1;
+      -webkit-column-gap: 0;
+  	}
+
+  	@media #{$large-up} {
+      -moz-column-count: 2;
+      -moz-column-gap: 60px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 60px;
+  	}
+  }	
 }
 
   // .single-entry {
