@@ -15,10 +15,10 @@
 	
 	.sock {
 		padding-top: 1em;
-	}
-	
-	.serif {
-		font-weight: 300;	
+
+		.copy {
+			font-size: .625rem;
+		}
 	}
 
 	.underlined {
@@ -29,17 +29,15 @@
 .footer-menu {
 	margin: 0;
 	margin-top: 1em;
-	margin-bottom: 2em;
+	margin-bottom: 8em;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 
 	.footer-list {
-		margin-top: .25em;
+		margin-top: .125em;
 		margin-bottom: 2em;
 		
 		li {
-			font-size: .8rem;
-			line-height: 1.375em;
 			list-style: none;
 			white-space: nowrap;
 			

@@ -1,11 +1,15 @@
 .pager {
 	@include type-scale(medium);
-	@include margin-leader(3);
-	@include margin-trailer(2);
+	@include margin-leader(2.5);
+	@include margin-trailer(3);
 	font-family: $sans-font-family-semibold;
 	font-weight: normal;
 	color: #333;
 	display: inline-block;
+
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 .pager-down {
