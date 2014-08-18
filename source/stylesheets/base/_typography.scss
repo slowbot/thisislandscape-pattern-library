@@ -304,7 +304,7 @@ dl dt, dl dd {
     $type-scale: (
         tiny: (
             font-size: 14px,
-            base-lines: 1
+            base-lines: .825
         ),
         small: (
             font-size: 18px,
@@ -367,7 +367,7 @@ dl dt, dl dd {
     $type-scale: (
         tiny: (
             font-size: 14px,
-            base-lines: 1
+            base-lines: .825
         ),
         small: (
             font-size: 18px,
@@ -421,6 +421,7 @@ dl dt, dl dd {
 
     p {
         @include type-scale(base, false);
+        letter-spacing: .75px;
     }
 }
 

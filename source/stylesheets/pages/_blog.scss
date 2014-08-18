@@ -13,7 +13,12 @@
 
 		@media #{$medium-up} {
 			margin-bottom: 5rem;
-		}	
+		}
+
+		hr {
+			height: .5rem;
+			background-color: $primary-color;
+		}
 	}
 
 	.alpha {
@@ -26,8 +31,12 @@
 		}
 	}
 
+	p {
+		margin-bottom: 1.5rem;
+	}
+
 	.meta {
-		margin-top: -.6rem;
+	//	margin-top: -.6rem;
 	}
 
 	.meta, .meta a {
@@ -38,9 +47,12 @@
 			@include type-scale(small);
 			font-size: .85rem;
 		}	
+	}
 
-		&.share {
-			color: $primary-color;
-		}
+	.share {
+		@include type-scale(small);
+		border-bottom: 1px solid $primary-color;
+		color: $primary-color;
+		padding-bottom: .25em;
 	}
 }
