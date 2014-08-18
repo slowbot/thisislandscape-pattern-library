@@ -1,5 +1,17 @@
 .hero {
-	margin-bottom: 2em;
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 85% 0 0 0;
+
+	@media #{$large-up} {
+		padding: 0;
+		height: 700px;
+	}
+
+	@media #{$xlarge-up} {
+		height: 900px;
+	}	
 }
 
 .slide {
@@ -7,15 +19,21 @@
 }
 
 .cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	background-size: cover;
-	height: 100vh;
-	width: 100%;
-	background-position: 50% 50%;
+	background-position: center;
+	background-attachment: scroll;
+	height: 100%;
 
-	@media #{$medium-up} {
-		background-position: 0 0;
-		height: 80vh;
-		min-height: 700px;
+	@media #{$large-up} {
+		max-height: 700px;
+	}
+
+	@media #{$xlarge-up} {
+		max-height: 900px;
 	}	
 }
 

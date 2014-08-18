@@ -10,7 +10,6 @@ $(document).ready(function() {
 		e.preventDefault();
 		$menulink.toggleClass('active');
 	});
-	
 
 	// Dock the header to the top of the window when scrolled past the banner.
     // This is the default behavior.
@@ -70,3 +69,7 @@ $(function(){
         });            
     });
 });
+
+// $(window).resize(function () {
+//   $(.single-content).css({‘margin-top’: $(‘.hero)[0].offsetHeight;});
+// });
