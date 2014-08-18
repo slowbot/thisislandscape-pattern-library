@@ -4,8 +4,9 @@
 	width: 100%;
 	padding: 100% 0 0 0;
 
-	@media #{$large-up} {
+	@media #{$medium-up} {
 		padding: 85% 0 0 0;
+		margin-bottom: 4rem;
 	}	
 
 	@media #{$large-up} {

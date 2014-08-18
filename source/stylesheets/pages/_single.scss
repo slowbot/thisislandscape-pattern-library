@@ -1,10 +1,9 @@
-.single {
+.single-project {
 
 	.leader {
 		padding-bottom: 1em;
 		
 		@media #{$medium-up} {
-			padding-top: 1.5em;
 			padding-bottom: 2.5em;
 			
 			.alpha {
@@ -34,12 +33,12 @@
     }	
 }
 
-.single-entry {
-	figure {
-		&.rhythm {
-			@media #{$medium-up} {
-				@include margin-trailer(2);
-			}
-		}
-	}
-}
+  // .single-entry {
+  // 	figure {
+  // 		&.rhythm {
+  // 			@media #{$medium-up} {
+  // 				@include margin-trailer(2);
+  // 			}
+  // 		}
+  // 	}
+  // }
