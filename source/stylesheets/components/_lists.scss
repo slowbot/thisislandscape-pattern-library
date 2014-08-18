@@ -22,9 +22,10 @@
 
 .lined-list {
 	h4 {
-		margin-bottom: 0;
 		border-bottom: 1px solid #333;
 		display: inline-block;
+		margin-bottom: .25rem;
+		padding-bottom: .25rem;
 	}
 
 	ul, dl {
@@ -32,7 +33,7 @@
 	}
 
 	li, dt, dd {
-		line-height: 1.375em;
+		line-height: 1.5em;
 	}
 }
 
