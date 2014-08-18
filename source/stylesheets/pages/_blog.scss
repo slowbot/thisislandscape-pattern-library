@@ -39,6 +39,18 @@
 	//	margin-top: -.6rem;
 	}
 
+	.more {
+		position: relative;
+		padding-right: 1em;
+	}
+
+	.icon-more {
+		position: absolute;
+		font-size: .825rem;
+		right: 0;
+		bottom: 0;
+	}
+
 	.meta, .meta a {
 		color: #96a7b1;
 		font-size: .7rem;
