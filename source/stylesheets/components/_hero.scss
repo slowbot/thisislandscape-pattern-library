@@ -2,7 +2,11 @@
 	display: block;
 	position: relative;
 	width: 100%;
-	padding: 85% 0 0 0;
+	padding: 100% 0 0 0;
+
+	@media #{$large-up} {
+		padding: 85% 0 0 0;
+	}	
 
 	@media #{$large-up} {
 		padding: 0;
