@@ -25,10 +25,14 @@
 .footer-menu {
 	margin: 0;
 	margin-top: 1em;
-	margin-bottom: 8em;
+	margin-bottom: 5em;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 
+	@media #{$medium-up} {
+		margin-bottom: 8em;
+	}
+		
 	.underlined {
 		border-bottom-color: #fff;
 	}

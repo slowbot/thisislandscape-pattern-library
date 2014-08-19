@@ -1,10 +1,10 @@
 .single-project {
 
 	.leader {
-		padding-bottom: 1em;
+		@include margin-trailer(1);
 		
 		@media #{$medium-up} {
-			padding-bottom: 2.5em;
+			@include margin-trailer(2);
 			
 			.alpha {
 				@include type-scale(xlarge);
@@ -13,7 +13,7 @@
 	}
 
 	.project-section {
-		margin-bottom: 3em;
+		@include margin-trailer(2);
 	}
 
   .offering {

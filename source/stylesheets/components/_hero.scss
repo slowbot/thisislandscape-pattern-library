@@ -7,7 +7,7 @@
 
 	@media #{$medium-up} {
 		padding: 65% 0 0 0;
-		margin-bottom: 4rem;
+		@include margin-trailer(3);
 	}	
 
 	@media #{$large-up} {
@@ -54,9 +54,6 @@ body.home {
 	.single-article {
 		.hero {
 			@include grid-column(14, true, true, false);
-			.cover {
-
-			}
 		}
 	}
 }

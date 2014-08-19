@@ -60,7 +60,10 @@
 }
 
 .page-section {
-	padding: 3.5rem 0;
+	padding: 3rem 0 2rem 0;
+	@media #{$medium-up} {
+		padding: 3.5rem 0 2.5rem 0;
+	}	
 }
 
 .gutter-right {
