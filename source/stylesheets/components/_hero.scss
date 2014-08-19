@@ -1,9 +1,9 @@
 .hero {
 	@include margin-trailer(1.25);
 	display: block;
+	padding: 125% 0 0 0;
 	position: relative;
 	width: 100%;
-	padding: 125% 0 0 0;
 
 	@media #{$medium-up} {
 		padding: 65% 0 0 0;
@@ -25,14 +25,14 @@
 }
 
 .cover {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
 	background-size: cover;
 	background-position: center;
 	background-attachment: scroll;
 	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
 
 	@media #{$large-up} {
 		max-height: 700px;

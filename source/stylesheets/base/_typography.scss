@@ -367,7 +367,6 @@ dl dt, dl dd {
     p {
         @include type-scale(base, false);
     }
-
 }
 
 @media #{$large-up} {
@@ -432,4 +431,3 @@ dl dt, dl dd {
         letter-spacing: .75px;
     }
 }
-

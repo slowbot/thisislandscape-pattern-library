@@ -2,10 +2,10 @@
 	@include type-scale(medium);
 	@include margin-leader(2.5);
 	@include margin-trailer(3);
-	font-family: $sans-font-family-semibold;
-	font-weight: normal;
 	color: #333;
-	display: inline-block;
+  display: inline-block;
+  font-family: $sans-font-family-semibold;
+	font-weight: normal;
 
   &:hover {
     color: $primary-color;

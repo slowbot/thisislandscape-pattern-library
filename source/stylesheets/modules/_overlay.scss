@@ -10,23 +10,23 @@
 	color: #fff;
 
 	.overlay-close {
-		width: 80px;
+		background: transparent;
+		border: none;
+		color: darken($primary-color, 10%);
+		cursor: pointer;
+		display: block;
+		font-size: 32px;
 		height: 80px;
 		line-height: 80px;
+		padding: 0;
 		position: fixed;
 		right: 20px;
 		top: 20px;
-		overflow: hidden;
-		border: none;
-		background: transparent;
 		outline: none;
-		color: darken($primary-color, 10%);
+		overflow: hidden;
 		text-align: center;
-		padding: 0;
-		font-size: 32px;
+		width: 80px;
 		z-index: 9000;
-		cursor: pointer;
-		display: block;
 	}
 
 	.tall {
