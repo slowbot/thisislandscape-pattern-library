@@ -152,9 +152,15 @@
 				position: fixed;
 				right: 0;
 				overflow-y: scroll;
-				height: 80%;
+				height: 65%;
 				margin-top: 6em;
 				width: 100%;
+			}
+		}
+
+		@media screen and (min-width: 64em) and (min-height:900px) {
+			.nav-projects-mask {
+				height: 75%;
 			}
 		}
 

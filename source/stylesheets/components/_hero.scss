@@ -45,8 +45,16 @@
 }
 
 body.home {
+
+	.hero {
+		padding: 0;
+		height: 100%;
+	}
+
 	.cover {
-		height: 100vh;
+		@media #{$large-up} {
+			max-height: none;
+		}	
 	}
 }
 
