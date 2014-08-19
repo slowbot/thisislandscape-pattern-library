@@ -9,10 +9,10 @@
 	}
 
 	.blog-row {
-		margin-bottom: 1rem;
+		@include margin-trailer(2);
 
 		@media #{$medium-up} {
-			margin-bottom: 5rem;
+			@include margin-trailer(3);
 		}
 
 		hr {
@@ -53,7 +53,7 @@
 
 	.meta, .meta a {
 		color: #96a7b1;
-		font-size: .7rem;
+		@include type-scale(tiny);
 
 		@media #{$medium-up} {
 			@include type-scale(small);
