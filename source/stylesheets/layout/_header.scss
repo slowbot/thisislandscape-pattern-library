@@ -51,6 +51,12 @@ header.header {
 		
 	.logo {
 		&.scroll-to-fixed-fixed {
+			left: 0 !important;
+			
+			@media #{$medium-up} {
+				left: auto !important;
+			}
+
 			.logo-svg {
 				background-color: $primary-color;
 				display: inline-block;

@@ -1,8 +1,9 @@
 .hero {
+	@include margin-trailer(1.25);
 	display: block;
 	position: relative;
 	width: 100%;
-	padding: 100% 0 0 0;
+	padding: 125% 0 0 0;
 
 	@media #{$medium-up} {
 		padding: 65% 0 0 0;

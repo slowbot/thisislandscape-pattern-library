@@ -12,12 +12,21 @@
 		}
 	}
 
-	.section {
+	.project-section {
 		margin-bottom: 3em;
 	}
 
+  .offering {
+    @media #{$medium-up} {
+      @include margin-trailer(3);
+    }
+  }
+
   .awards {
+    padding-top: 3em;
+
     @media #{$large-up} {
+      padding-top: 0;
       padding-left: 1em;
     }
   }
@@ -38,13 +47,3 @@
   	}
   }	
 }
-
-  // .single-entry {
-  // 	figure {
-  // 		&.rhythm {
-  // 			@media #{$medium-up} {
-  // 				@include margin-trailer(2);
-  // 			}
-  // 		}
-  // 	}
-  // }
