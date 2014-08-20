@@ -8,25 +8,67 @@
 			
 			.alpha {
 				@include type-scale(xlarge);
+        @include margin-trailer(1.275);
 			}
 		}
+
+    .large {
+      @include type-scale(medium);
+
+      @media #{$medium-up} {
+        @include type-scale(mediumlarger);
+      }
+
+      @media #{$large-up} {
+        @include type-scale(large);
+      } 
+    }
 	}
 
 	.project-section {
 		@include margin-trailer(2);
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+    p {
+      @media #{$medium-up} {
+        @include type-scale(mediumlarger);
+      }
+
+      @media #{$large-up} {
+        @include type-scale(base);
+      }  
+    }
 	}
 
   .offering {
     @media #{$medium-up} {
       @include margin-trailer(3);
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 
   .awards {
-    padding-top: 3em;
+    @include margin-leader(2.5);
+    @include margin-trailer(3);
+
+    .underlined {
+      @media #{$medium-up} {
+        @include type-scale(small);
+      }
+
+      @media #{$large-up} {
+        @include type-scale(base);
+      }  
+    }
 
     @media #{$large-up} {
-      padding-top: 0;
+      margin-top: 0;
       padding-left: 1em;
     }
   }

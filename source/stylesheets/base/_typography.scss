@@ -34,31 +34,35 @@ $type-prefix: "t-";
 $type-scale: (
     tiny: (
         font-size: 14px,
-        base-lines: .825
+        base-lines: 0.425
     ),
     small: (
         font-size: 16px,
-        base-lines: 1
+        base-lines: 0.625
     ),
     base: (
-        font-size: 20px,
-        base-lines: 1.125
+        font-size: 18px,
+        base-lines: 1
     ),
     medium: (
+        font-size: 20px,
+        base-lines: 1
+    ),
+    mediumlarger: (
+        font-size: 22px,
+        base-lines: 1.5
+    ),
+    large: (
         font-size: 25px,
         base-lines: 1.25
     ),
-    large: (
-        font-size: 30px,
+    xlarge: (
+        font-size: 28px,
         base-lines: 1.5
     ),
-    xlarge: (
-        font-size: 40px,
-        base-lines: 1.75
-    ),
     xxlarge: (
-        font-size: 50px,
-        base-lines: 2
+        font-size: 33px,
+        base-lines: 1.75
     )
 );
 
@@ -120,7 +124,6 @@ $type-weight: (
 #{h1, h2, h3, h4, h5, h6} {
     font-family: $base-font-family;
     margin-top: 0;
-//    @include type-weight(black);
     @include margin-trailer(1);
     @include type-ligatures;
 }
@@ -318,58 +321,127 @@ dl dt, dl dd {
 
 @media #{$medium-up} {
 
+    $type-scale: (
+        tiny: (
+            font-size: 14px,
+            base-lines: .825
+        ),
+        small: (
+            font-size: 16px,
+            base-lines: .9
+        ),
+        base: (
+            font-size: 18px,
+            base-lines: 1.125
+        ),
+        medium: (
+            font-size: 20px,
+            base-lines: 1.25
+        ),
+        mediumlarger: (
+            font-size: 25px,
+            base-lines: 1.5
+        ),
+        large: (
+            font-size: 30px,
+            base-lines: 1.5
+        ),
+        xlarge: (
+            font-size: 40px,
+            base-lines: 1.75
+        ),
+        xxlarge: (
+            font-size: 50px,
+            base-lines: 2
+        )
+    );
+
     h1, .alpha, .xxlarge {
-        @include type-scale(xxlarge, false);
+        @include type-scale(xxlarge);
     }
     h2, .beta, .xlarge {
-        @include type-scale(xlarge, false);
+        @include type-scale(xlarge);
     }
     h3, .gamma, .large {
-        @include type-scale(large, false);
+        @include type-scale(large);
     }
     h4, .delta, .medium {
-        @include type-scale(medium, false);
+        @include type-scale(medium);
     }
     h5, .epsilon, .base{
-        @include type-scale(base, false);
+        @include type-scale(base);
     }
     h6, .zeta, .small {
-        @include type-scale(small, false);
+        @include type-scale(small);
     }
 
     .omega, .tiny {
-        @include type-scale(tiny, false);
-    }
-
-    ul, ul li ul, dl dt, dl dd{
         @include type-scale(tiny);
     }
 
+    ul, ul li ul, dl dt, dl dd{
+        @include type-scale(small);
+    }
+
     p {
-        @include type-scale(base, false);
+        @include type-scale(medium);
     }
 }
 
 @media #{$large-up} {
 
+        $type-scale: (
+            tiny: (
+                font-size: 14px,
+                base-lines: .825
+            ),
+            small: (
+                font-size: 16px,
+                base-lines: 1
+            ),
+            base: (
+                font-size: 20px,
+                base-lines: 1.125
+            ),
+            medium: (
+                font-size: 22px,
+                base-lines: 1.25
+            ),
+            mediumlarger: (
+                font-size: 25px,
+                base-lines: 1.5
+            ),
+            large: (
+                font-size: 30px,
+                base-lines: 1.5
+            ),
+            xlarge: (
+                font-size: 40px,
+                base-lines: 1.75
+            ),
+            xxlarge: (
+                font-size: 50px,
+                base-lines: 2
+            )
+        );
 
     h1, .alpha, .xxlarge {
-        @include type-scale(xxlarge, false);
+        @include type-scale(xxlarge);
     }
     h2, .beta, .xlarge {
-        @include type-scale(xlarge, false);
+        @include type-scale(xlarge);
     }
     h3, .gamma, .large {
-        @include type-scale(large, false);
+        @include type-scale(large);
     }
     h4, .delta, .medium {
-        @include type-scale(medium, false);
+        @include type-scale(medium);
     }
     h5, .epsilon, .base{
-        @include type-scale(base, false);
+        @include type-scale(base);
     }
     h6, .zeta, .small {
-        @include type-scale(small, false);
+        @include type-scale(small);
     }
 
     ul, ul li ul, dl dt, dl dd {

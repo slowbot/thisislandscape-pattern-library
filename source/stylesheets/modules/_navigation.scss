@@ -1,7 +1,7 @@
 .pager {
 	@include type-scale(medium);
-	@include margin-leader(2.5);
-	@include margin-trailer(3);
+	@include margin-leader(4.5);
+	@include margin-trailer(3.5);
 	color: #333;
   display: inline-block;
   font-family: $sans-font-family-semibold;
@@ -13,5 +13,5 @@
 }
 
 .pager-down {
-	@include type-scale(xlarge);
+	font-size: 2rem;
 }
