@@ -1,7 +1,7 @@
 .pager {
 	@include type-scale(medium);
-	@include margin-leader(4.5);
-	@include margin-trailer(3.5);
+	@include margin-leader(3);
+	@include margin-trailer(2);
 	color: #333;
   display: inline-block;
   font-family: $sans-font-family-semibold;
@@ -9,6 +9,11 @@
 
   &:hover {
     color: $primary-color;
+  }
+
+  @media #{$medium-up} {
+    @include margin-leader(4.5);
+    @include margin-trailer(3.5);
   }
 }
 

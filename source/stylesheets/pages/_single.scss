@@ -1,16 +1,19 @@
 .single-project {
 
 	.leader {
-		@include margin-trailer(1);
+		@include margin-trailer(1.5);
 		
 		@media #{$medium-up} {
 			@include margin-trailer(2);
-			
-			.alpha {
-				@include type-scale(xlarge);
-        @include margin-trailer(1.275);
-			}
 		}
+
+    h1 {
+      @include margin-trailer(1.5);
+
+      @media #{$medium-up} {
+        @include type-scale(xlarge);
+      }
+    }
 
     .large {
       @include type-scale(medium);
