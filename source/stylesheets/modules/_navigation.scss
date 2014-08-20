@@ -12,8 +12,8 @@
   }
 
   @media #{$medium-up} {
-    @include margin-leader(4.5);
-    @include margin-trailer(3.5);
+    @include margin-leader(5);
+    @include margin-trailer(4);
   }
 }
 

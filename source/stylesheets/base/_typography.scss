@@ -30,6 +30,7 @@ html, body {
 // The type-scale Map contains the whole type scale.
 // Add your own sizes or modify these, they will be available in the type-scale mixin for use.
 
+// Default Sizes
 $type-prefix: "t-";
 $type-scale: (
     tiny: (
@@ -50,19 +51,19 @@ $type-scale: (
     ),
     mediumlarger: (
         font-size: 22px,
-        base-lines: 1.5
+        base-lines: 1.25
     ),
     large: (
-        font-size: 25px,
+        font-size: 24px,
         base-lines: 1.25
     ),
     xlarge: (
         font-size: 28px,
-        base-lines: 1.5
+        base-lines: 1.45
     ),
     xxlarge: (
         font-size: 33px,
-        base-lines: 1.75
+        base-lines: 1.45
     )
 );
 
@@ -321,6 +322,7 @@ dl dt, dl dd {
 
 @media #{$medium-up} {
 
+// Medium Overrights
     $type-scale: (
         tiny: (
             font-size: 14px,
@@ -339,20 +341,20 @@ dl dt, dl dd {
             base-lines: 1.25
         ),
         mediumlarger: (
-            font-size: 25px,
-            base-lines: 1.5
+            font-size: 24px,
+            base-lines: 1.375
         ),
         large: (
             font-size: 30px,
-            base-lines: 1.5
+            base-lines: 1.425
         ),
         xlarge: (
-            font-size: 40px,
-            base-lines: 1.75
+            font-size: 33px,
+            base-lines: 1.5
         ),
         xxlarge: (
-            font-size: 50px,
-            base-lines: 2
+            font-size: 35px,
+            base-lines: 1.75
         )
     );
 
@@ -390,6 +392,7 @@ dl dt, dl dd {
 
 @media #{$large-up} {
 
+// Large Overrights and Includes
     $type-scale: (
         tiny: (
             font-size: 14px,
@@ -408,20 +411,20 @@ dl dt, dl dd {
             base-lines: 1.25
         ),
         mediumlarger: (
-            font-size: 25px,
-            base-lines: 1.5
+            font-size: 24px,
+            base-lines: 1.375
         ),
         large: (
             font-size: 30px,
-            base-lines: 1.5
+            base-lines: 1.425
         ),
         xlarge: (
-            font-size: 40px,
+            font-size: 33px,
             base-lines: 1.75
         ),
         xxlarge: (
-            font-size: 50px,
-            base-lines: 2
+            font-size: 40px,
+            base-lines: 1.825
         )
     ) !global;
 
