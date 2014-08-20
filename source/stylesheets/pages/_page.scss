@@ -16,7 +16,19 @@ body.page .content {
 
 		@media #{$large-up} {
 			@include margin-trailer(2);
-		}	
+		}
+
+		.large {
+      @include type-scale(medium);
+
+      @media #{$medium-up} {
+        @include type-scale(mediumlarger);
+      }
+
+      @media #{$large-up} {
+        @include type-scale(large);
+      }
+    }	
 	}
 }
 
