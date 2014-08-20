@@ -34,16 +34,34 @@
 		
 	.underlined {
 		border-bottom-color: #fff;
+		@include type-scale(small);
+
+		@media #{$medium-up} {
+			@include type-scale(small);
+		}
+
+		@media #{$large-up} {
+			@include type-scale(base);
+		}	
 	}
 
 	.footer-list {
-		margin-top: .125em;
 		@include margin-trailer(1.5);
+		margin-top: .125em;
+		@include type-scale(small);
+
+		@media #{$medium-up} {
+			@include type-scale(small);
+		}
+
+		@media #{$large-up} {
+			@include type-scale(base);
+		}	
 		
 		li {
 			list-style: none;
 			white-space: nowrap;
-			
+
 			&.column {
 				@media #{$medium-up} {
 					@include grid-column($columns:2);

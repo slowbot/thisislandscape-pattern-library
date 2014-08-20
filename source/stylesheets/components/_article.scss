@@ -55,10 +55,15 @@
 
 		p {
 			@include type-scale(tiny);
-
-			//font-size: .7rem;
 			margin-bottom: 0;
 
+			@media #{$medium-up} {
+				@include type-scale(small);
+			}
+
+			@media #{$large-up} {
+				@include type-scale(tiny);
+			}	
 		}
 	}
 }

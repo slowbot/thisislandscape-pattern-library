@@ -34,31 +34,31 @@ $type-prefix: "t-";
 $type-scale: (
     tiny: (
         font-size: 14px,
-        base-lines: 0.425
+        base-lines: .825
     ),
     small: (
         font-size: 16px,
-        base-lines: 0.625
+        base-lines: 1
     ),
     base: (
-        font-size: 18px,
-        base-lines: 1
+        font-size: 20px,
+        base-lines: 1.125
     ),
     medium: (
-        font-size: 20px,
-        base-lines: 1
-    ),
-    large: (
-        font-size: 22px,
+        font-size: 25px,
         base-lines: 1.25
     ),
-    xlarge: (
-        font-size: 28px,
+    large: (
+        font-size: 30px,
         base-lines: 1.5
     ),
-    xxlarge: (
-        font-size: 33px,
+    xlarge: (
+        font-size: 40px,
         base-lines: 1.75
+    ),
+    xxlarge: (
+        font-size: 50px,
+        base-lines: 2
     )
 );
 
@@ -318,38 +318,6 @@ dl dt, dl dd {
 
 @media #{$medium-up} {
 
-    $type-scale: (
-        tiny: (
-            font-size: 14px,
-            base-lines: .825
-        ),
-        small: (
-            font-size: 18px,
-            base-lines: 1
-        ),
-        base: (
-            font-size: $base-font-size,
-            base-lines: 1.125
-        ),
-        medium: (
-            font-size: 25px,
-            base-lines: 1.25
-        ),
-        large: (
-            font-size: 30px,
-            base-lines: 1.5
-        ),
-        xlarge: (
-            font-size: 40px,
-            base-lines: 1.75
-        ),
-        xxlarge: (
-            font-size: 50px,
-            base-lines: 2
-        )
-    ) !global;
-
-
     h1, .alpha, .xxlarge {
         @include type-scale(xxlarge, false);
     }
@@ -369,8 +337,12 @@ dl dt, dl dd {
         @include type-scale(small, false);
     }
 
+    .omega, .tiny {
+        @include type-scale(tiny, false);
+    }
+
     ul, ul li ul, dl dt, dl dd{
-        @include type-scale(base);
+        @include type-scale(tiny);
     }
 
     p {
@@ -379,37 +351,6 @@ dl dt, dl dd {
 }
 
 @media #{$large-up} {
-
-    $type-scale: (
-        tiny: (
-            font-size: 14px,
-            base-lines: .825
-        ),
-        small: (
-            font-size: 18px,
-            base-lines: 1
-        ),
-        base: (
-            font-size: $base-font-size,
-            base-lines: 1.125
-        ),
-        medium: (
-            font-size: 25px,
-            base-lines: 1.25
-        ),
-        large: (
-            font-size: 30px,
-            base-lines: 1.5
-        ),
-        xlarge: (
-            font-size: 40px,
-            base-lines: 1.75
-        ),
-        xxlarge: (
-            font-size: 50px,
-            base-lines: 2
-        )
-    ) !global;
 
 
     h1, .alpha, .xxlarge {
