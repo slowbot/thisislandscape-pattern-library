@@ -283,9 +283,9 @@ dl dt, dl dd {
         display: inline-block;
         width: 1em;
         left: 0;
-        margin-left: -2.5em;
         top: 0;
         margin: 0;
+        margin-left: -2.5em;
         &.scroll-to-fixed-fixed {
             left: auto !important;
             margin-left: -2.5em !important;
