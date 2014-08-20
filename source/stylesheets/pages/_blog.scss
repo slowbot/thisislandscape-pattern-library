@@ -12,12 +12,17 @@
 		@include margin-trailer(2);
 
 		@media #{$medium-up} {
-			@include margin-trailer(3);
+			@include margin-trailer(4);
+		}
+
+		figure {
+			margin-top: .4rem;
 		}
 
 		hr {
-			height: .5rem;
+			height: .25rem;
 			background-color: $primary-color;
+			margin-top: .4rem;
 		}
 	}
 
@@ -57,7 +62,6 @@
 
 		@media #{$medium-up} {
 			@include type-scale(small);
-			font-size: .85rem;
 		}	
 	}
 

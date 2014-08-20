@@ -390,40 +390,40 @@ dl dt, dl dd {
 
 @media #{$large-up} {
 
-        $type-scale: (
-            tiny: (
-                font-size: 14px,
-                base-lines: .825
-            ),
-            small: (
-                font-size: 16px,
-                base-lines: 1
-            ),
-            base: (
-                font-size: 20px,
-                base-lines: 1.125
-            ),
-            medium: (
-                font-size: 22px,
-                base-lines: 1.25
-            ),
-            mediumlarger: (
-                font-size: 25px,
-                base-lines: 1.5
-            ),
-            large: (
-                font-size: 30px,
-                base-lines: 1.5
-            ),
-            xlarge: (
-                font-size: 40px,
-                base-lines: 1.75
-            ),
-            xxlarge: (
-                font-size: 50px,
-                base-lines: 2
-            )
-        );
+    $type-scale: (
+        tiny: (
+            font-size: 14px,
+            base-lines: .825
+        ),
+        small: (
+            font-size: 16px,
+            base-lines: 1
+        ),
+        base: (
+            font-size: 20px,
+            base-lines: 1.125
+        ),
+        medium: (
+            font-size: 22px,
+            base-lines: 1.25
+        ),
+        mediumlarger: (
+            font-size: 25px,
+            base-lines: 1.5
+        ),
+        large: (
+            font-size: 30px,
+            base-lines: 1.5
+        ),
+        xlarge: (
+            font-size: 40px,
+            base-lines: 1.75
+        ),
+        xxlarge: (
+            font-size: 50px,
+            base-lines: 2
+        )
+    ) !global;
 
     h1, .alpha, .xxlarge {
         @include type-scale(xxlarge);
