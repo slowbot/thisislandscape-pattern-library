@@ -51,9 +51,13 @@
 
 	.icon-more {
 		position: absolute;
-		font-size: .825rem;
+		font-size: .725rem;
 		right: 0;
 		bottom: 0;
+
+		@media #{$medium-up} {
+			font-size: .825rem;
+		}	
 	}
 
 	.meta, .meta a {
@@ -66,9 +70,13 @@
 	}
 
 	.share {
-		@include type-scale(small);
+		@include type-scale(tiny);
 		border-bottom: 1px solid $primary-color;
 		color: $primary-color;
 		padding-bottom: .25em;
+
+		@media #{$medium-up} {
+			@include type-scale(small);
+		}	
 	}
 }

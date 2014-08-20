@@ -7,7 +7,37 @@ body.page .content {
 		@include margin-trailer(1);
 
 		@media #{$medium-up} {
+			@include margin-trailer(3.5);
+
+			h1 {
+				@include margin-trailer(1.275);
+			}
+		}
+
+		@media #{$large-up} {
 			@include margin-trailer(2);
+		}	
+	}
+}
+
+.bright {
+	@media #{$medium-up} {
+		h3 {
+			@include type-scale(small);
+		}
+
+		h4 {
+			@include type-scale(small);
+		}
+	}
+
+	@media #{$large-up} {
+		h3 {
+			@include type-scale(base);
+		}
+
+		h4 {
+			@include type-scale(base);
 		}
 	}
 }
@@ -19,6 +49,30 @@ body.page .content {
 .contact-info {
 	background-color: $alert-color;
 	padding: 3rem 0 2rem 0;
+
+	@media #{$medium-up} {
+		padding: 6rem 0 5rem 0;
+
+		h3 {
+			@include type-scale(small);
+		}
+
+		p {
+			@include type-scale(small);
+		}
+	}
+
+	@media #{$large-up} {
+		padding: 3rem 0 2rem 0;
+
+		h3 {
+			@include type-scale(base);
+		}
+
+		p {
+			@include type-scale(base);
+		}	
+	}	
 }
 
 .clients-awards {
@@ -34,7 +88,28 @@ body.page .content {
 
 		@media #{$medium-up} {
 			border-bottom: none;
+			padding-top: 6rem;
+
+			h3 {
+				@include type-scale(small);
+			}
+
+			h4 {
+				@include type-scale(small);
+			}
+		}
+
+		@media #{$large-up} {
 			padding-top: 3.5rem;
+
+
+			h3 {
+				@include type-scale(base);
+			}
+
+			h4 {
+				@include type-scale(base);
+			}
 		}	
 	}
 }
