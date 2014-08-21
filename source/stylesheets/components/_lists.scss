@@ -5,6 +5,13 @@
 	list-style: none;
 }
 
+%broken-line {
+	display: inline;
+	border-bottom: 1px solid #333;
+	width: auto;
+	padding-bottom: .25rem;
+}
+
 .bordered-list {
 	margin: 0;
 	margin-bottom: 1em;
@@ -25,15 +32,9 @@
 	h4 {
 		display: inline-block;
 		margin-bottom: .125rem;
-		padding-bottom: .125rem;
 
 		span {
-			&:after {
-				content: "";
-				display: block;
-				border-bottom: 1px solid #333;
-				width: auto;
-			}
+			@extend %broken-line;
 		}
 	}
 
