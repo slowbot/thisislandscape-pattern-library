@@ -1,4 +1,4 @@
-.blog {
+.blog, .single-post {
 	background-color: #ddebf3;
 	height: auto;
 
@@ -96,3 +96,13 @@
 		}	
 	}
 }
+
+.single-post {
+	.blog-row {
+		margin-bottom: 0;
+
+		@media #{$medium-up} {
+			margin-bottom: 0;
+		}	
+	}	
+}	
