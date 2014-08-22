@@ -29,7 +29,7 @@ $(document).ready(function() {
     // This is the default behavior.
 
 	var triggerBttn = document.getElementById( 'trigger-overlay' ),
-		overlay = document.querySelector( 'div.overlay' ),
+		overlay = document.querySelector( 'div.overlay-navigation' ),
 		closeBttn = overlay.querySelector( 'a.overlay-close' );
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
