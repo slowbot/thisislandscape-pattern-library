@@ -26,7 +26,7 @@
 		}
 	}
 
-	h2 {
+	.alpha {
 		@media #{$medium-up} {
 			@include type-scale(mediumlarger);
 		}

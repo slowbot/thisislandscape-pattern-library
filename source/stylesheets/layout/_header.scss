@@ -106,3 +106,20 @@ body.single-project, body.home, body.cover-article {
 		}
 	}
 }
+
+body.hero-contrast {	
+	header.header, .nav-primary {
+		.logo-svg {
+			.letter {
+				fill: #000 !important;
+			}
+		}	
+	}
+
+	.overlay,
+	.overlay .nav-overlay .nav-projects li a,
+	.overlay .nav-overlay .nav-main li a,
+	.overlay .scroll-arrows .arrow {
+		color: #000;
+	}
+}

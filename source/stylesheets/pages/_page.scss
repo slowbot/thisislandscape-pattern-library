@@ -125,3 +125,13 @@ body.page .content {
 		}	
 	}
 }
+
+.page, .cover-article {
+	.page-section:last-child {
+		@include margin-trailer(1);
+
+		@media #{$medium-up} {
+			@include margin-trailer(3);
+		}	
+	}
+}
