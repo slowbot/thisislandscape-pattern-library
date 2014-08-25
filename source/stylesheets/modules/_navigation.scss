@@ -12,11 +12,19 @@
   }
 
   @media #{$medium-up} {
+    @include type-scale(large);
     @include margin-leader(5);
     @include margin-trailer(4);
   }
 }
 
 .pager-down {
-	font-size: 2rem;
+	font-size: 1rem;
+  padding-top: .25rem;
+  display: inline-block;
+
+  @media #{$medium-up} {
+    font-size: 2rem;
+    padding-top: .625rem;
+  }  
 }

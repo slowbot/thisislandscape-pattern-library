@@ -26,12 +26,14 @@
 	border-bottom: 1px solid #333;
 	display: inline-block;
 	padding-bottom: .125rem;
+	letter-spacing: .04rem;
 }	
 
 .lined-list {
 	h4 {
 		display: inline-block;
 		margin-bottom: .125rem;
+		letter-spacing: .04rem;
 
 		span {
 			@extend %broken-line;
