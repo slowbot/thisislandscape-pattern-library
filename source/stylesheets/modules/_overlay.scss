@@ -66,11 +66,10 @@
 		.nav-main {
 			height: 8.5rem;
 			position: absolute;
-			bottom: 0;
+			bottom: 5%;
 			padding: 0 .75rem;
 
 			@media #{$medium-up} {
-				@include margin-trailer(2);
 				padding: 0;
 			}
 
@@ -108,7 +107,7 @@
 				a {
 					color: #fff;
 					display: block;
-					padding: .325rem .5rem;
+					padding: .325rem .75rem;
 					-webkit-transition: color 0.2s;
 					transition: color 0.2s;
 
@@ -117,8 +116,8 @@
 					}
 
 					@media #{$large-up} {
-						@include type-scale(xlarge);
-						padding: .5rem .5rem;
+						@include type-scale(xxlarge);
+						padding: .5rem .825rem;
 					}	
 				}
 			}		
@@ -126,19 +125,19 @@
 	}	
 
 	.scroll-arrows {
-		bottom: 1em;
-		display: none;
+		bottom: 5%;
+		display: block;
 		left: -.5em;
 		position: absolute;
 		z-index: 1000;
 		
 		@media #{$large-up} {
-			bottom: 4em;
+			bottom: 5%;
 		}
 
-		@media screen and (min-width: 64em) and (min-height: 40em) {
-			display: block;
-		}
+		// @media screen and (min-width: 64em) and (min-height: 40em) {
+		// 	display: block;
+		// }
 
 		.arrow {
 			color: #fff;
@@ -221,7 +220,7 @@
 		width: 100%;
 
 		@media #{$medium-up} {
-			@include margin-leader(4.25);
+			margin-top: 20%;
 			height: 80%;
 			overflow-y: scroll;
 			position: fixed;
@@ -229,8 +228,8 @@
 		}
 
 		@media #{$large-up} {
-			@include margin-leader(3.5);
-			height: 75%;
+			margin-top: 12.5%;
+			height: 80%;
 		}
 	}
 
