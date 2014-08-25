@@ -36,6 +36,8 @@
       }
 
     p {
+      letter-spacing: .04rem;
+
       @media #{$medium-up} {
         @include type-scale(mediumlarger);
       }

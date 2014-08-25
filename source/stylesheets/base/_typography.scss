@@ -127,6 +127,7 @@ $type-weight: (
     margin-top: 0;
     @include margin-trailer(1);
     @include type-ligatures;
+    letter-spacing: .02rem;
 }
 h1, .alpha {
     @include type-scale(xxlarge);
@@ -155,6 +156,7 @@ p {
     @include type-ligatures;
     @include type-scale(base);
     font-family: $font-family;
+    letter-spacing: .02rem;
 }
 
 // Small
@@ -165,6 +167,7 @@ small {
 a {
 	color: $primary-color;
     text-decoration: none;
+    letter-spacing: .02rem;
 
     &:hover {
 
@@ -190,11 +193,13 @@ ul, ul li ul {
     list-style: none;
     margin: 0;
     @include type-scale(base);
+    letter-spacing: .02rem;
 }
 
 dl dt, dl dd {
     margin: 0;
     @include type-scale(base);
+    letter-spacing: .02rem;
 }
 
 .serif {
@@ -453,6 +458,5 @@ dl dt, dl dd {
 
     p {
         @include type-scale(base, false);
-        letter-spacing: .75px;
     }
 }

@@ -1,7 +1,7 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
 source 'http://rubygems.org'
-gem "compass", "~>1.0.0.alpha.20"
+gem "compass", "~>1.0.1"
 gem "sass", "~>3.3.9"
 
 gem "middleman", "~>3.3.2"
