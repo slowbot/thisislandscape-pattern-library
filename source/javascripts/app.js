@@ -60,6 +60,7 @@ $(document).ready(function() {
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
+  
 });
 
 $(function(){

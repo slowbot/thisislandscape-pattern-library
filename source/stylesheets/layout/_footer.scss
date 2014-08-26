@@ -35,7 +35,7 @@
 	.underlined {
 		border-bottom-color: #fff;
 		@include type-scale(small);
-		letter-spacing: .04rem;
+		letter-spacing: .04em;
 
 		@media #{$medium-up} {
 			@include type-scale(small);
@@ -50,7 +50,7 @@
 		@include margin-trailer(1.5);
 		margin-top: .125em;
 		@include type-scale(small);
-		letter-spacing: .04rem;
+		letter-spacing: .04em;
 
 		@media #{$medium-up} {
 			@include type-scale(small);

@@ -38,7 +38,7 @@
 
 	p {
 		@include margin-trailer(1);
-		letter-spacing: .04rem;
+		letter-spacing: .04em;
 
 		@media #{$medium-up} {
 			@include type-scale(small);
@@ -76,7 +76,7 @@
 	.meta, .meta a {
 		color: #96a7b1;
 		@include type-scale(tiny);
-		letter-spacing: .04rem;
+		letter-spacing: .04em;
 
 		@media #{$medium-up} {
 			@include type-scale(small);
@@ -92,7 +92,7 @@
 		border-bottom: 1px solid $primary-color;
 		color: $primary-color;
 		padding-bottom: .25em;
-		letter-spacing: .04rem;
+		letter-spacing: .04em;
 
 		@media #{$medium-up} {
 			@include type-scale(small);

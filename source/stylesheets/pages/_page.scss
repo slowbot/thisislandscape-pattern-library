@@ -127,6 +127,12 @@ body.page .content {
 }
 
 .page, .cover-article {
+	.content {
+		@media #{$large-up} {
+			@include margin-leader(2);
+		}
+	}
+
 	.page-section:last-child {
 		@include margin-trailer(1);
 

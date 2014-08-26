@@ -1,12 +1,12 @@
 .logo-svg {
-	padding: 0 16px;
+	padding: 16px;
 	width: 128px;
 	height: 50px;
 	margin: 2.275em 0 1.175em 0;
 	z-index: 500;
 
 	svg {
-		margin: 14px 0;
+		margin: 0;
 	}
 
 	@media #{$medium-up} {
@@ -14,12 +14,12 @@
 	}	
 
 	@media #{$large-up} {
-		height: 65px;
+		height: 60px;
 		margin: 4em 0 0 -14px;
 		width: 160px;
 
 		svg {
-			margin: 1em 0;
+			margin: 0;
 		}
 	}
 }
@@ -97,11 +97,11 @@ body.single-project, body.home, body.cover-article {
 		
 		header.header {
 			position: relative;
-		}
-	
-		.logo-svg {
-			.letter {
-				fill: #333;
+		
+			.logo-svg {
+				.letter {
+					fill: #333;
+				}
 			}
 		}
 	}

@@ -63,6 +63,13 @@ body.home {
 	.single-article {
 		.hero {
 			@include grid-column(14, true, true, false);
+			max-height: 60vh;
+			overflow: hidden;
+
+			.cover {
+				margin-left: 1.125rem;
+				margin-right: 1.125rem;
+			}
 		}
 	}
 }
