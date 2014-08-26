@@ -92,6 +92,10 @@
 					@media #{$medium-up} {
 						@include type-scale(base);
 					}
+
+					&:hover {
+						color: rgba(#fff, .5);
+					}
 				}
 			}		
 		}
@@ -120,7 +124,7 @@
 					@media #{$large-up} {
 						@include type-scale(xxlarge);
 						padding: .5rem .825rem;
-					}	
+					}
 				}
 			}		
 		}
@@ -145,6 +149,10 @@
 			color: #fff;
 			font-size: 32px;
 			padding: .5em;
+
+			&.disabled {
+				color: rgba(#fff, .5);
+			}
 		}
 	}
 
@@ -230,7 +238,7 @@
 		}
 
 		@media #{$large-up} {
-			top: 12.5%;
+			top: 10%;
 			height: 80%;
 		}
 
