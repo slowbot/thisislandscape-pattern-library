@@ -35,12 +35,11 @@
 	top: 0;
 
 	@media #{$large-up} {
-		max-height: 700px;
+
 	}
 
 	@media #{$xlarge-up} {
-		max-height: none;
-		height: 80vh
+
 	}	
 }
 
@@ -60,10 +59,9 @@ body.home {
 }
 
 @media #{$large-up} {
-	.single-article {
+	.single-article, .cover-article {
 		.hero {
 			@include grid-column(14, true, true, false);
-			max-height: 60vh;
 			overflow: hidden;
 
 			.cover {

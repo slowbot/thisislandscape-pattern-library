@@ -269,16 +269,14 @@
 		
 		.nav-secondary ul {
 			opacity: 1;
-			-webkit-transition-delay: 0.3s;
-			transition-delay: 0.3s;
-			// -webkit-transform: rotateX(0deg);
-			// transform: rotateX(0deg);
+			-webkit-transition-delay: 0.2s;
+			transition-delay: 0.2s;
 		}
 	}
 
 	&.close .nav-secondary ul {
-		// -webkit-transform: translateY(25%) rotateX(-35deg);
-		// transform: translateY(25%) rotateX(-35deg);
+		-webkit-transition-delay: 0s;
+		transition-delay: 0s;
 	}
 }
 
