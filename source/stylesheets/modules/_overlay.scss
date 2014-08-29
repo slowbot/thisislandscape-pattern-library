@@ -102,7 +102,8 @@
 
 		.nav-projects {
 			height: 100%;
-			
+			margin-right: 20px;
+
 			@media #{$medium-up} {
 				padding: 0;
 			}
@@ -210,6 +211,7 @@
 	.nav-secondary {
 		-webkit-perspective: 1200px;
 		perspective: 1200px;
+		overflow: hidden;
 		
 		/* Masking effect: currently causing a double scroll event */
 		@media #{$medium-up} {
@@ -234,7 +236,7 @@
 			height: 80%;
 			overflow-y: scroll;
 			position: absolute;
-			right: 0;
+			right: -20px;
 		}
 
 		@media #{$large-up} {

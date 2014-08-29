@@ -5,6 +5,12 @@
 		}
 	}
 
+	&.page {
+		.content {
+			margin-top: 0;
+		}
+	}
+
 	.logo-svg {
 		&:hover {
 			background-color: $primary-color;
