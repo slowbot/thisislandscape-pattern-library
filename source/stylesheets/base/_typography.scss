@@ -276,7 +276,7 @@ dl dt, dl dd {
         -webkit-column-count: 2;
         -webkit-column-gap: 50px;
 
-        p, ul, dl {
+        ul, dl {
             -webkit-column-break-inside: avoid;
             -moz-column-break-inside: avoid;
             -moz-page-break-inside: avoid;

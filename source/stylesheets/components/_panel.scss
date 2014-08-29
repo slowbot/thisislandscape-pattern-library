@@ -35,6 +35,10 @@
 		@include type-scale(tiny);
 
 		@media #{$medium-up} {
+			@include type-scale(small);
+		}
+
+		@media #{$large-up} {
 			@include type-scale(base);
 		}	
 	}
