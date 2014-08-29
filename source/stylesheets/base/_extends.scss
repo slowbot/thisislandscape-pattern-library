@@ -1,0 +1,81 @@
+// Center align block
+%center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// CSS Truncate
+%text-truncate {
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+// @mixin ellipsis($width: 100%) {
+//   display: inline-block;
+//   max-width: $width;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+%navigation-list {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    > li{
+        display:block;
+        float:left;
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+}
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+%centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%coverer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+%has-pseudo {
+  position: relative;
+  &::before,
+  &::after {
+      position: absolute;
+      display: block;
+      content: '';
+  }
+}  

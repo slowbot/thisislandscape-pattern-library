@@ -1,11 +1,15 @@
 .panel {
 	background: $alert-color;
 	border: none;
-	padding: 2em;
+	padding: 1.5em;
 	
-	li a {
+	@media #{$medium-up} {
+		padding: 2em;
+	}		
 
-	}
+	@media #{$large-up} {
+		padding: 3em;
+	}	
 	
 	&.bright {
 		background-color: $primary-color;
@@ -27,11 +31,11 @@
 		color: rgba(#fff, .5);
 	}
 
-	@media #{$medium-up} {
+	p {
+		@include type-scale(tiny);
 
-	}		
-
-	@media #{$large-up} {
-		padding: 3em;
-	}	
-}	
+		@media #{$medium-up} {
+			@include type-scale(base);
+		}	
+	}
+}
