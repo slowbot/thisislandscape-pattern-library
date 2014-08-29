@@ -134,7 +134,7 @@
 	.scroll-arrows {
 		bottom: 5%;
 		display: none;
-		left: -.5em;
+		left: .5em;
 		position: absolute;
 		z-index: 1000;
 		
@@ -162,8 +162,8 @@
 		position: relative;
 		text-align: center;
 		top: 50%;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+		// -webkit-transform: translateY(-50%);
+		// transform: translateY(-50%);
 	
 		ul {
 			display: inline-block;
@@ -209,8 +209,8 @@
 	visibility: hidden;
 	
 	.nav-secondary {
-		-webkit-perspective: 1200px;
-		perspective: 1200px;
+		// -webkit-perspective: 1200px;
+		// perspective: 1200px;
 		overflow: hidden;
 		
 		/* Masking effect: currently causing a double scroll event */
@@ -220,10 +220,10 @@
 
 		ul {
 			opacity: 0.4;
-			-webkit-transform: translateY(-25%) rotateX(35deg);
-			transform: translateY(-25%) rotateX(35deg);
-			-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-			transition: transform 0.5s, opacity 0.5s;
+			// -webkit-transform: translateY(-25%) rotateX(35deg);
+			// transform: translateY(-25%) rotateX(35deg);
+			// -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+			// transition: transform 0.5s, opacity 0.5s;
 		}
 	}
 
@@ -261,14 +261,14 @@
 		
 		.nav-secondary ul {
 			opacity: 1;
-			-webkit-transform: rotateX(0deg);
-			transform: rotateX(0deg);
+			// -webkit-transform: rotateX(0deg);
+			// transform: rotateX(0deg);
 		}
 	}
 
 	&.close .nav-secondary ul {
-		-webkit-transform: translateY(25%) rotateX(-35deg);
-		transform: translateY(25%) rotateX(-35deg);
+		// -webkit-transform: translateY(25%) rotateX(-35deg);
+		// transform: translateY(25%) rotateX(-35deg);
 	}
 }
 
