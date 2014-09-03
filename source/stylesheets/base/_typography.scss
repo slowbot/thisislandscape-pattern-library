@@ -25,6 +25,7 @@ html, body {
     font-size: 20px;
     font-family: $font-family;
     background-color: $wash-color;
+    -webkit-font-kerning:normal;
 }
 
 // The type-scale Map contains the whole type scale.
