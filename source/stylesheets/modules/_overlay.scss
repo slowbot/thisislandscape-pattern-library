@@ -1,30 +1,23 @@
 /* Overlay style */
 .overlay {
+	@include fixed(top right bottom left);
 	background: rgba(4, 87, 167,0.9);
 	color: #fff;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
 	z-index: 999;
 
 	.overlay-close {
+		@include fixed(top 1em right 1em);
 		background: transparent;
 		border: none;
 		color: darken($primary-color, 10%);
 		cursor: pointer;
 		display: block;
 		font-size: 18px;
-		height: 20px;
 		line-height: 20px;
 		outline: none;
 		overflow: hidden;
 		padding: 0;
-		position: fixed;
-		right: 20px;
 		text-align: center;
-		top: 20px;
 		width: 20px;
 		z-index: 9000;
 
@@ -65,9 +58,8 @@
 		}
 
 		.nav-main {
+			@include absolute(bottom 5%);
 			height: 8.5rem;
-			position: absolute;
-			bottom: 5%;
 			padding: 0 .75rem;
 
 			@media #{$medium-up} {
@@ -132,10 +124,9 @@
 	}	
 
 	.scroll-arrows {
-		bottom: 5%;
+		@include absolute(bottom 5%);
 		display: none;
 		left: .5em;
-		position: absolute;
 		z-index: 1000;
 		
 		@media #{$large-up} {
@@ -158,10 +149,9 @@
 	}
 
 	.nav-share {
+		@include relative(top 50%);
 		height: 60%;
-		position: relative;
 		text-align: center;
-		top: 50%;
 		// -webkit-transform: translateY(-50%);
 		// transform: translateY(-50%);
 	
@@ -240,11 +230,9 @@
 		width: 100%;
 
 		@media #{$medium-up} {
-			top: 10%;
+			@include absolute(top 10% right -1rem);
 			height: 80%;
 			overflow-y: scroll;
-			position: absolute;
-			right: -20px;
 		}
 
 		@media #{$large-up} {
