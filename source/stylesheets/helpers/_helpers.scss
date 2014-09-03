@@ -71,3 +71,33 @@
 		padding-right: 2.25rem;
 	}
 }
+
+.rhythm {
+    @include margin-trailer(1);
+}
+
+.rhythm-2 {
+    @include margin-trailer(2);
+}
+
+.rhythm-3 {
+    @include margin-trailer(3);
+}
+
+.offering {
+	@include margin-trailer(1);
+
+	.rhythm {
+		margin-bottom: 0;
+	}
+
+	&.gallery-rhythm {
+		.rhythm {
+    	@include margin-trailer(1);
+
+    	&:last-of-type {
+    		margin-bottom: 0;
+    	}
+		}
+	}
+}

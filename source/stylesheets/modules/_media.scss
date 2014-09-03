@@ -83,5 +83,9 @@ figure {
 		&:hover {
 			opacity: 1;
 		}
-	}	
+	}
+}
+
+citation {
+	@include type-scale(tiny);
 }

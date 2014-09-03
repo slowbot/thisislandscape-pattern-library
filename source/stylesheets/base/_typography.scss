@@ -239,18 +239,6 @@ dl dt, dl dd {
 
 }
 
-.rhythm {
-    @include margin-trailer(1);
-}
-
-.rhythm-2 {
-    @include margin-trailer(2);
-}
-
-.rhythm-3 {
-    @include margin-trailer(3);
-}
-
 .h-sub {
     color: $primary-color;
 }
