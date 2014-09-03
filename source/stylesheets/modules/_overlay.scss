@@ -22,7 +22,7 @@
 		z-index: 9000;
 
 		&:hover {
-			color: darken($primary-color, 2%);
+			color: darken($primary-color, 15%);
 		}
 
 		@media #{$medium-up} {
