@@ -10,6 +10,18 @@
 	@media #{$large-up} {
 		padding: 3em;
 	}	
+
+	cite {
+		@include absolute(bottom .75em left 1.75em);
+
+		@media #{$medium-up} {
+			@include absolute(bottom 1em left 3em);
+		}
+
+		@media #{$large-up} {
+			@include absolute(bottom 1.5em left 4.25em);
+		}	
+	}
 	
 	&.bright {
 		background-color: $primary-color;

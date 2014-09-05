@@ -38,7 +38,6 @@ figure {
 .caption-overlay {
 	overflow: hidden;
 	position: relative;
-	cursor: pointer;
 
 	figcaption {
 		opacity: 0;
@@ -82,10 +81,12 @@ figure {
 
 		&:hover {
 			opacity: 1;
+			cursor: pointer;
 		}
 	}
 }
 
-citation {
+cite {
 	@include type-scale(tiny);
+	font-style: normal;
 }
