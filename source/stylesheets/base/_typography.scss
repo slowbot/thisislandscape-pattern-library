@@ -169,6 +169,8 @@ a {
 	color: $primary-color;
     text-decoration: none;
     letter-spacing: .02em;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
 
     &:hover {
 

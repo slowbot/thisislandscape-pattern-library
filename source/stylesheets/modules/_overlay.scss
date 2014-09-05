@@ -86,8 +86,6 @@ body.stop-scrolling {
 					color: #fff;
 					display: block;
 					letter-spacing: .04em;
-					-webkit-transition: color 0.2s;
-					transition: color 0.2s;
 					
 					@media #{$medium-up} {
 						@include type-scale(base);
@@ -115,8 +113,10 @@ body.stop-scrolling {
 					color: #fff;
 					display: block;
 					padding: .325rem .75rem;
-					-webkit-transition: color 0.2s;
-					transition: color 0.2s;
+					
+					&:hover {
+						color: rgba(#fff, .5);
+					}
 
 					@media #{$medium-up} {
 						@include type-scale(medium);
