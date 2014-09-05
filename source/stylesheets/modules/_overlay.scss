@@ -1,4 +1,8 @@
 /* Overlay style */
+body.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
 .overlay {
 	@include fixed(top right bottom left);
 	background: rgba(4, 87, 167,0.9);
