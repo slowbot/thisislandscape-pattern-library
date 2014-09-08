@@ -86,18 +86,23 @@
 
 .offering {
 	@include margin-trailer(1);
-
-	.rhythm {
+	
+	figure, .no-rhythm {
 		margin-bottom: 0;
 	}
 
 	&.gallery-rhythm {
-		.rhythm {
+
+		.rhythm, figure {
     	@include margin-trailer(1);
 
     	&:last-of-type {
     		margin-bottom: 0;
     	}
+		}
+
+		.no-rhythm {
+			margin-bottom: 0;
 		}
 	}
 }
