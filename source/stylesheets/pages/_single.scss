@@ -46,9 +46,18 @@
         @include type-scale(base);
       }  
     }
+
+    .scroll-to-fixed-fixed {
+      display: none;
+
+      @media #{$medium-up} {
+        display: block;
+      }  
+    }
 	}
 
   .offering {
+
     @media #{$medium-up} {
       @include margin-trailer(3);
 
