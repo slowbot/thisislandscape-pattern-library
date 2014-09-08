@@ -87,13 +87,13 @@
 .offering {
 	@include margin-trailer(1);
 	
-	figure, .no-rhythm {
+	.no-rhythm {
 		margin-bottom: 0;
 	}
 
 	&.gallery-rhythm {
 
-		.rhythm, figure {
+		.rhythm {
     	@include margin-trailer(1);
 
     	&:last-of-type {
