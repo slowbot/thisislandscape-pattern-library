@@ -281,11 +281,13 @@ dl dt, dl dd {
         @include rotate(90deg);
         position: absolute;
         display: inline-block;
+        height: auto;
         width: 1em;
         left: 0;
         top: 0;
         margin: 0;
         margin-left: -2.5em !important;
+        white-space: nowrap;
         &.scroll-to-fixed-fixed {
             left: auto !important;
             margin-left: -2.5em !important;

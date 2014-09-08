@@ -71,6 +71,41 @@ $(function(){
     });
 });
 
+$(function(){
+
+    $(window).load(setScrollToFixed);
+
+    $(window).resize(function() {
+      $('h3.flip').trigger('detach.ScrollToFixed');
+      window.setTimeout(setScrollToFixed, 2);
+    });
+
+    function setScrollToFixed() {
+      var total_flips = $('h3.flip').length;
+      for (i = 1; i <= total_flips; i++) {
+        var flip_selector = '#flip',
+          next_selector,
+          this_selector = '#offering';
+
+        if(i > 1) {
+          flip_selector += '-'+i;
+          this_selector += '-'+i;
+        }
+        if(i+1 <= total_flips) {
+          next_selector = '#offering-' + (i+1);
+        } else {
+          next_selector = '.footer';
+        }
+
+        $(flip_selector).scrollToFixed({
+          marginTop: 10,
+          limit: $(next_selector).offset().top - $(flip_selector).height() - 50,
+          removeOffsets: true
+        });
+      }
+    }
+});
+
 // $(window).resize(function () {
 //   $(.single-content).css({‘margin-top’: $(‘.hero)[0].offsetHeight;});
 // });
