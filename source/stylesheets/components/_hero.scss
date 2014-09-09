@@ -15,9 +15,15 @@
 		height: 700px;
 	}
 
+	@media #{$medium-up} and 
+	(-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
+		height: 80vh;
+	}
+
 	@media #{$xlarge-up} {
 		height: 80vh;
-	}	
+	}
 }
 
 .slide {
