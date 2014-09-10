@@ -71,10 +71,12 @@
     @include type-scale(base);
     @include margin-leader(2.5);
     @include margin-trailer(3);
+    letter-spacing: .04em;
 
     .underlined {
       display: inline;
-
+      letter-spacing: .04em;
+      
       @media #{$medium-up} {
         @include type-scale(small);
       }
@@ -86,7 +88,8 @@
 
     p {
       @include type-scale(base);
-      
+      letter-spacing: .04em;
+
       @media #{$medium-up} {
         @include type-scale(small);
       }
