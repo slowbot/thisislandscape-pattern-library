@@ -74,7 +74,7 @@
 
     .underlined {
       display: inline;
-      
+
       @media #{$medium-up} {
         @include type-scale(small);
       }
@@ -82,6 +82,17 @@
       @media #{$large-up} {
         @include type-scale(base);
       }  
+    }
+
+    p {
+      @include type-scale(base);
+      
+      @media #{$medium-up} {
+        @include type-scale(small);
+      }
+      @media #{$large-up} {
+        @include type-scale(base);
+      }
     }
 
     @media #{$medium-up} {
