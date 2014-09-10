@@ -113,11 +113,19 @@ body.hero-contrast {
 	header.header, .nav-primary {
 		.logo-svg {
 			.letter {
-				fill: #000 !important;
+				fill: #000;
 				-webkit-transition: fill 0.2s ease;
 				transition: fill 0.2s ease;
 			}
-		}	
+		}
+
+		.scroll-to-fixed-fixed {
+			.logo-svg {
+				.letter {
+					fill: #fff;
+				}
+			}
+		}
 	}
 
 	.overlay,
@@ -148,5 +156,6 @@ body.hero-contrast {
 				color: rgba(#000, .15);
 			}
 		}
-	}	
+	}
+
 }

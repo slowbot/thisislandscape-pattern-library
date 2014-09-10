@@ -68,6 +68,7 @@
   }
 
   .awards {
+    @include type-scale(base);
     @include margin-leader(2.5);
     @include margin-trailer(3);
 
@@ -81,7 +82,12 @@
       }  
     }
 
+    @media #{$medium-up} {
+      @include type-scale(small);
+    }
+
     @media #{$large-up} {
+      @include type-scale(base);
       margin-top: 0;
       padding-left: 1em;
     }
