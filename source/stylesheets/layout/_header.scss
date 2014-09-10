@@ -137,4 +137,16 @@ body.hero-contrast {
 			transition: color 0.2s;
 		}
 	}
+
+	.overlay .scroll-arrows .arrow {
+		.arrow {
+			&:hover {
+				color: rgba(#000, .7);
+			}
+
+			&.disabled {
+				color: rgba(#000, .15);
+			}
+		}
+	}	
 }
