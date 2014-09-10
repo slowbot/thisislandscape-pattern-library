@@ -73,6 +73,8 @@
     @include margin-trailer(3);
 
     .underlined {
+      display: inline;
+      
       @media #{$medium-up} {
         @include type-scale(small);
       }
