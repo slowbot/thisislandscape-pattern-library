@@ -68,6 +68,8 @@ header.header {
 
 				.letter {
 					fill: #fff;
+					-webkit-transition: fill 0.2s ease;
+					transition: fill 0.2s ease;
 				}
 
 				svg {
@@ -112,6 +114,8 @@ body.hero-contrast {
 		.logo-svg {
 			.letter {
 				fill: #000 !important;
+				-webkit-transition: fill 0.2s ease;
+				transition: fill 0.2s ease;
 			}
 		}	
 	}
@@ -119,7 +123,18 @@ body.hero-contrast {
 	.overlay,
 	.overlay .nav-overlay .nav-projects li a,
 	.overlay .nav-overlay .nav-main li a,
-	.overlay .scroll-arrows .arrow {
+	.overlay .scroll-arrows .arrow,
+	.overlay .nav-overlay p {
 		color: #000;
+		-webkit-transition: color 0.2s;
+		transition: color 0.2s;
+	}
+
+	.overlay .nav-overlay .nav-projects li a {
+		&:hover {
+			color: #fff;
+			-webkit-transition: color 0.2s;
+			transition: color 0.2s;
+		}
 	}
 }

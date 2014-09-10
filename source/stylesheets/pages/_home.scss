@@ -89,9 +89,12 @@
 			li {
 				a {
 					display: inline-block !important;
+					-webkit-transition: background-color 0.2s;
+					transition: background-color 0.2s;
 
 					&:hover {
 						background-color: $primary-color;
+						color: #fff;
 					}
 				}
 			}
