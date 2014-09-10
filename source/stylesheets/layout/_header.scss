@@ -147,15 +147,12 @@ body.hero-contrast {
 	}
 
 	.overlay .scroll-arrows .arrow {
-		.arrow {
-			&:hover {
-				color: rgba(#000, .7);
-			}
+		&:hover {
+			color: rgba(#000, .7);
+		}
 
-			&.disabled {
-				color: rgba(#000, .15);
-			}
+		&.disabled {
+			color: rgba(#000, .15);
 		}
 	}
-
 }
