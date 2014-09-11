@@ -1,46 +1,17 @@
-<div class="content">
-	<div class="single-project">
-		
-		<%= partial "partials/_figure-hero" %>
+<!-- Main blog loop -->
+<section class="content archive">
+  <div class="row">
+    <div class="medium-14 medium-centered columns">
+      
+      <div class="blog-row row">
+        <div class="medium-8 medium-push-8 large-8 large-push-8 columns"> 
+          <%= partial "partials/_figure-1x1" %>
+        </div>
+        <div class="medium-8 medium-pull-8 large-7 large-pull-9 columns">
+          <%= partial "partials/_post-blog" %>
+        </div>
+      </div>
 
-		<div class="single-content row">
-			<div class="single-entry medium-14 medium-centered columns">
-				<section class="leader row">
-					<!-- <h2 class="h-sub base flip hide-for-small-only">Introduction</h2> -->
-					<div class="large-8 columns">
-						<%= partial "partials/_header-introduction" %>
-					</div>
-
-					<div class="large-8 columns">
-						<%= partial "partials/_page" %>
-					</div>
-				</section>
-
-				<section class="project-section relative">
-					<h3 class="h-sub base flip">Indenity</h3>
-					<div id="offering" class="offering gallery-rhythm relative">
-						<%= partial "partials/_figure-caption" %>
-						<%= partial "partials/_figure-rhythm" %>
-					</div>
-
-					<div class="row">
-						<div class="large-11 columns">
-							<%= partial "partials/_entry" %>
-						</div>
-
-						<div class="large-5 columns">
-							<%= partial "partials/_aside-awards" %>
-						</div>
-				</section>	
-
-				<section class="project-section relative">
-					<h3 id="flip-2" class="h-sub base flip">Web</h3>
-						<div class="offering">
-						<%= partial "partials/_figure" %>
-						<%= partial "partials/_figure" %>
-						</div>
-				</section>
-			</div>
-		</div>
-	</div>
-</div>
+    </div>  
+  </div>
+</section>
