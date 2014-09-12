@@ -95,6 +95,12 @@ header.header {
 					transition: fill 0.2s ease;
 				}
 
+				&:hover {
+					.letter {
+						fill: rgba(#fff, .5);
+					}
+				}
+
 				svg {
 					margin: 0;
 				}
