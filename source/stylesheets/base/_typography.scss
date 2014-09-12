@@ -281,9 +281,9 @@ dl dt, dl dd {
         @include transform(rotate(90deg) translateX(-1em));
         @include transform-origin(0px 100% 0px);
         position: absolute;
-        display: inline-block;
-        width: auto;
-        height: 1em;
+        display: block;
+        width: 1em;
+        height: auto;
         left: 0;
         top: 0;
         margin: 0;
