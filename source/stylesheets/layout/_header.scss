@@ -183,6 +183,12 @@ body.hero-contrast {
 				-webkit-transition: fill 0.2s ease;
 				transition: fill 0.2s ease;
 			}
+
+			&:hover {
+				.letter {
+					fill: rgba(#000, .7);
+				}
+			}
 		}
 
 		.scroll-to-fixed-fixed {
@@ -190,6 +196,12 @@ body.hero-contrast {
 				.letter {
 					fill: #fff;
 				}
+
+				&:hover {
+					.letter {
+						fill: rgba(#fff, .5);
+					}
+				}		
 			}
 		}
 	}
