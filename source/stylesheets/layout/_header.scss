@@ -79,8 +79,11 @@ header.header {
 			&.stuck {
 				visibility: hidden;
 				opacity: 0;
-				-webkit-transition: opacity 0.1s;
-				transition: opacity 0.1s;
+				-webkit-transition: opacity 0.3s 0.2s;
+				transition: opacity 0.3s 0.2s;
+				height: 0;
+				padding: 0;
+				margin: 0;
 			}
 		}	
 			
