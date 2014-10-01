@@ -54,6 +54,10 @@ body.stop-scrolling {
 				padding: 0;
 			}
 
+			@media screen and (max-height: 25em) {
+				display: none;
+			}
+
 			p {
 				@include type-scale(small);
 				letter-spacing: .04em;
@@ -70,6 +74,11 @@ body.stop-scrolling {
 			height: 8.5rem;
 			padding: 0 .75rem;
 
+			@media screen and (max-height: 25em) {
+					@include absolute(bottom 1%);
+					height: 6.5rem;
+			}		
+
 			@media #{$medium-up} {
 				padding: 0;
 			}
@@ -80,6 +89,10 @@ body.stop-scrolling {
 
 			li {
 				padding: .25rem 0;
+				
+				@media screen and (max-height: 25em) {
+					padding: .125rem 0;
+				}	
 
 				a {
 					@include type-scale(small);

@@ -5,6 +5,10 @@
 	margin: 2.275em 0 1.175em 0;
 	z-index: 500;
 
+	@media screen and (max-height: 25em) {
+		margin-top: 1em;
+	}	
+
 	.letter {
 		fill: #333;
 		-webkit-transition: fill 0.2s ease;
