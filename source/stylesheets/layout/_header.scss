@@ -72,7 +72,15 @@ header.header {
 	}
 		
 	.logo {
+		
+		.logo-svg {
+			visibility: visible;
 
+			&.stuck {
+				display: none;
+			}
+		}	
+			
 		&.scroll-to-fixed-fixed {
 			left: 0 !important;
 			
@@ -81,13 +89,20 @@ header.header {
 			}
 
 			.logo-svg {
+				visibility: hidden;
+			}	
+
+			.logo-svg.stuck {
 				background-color: $primary-color;
 				display: inline-block;
 				margin-top: 0;
 				margin-left: 0;
 				padding: 8px 18px 12px;
+				position: absolute;
 				width: 120px;
 				height: 36px;
+				top: 0;
+				visibility: visible;
 
 				.letter {
 					fill: #fff;
