@@ -74,16 +74,14 @@ header.header {
 	.logo {
 		
 		.logo-svg {
-			visibility: visible;
+			opacity: 1;
 
 			&.stuck {
-				visibility: hidden;
-				opacity: 0;
-				-webkit-transition: opacity 0.3s 0.2s;
-				transition: opacity 0.3s 0.2s;
+				opacity: 0;	
 				height: 0;
 				padding: 0;
 				margin: 0;
+				visibility: hidden;
 			}
 		}	
 			
@@ -95,7 +93,7 @@ header.header {
 			}
 
 			.logo-svg {
-				visibility: hidden;
+				opacity: 0;
 			}	
 
 			.logo-svg.stuck {
