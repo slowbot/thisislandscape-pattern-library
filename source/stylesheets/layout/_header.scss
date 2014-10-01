@@ -1,3 +1,39 @@
+%white-letters {
+	.letter {
+		fill: #fff;
+		@extend %fill-transition;
+	}
+
+	&:hover {
+		.letter {
+			fill: rgba(#fff, .5);
+		}
+	}	
+}
+
+%black-letters {
+	.letter {
+		fill: #000;
+		@extend %fill-transition;
+	}
+
+	&:hover {
+		.letter {
+			fill: rgba(#000, .7);
+		}
+	}
+}
+
+%fill-transition {
+	-webkit-transition: fill 0.2s ease;
+	transition: fill 0.2s ease;
+}
+
+%color-transition {
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
 .logo-svg {
 	padding: 16px;
 	width: 128px;
@@ -11,13 +47,12 @@
 
 	.letter {
 		fill: #333;
-		-webkit-transition: fill 0.2s ease;
-		transition: fill 0.2s ease;
+		@extend %fill-transition;
 	}	
 
 	&:hover {
 		.letter {
-				fill: $primary-color;
+			fill: $primary-color;
 		}
 	}
 
@@ -42,17 +77,7 @@
 
 .nav-overlay {
 	.logo-svg {
-		.letter {
-			fill: #fff;
-			-webkit-transition: fill 0.2s ease;
-			transition: fill 0.2s ease;
-		}	
-
-		&:hover {
-			.letter {
-				fill: rgba(#fff, .5);
-			}
-		}
+		@extend %white-letters;
 	}
 }
 
@@ -119,16 +144,7 @@ header.header {
 				top: 0;
 				visibility: visible;
 
-				.letter {
-					-webkit-transition: fill 0.2s ease;
-					transition: fill 0.2s ease;
-				}
-
-				&:hover {
-					.letter {
-						fill: rgba(#fff, .5);
-					}
-				}
+				@extend %white-letters;
 
 				svg {
 					margin: 0;
@@ -146,17 +162,7 @@ body.single-project, body.home, body.cover-article {
 	}
 
 	.logo-svg {
-		.letter {
-			fill: #fff;
-			-webkit-transition: fill 0.2s ease;
-			transition: fill 0.2s ease;
-		}
-
-		&:hover {
-			.letter {
-				fill: rgba(#fff, .5);
-			}
-		}
+		@extend %white-letters;
 	}
 }
 
@@ -168,7 +174,15 @@ body.single-project, body.home, body.cover-article {
 		
 			.logo-svg {
 				.letter {
-					fill: #333;
+					fill: #000;
+					-webkit-transition: fill 0.2s ease;
+					transition: fill 0.2s ease;
+				}
+
+				&:hover {
+					.letter {
+						fill: rgba(#000, .7);
+					}
 				}
 			}
 		}
@@ -178,30 +192,12 @@ body.single-project, body.home, body.cover-article {
 body.hero-contrast {	
 	header.header, .nav-primary {
 		.logo-svg {
-			.letter {
-				fill: #000;
-				-webkit-transition: fill 0.2s ease;
-				transition: fill 0.2s ease;
-			}
-
-			&:hover {
-				.letter {
-					fill: rgba(#000, .7);
-				}
-			}
+			@extend %black-letters;
 		}
 
 		.scroll-to-fixed-fixed {
 			.logo-svg {
-				.letter {
-					fill: #fff;
-				}
-
-				&:hover {
-					.letter {
-						fill: rgba(#fff, .5);
-					}
-				}		
+				@extend %white-letters;
 			}
 		}
 	}
@@ -212,15 +208,13 @@ body.hero-contrast {
 	.overlay .scroll-arrows .arrow,
 	.overlay .nav-overlay p {
 		color: #000;
-		-webkit-transition: color 0.2s;
-		transition: color 0.2s;
+		@extend %color-transition;
 	}
 
 	.overlay .nav-overlay .nav-projects li a {
 		&:hover {
 			color: #fff;
-			-webkit-transition: color 0.2s;
-			transition: color 0.2s;
+			@extend %color-transition;
 		}
 	}
 
