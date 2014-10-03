@@ -9,6 +9,11 @@
 
   &:hover {
     color: $primary-color;
+
+    .pager-down {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+    }
   }
 
   @media #{$medium-up} {
@@ -22,6 +27,8 @@
 	font-size: 1rem;
   padding-top: .25rem;
   display: inline-block;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 
   @media #{$medium-up} {
     font-size: 2rem;

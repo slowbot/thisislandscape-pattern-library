@@ -57,6 +57,11 @@
 	}
 
   .offering {
+    figure {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     @media #{$medium-up} {
       @include margin-trailer(3);

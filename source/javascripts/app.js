@@ -106,6 +106,65 @@ $(function(){
     }
 });
 
-// $(window).resize(function () {
-//   $(.single-content).css({‘margin-top’: $(‘.hero)[0].offsetHeight;});
-// });
+$(function() {
+  var up = $('.scroll-arrows a.arrow[data-direction=up]'),
+    down = $('.scroll-arrows a.arrow[data-direction=down]'),
+    mask = $('.nav-projects-mask'),
+    menu_height = mask.find('li').first().outerHeight(true) * mask.find('li').length,
+    scroll_bottom = menu_height - mask.height();
+  $(window).resize(function() {
+    menu_height = mask.find('li').first().outerHeight(true) * mask.find('li').length;
+    scroll_bottom = menu_height - mask.height();
+  });
+  $('.nav-projects-mask').scroll(function() {
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+      if(mask.scrollTop() == 0) {
+        up.addClass('disabled');
+        down.removeClass('disabled');
+      } else if(mask.scrollTop() == scroll_bottom) {
+        up.removeClass('disabled');
+        down.addClass('disabled');
+      } else {
+        up.removeClass('disabled');
+        down.removeClass('disabled');
+      }
+    }, 2));
+  });
+  $('.scroll-arrows a.arrow').click(function(e) {
+    e.stopPropagation();
+    var row_height = $('.nav-projects li').first().outerHeight(true),
+      num_rows_to_scroll = 3,
+      distance_to_scroll = row_height * num_rows_to_scroll,
+      mask = $('.nav-projects-mask'),
+      current_scroll = mask.scrollTop(),
+      new_scroll;
+
+    if($(this).attr('data-direction') == 'up') {
+      distance_to_scroll = -distance_to_scroll;
+    }
+
+    new_scroll = current_scroll += distance_to_scroll;
+
+    mask.animate({
+      scrollTop: new_scroll
+    }, 400, 'swing');
+      return false;
+  });
+}); 
+
+$(function() {
+  $(document).scroll(function(){
+    $('#wrapper').stop().animate({
+      scrollTop : $(this).scrollTop()
+    });
+  });
+});
+
+$(function() {
+  $(document).scroll(function(){
+    $('#wrapper').stop().animate({
+      scrollTop : $(this).scrollTop()
+    });
+  });
+}); 
