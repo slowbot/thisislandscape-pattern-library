@@ -186,23 +186,30 @@ body.single-project, body.home, body.cover-article {
 }
 
 body.hero-contrast {	
+	.overlay-navigation.open {	
+		header.header, .nav-primary .logo-svg {
+			@extend %white-letters;
+		}
+	}
 	header.header, .nav-primary {
 		.logo-svg {
 			@extend %black-letters;
 		}
-
+		
+			
 		.scroll-to-fixed-fixed {
 			.logo-svg {
 				@extend %white-letters;
 			}
 		}
 	}
-
+	/*
 	.overlay,
 	.overlay .nav-overlay .nav-projects li a,
 	.overlay .nav-overlay .nav-main li a,
 	.overlay .scroll-arrows .arrow,
-	.overlay .nav-overlay p {
+	.overlay .nav-overlay p 
+	{
 		color: #000;
 		@extend %color-transition;
 	}
@@ -212,7 +219,7 @@ body.hero-contrast {
 			color: #fff;
 			@extend %color-transition;
 		}
-	}
+	} 
 
 	.overlay .scroll-arrows .arrow {
 		&:hover {
@@ -222,5 +229,5 @@ body.hero-contrast {
 		&.disabled {
 			color: rgba(#000, .15);
 		}
-	}
+	}*/
 }
