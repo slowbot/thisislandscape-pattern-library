@@ -174,8 +174,9 @@ body.stop-scrolling {
 	}
 
 	.nav-share {
-		@include relative(top 50%);
+		@include absolute(top 50%);
 		height: 60%;
+		width: 100%;
 		text-align: center;
 		// -webkit-transform: translateY(-50%);
 		// transform: translateY(-50%);
@@ -186,6 +187,7 @@ body.stop-scrolling {
 			margin: 0 auto;
 			padding: 0;
 			position: relative;
+			margin-top: -50%;
 		
 			li {
 				display: block;
