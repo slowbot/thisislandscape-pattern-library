@@ -104,8 +104,8 @@ header.header {
 		
 		.logo-svg {
 			opacity: 1;
-			-webkit-transition: opacity 0.2s ease;
-			transition: opacity 0.2s ease;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
 
 			&.stuck {
 				background-color: $primary-color;
@@ -114,8 +114,11 @@ header.header {
 				opacity: 0;
 				margin: 0;
 				padding: 8px 18px 12px;
+				position: absolute;
 				width: 120px;
-				
+				-webkit-transition: top 0.2s ease;
+				transition: top 0.2s ease;
+
 				.letter {
 					fill: #fff;
 				}	
@@ -138,7 +141,6 @@ header.header {
 				margin-left: 0;
 				opacity: 1;
 				position: absolute;
-				top: 0;
 
 				@extend %white-letters;
 
