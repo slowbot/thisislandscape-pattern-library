@@ -7,6 +7,9 @@
   font-family: $sans-font-family-semibold;
 	font-weight: normal;
 
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
   &:hover {
     color: $primary-color;
 
@@ -27,8 +30,8 @@
 	font-size: 1rem;
   padding-top: .25rem;
   display: inline-block;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
 
   @media #{$medium-up} {
     font-size: 2rem;
