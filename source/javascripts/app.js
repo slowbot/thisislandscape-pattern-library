@@ -18,8 +18,6 @@ $(document).ready(function() {
             limit: $('.header').offset().top - $('.footer').outerHeight() - 10,
         zIndex: 1000,
         removeOffsets: true,
-        preFixed: function() { $(this).find('.stuck').css('top', '0'); },
-        postFixed: function() { $(this).find('.stuck').css('top', '-36px'); }
     });  
 
     // This is the default behavior.
