@@ -18,6 +18,8 @@ $(document).ready(function() {
             limit: $('.header').offset().top - $('.footer').outerHeight() - 10,
         zIndex: 1000,
         removeOffsets: true,
+        // preFixed: function() { $(this).find('.stuck').css('opacity', '1'); },
+        // postFixed: function() { $(this).find('.stuck').css('opacity', '0'); }
     });  
 
     // This is the default behavior.
