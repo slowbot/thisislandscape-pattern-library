@@ -104,18 +104,22 @@ header.header {
 		
 		.logo-svg {
 			opacity: 1;
-			-webkit-transition: opacity 0.2s ease;
-			transition: opacity 0.2s ease;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
 
 			&.stuck {
 				background-color: $primary-color;
 				display: inline-block;
 				height: 36px;
-				//opacity: 0;
+				opacity: 0;
 				margin: 0;
 				padding: 8px 18px 12px;
+				position: fixed;
 				width: 120px;
-				
+				top: -36px;
+				-webkit-transition: top 0.2s ease-in-out;
+				transition: top 0.2s ease-in-out;
+
 				.letter {
 					fill: #fff;
 				}	
@@ -141,6 +145,8 @@ header.header {
 				opacity: 1;
 				position: absolute;
 				top: 0;
+				-webkit-transition: opacity 0.2s ease;
+				transition: opacity 0.2s ease;
 
 				@extend %white-letters;
 
