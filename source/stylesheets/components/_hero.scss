@@ -1,5 +1,6 @@
 .hero {
 	@include margin-trailer(1.5);
+	background-color: #ccc;
 	display: block;
 	padding: 125% 0 0 0;
 	position: relative;
