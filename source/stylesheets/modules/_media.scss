@@ -86,10 +86,7 @@ cite {
 }
 
 .video-container {
-	position: relative;
-  padding-bottom: 54%;
-  height: 0;
-  overflow: hidden; 
+	@extend %responsive-hero;
 
 	  iframe {
 	    position: absolute;

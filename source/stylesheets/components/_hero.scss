@@ -2,29 +2,14 @@
 	@include margin-trailer(1.5);
 	background-color: #ccc;
 	display: block;
-	padding: 125% 0 0 0;
 	position: relative;
 	width: 100%;
 
-	@media #{$medium-up} {
-		padding: 65% 0 0 0;
-		@include margin-trailer(3);
-	}	
-
-	@media #{$large-up} {
+	&.video {
 		padding: 0;
-		height: 700px;
 	}
 
-	@media #{$large-up} and 
-	(-webkit-min-device-pixel-ratio: 2), 
-	(min-resolution: 192dpi) { 
-		height: 80vh;
-	}
-
-	@media #{$xlarge-up} {
-		height: 80vh;
-	}
+	@extend %responsive-hero;
 }
 
 .slide {
