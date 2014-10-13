@@ -2,7 +2,7 @@
 
 	.leader {
 		@include margin-trailer(1.5);
-		
+
 		@media #{$medium-up} {
 			@include margin-trailer(2);
 		}
