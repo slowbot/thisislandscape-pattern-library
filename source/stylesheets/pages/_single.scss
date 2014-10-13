@@ -80,8 +80,9 @@
     letter-spacing: .04em;
 
     .underlined {
+      @include margin-trailer(1);
       display: inline;
-      letter-spacing: .04em;
+      // letter-spacing: .04em;
       
       @media #{$medium-up} {
         @include type-scale(small);
