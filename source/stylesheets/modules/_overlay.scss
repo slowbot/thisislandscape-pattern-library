@@ -199,10 +199,6 @@ body.stop-scrolling {
 					padding: .325rem .5rem;
 					-webkit-transition: color 0.2s;
 					transition: color 0.2s;
-			
-					@media #{$medium-up} {
-						@include type-scale(xlarge);
-					}
 
 					@media #{$large-up} {
 						@include type-scale(xxlarge);

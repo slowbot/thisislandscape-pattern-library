@@ -43,8 +43,9 @@
 		color: rgba(#fff, .5);
 	}
 
-	p {
+	p, citation {
 		@include type-scale(tiny);
+		letter-spacing: .04em;
 
 		@media #{$medium-up} {
 			@include type-scale(small);
