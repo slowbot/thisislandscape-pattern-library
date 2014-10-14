@@ -19,14 +19,14 @@
 
 	&:hover {
 		.letter {
-			fill: rgba(#000, .7);
+			fill: rgba(#000, .5);
 		}
 	}
 }
 
 %fill-transition {
-	-webkit-transition: fill 0.2s ease;
-	transition: fill 0.2s ease;
+	-webkit-transition: fill 0.2s ease-in-out;
+	transition: fill 0.2s ease-in-out;
 }
 
 %color-transition {
@@ -145,8 +145,8 @@ header.header {
 				opacity: 1;
 				position: absolute;
 				top: 0;
-				-webkit-transition: opacity 0.2s ease;
-				transition: opacity 0.2s ease;
+				-webkit-transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in-out;
 
 				@extend %white-letters;
 
@@ -179,8 +179,8 @@ body.single-project, body.home, body.cover-article {
 			.logo-svg {
 				.letter {
 					fill: #000;
-					-webkit-transition: fill 0.2s ease;
-					transition: fill 0.2s ease;
+					-webkit-transition: fill 0.2s ease-in-out;
+					transition: fill 0.2s ease-in-out;
 				}
 
 				&:hover {
@@ -199,6 +199,7 @@ body.hero-contrast {
 			@extend %white-letters;
 		}
 	}
+
 	header.header, .nav-primary {
 		.logo-svg {
 			@extend %black-letters;
@@ -211,7 +212,9 @@ body.hero-contrast {
 			}
 		}
 	}
-	/*
+}	
+
+body.home.hero-contrast {	
 	.overlay,
 	.overlay .nav-overlay .nav-projects li a,
 	.overlay .nav-overlay .nav-main li a,
@@ -237,5 +240,5 @@ body.hero-contrast {
 		&.disabled {
 			color: rgba(#000, .15);
 		}
-	}*/
+	}
 }
