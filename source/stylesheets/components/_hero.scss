@@ -1,15 +1,19 @@
 .hero {
 	@include margin-trailer(1.5);
-	background-color: #ccc;
 	display: block;
 	position: relative;
 	width: 100%;
+	overflow: hidden;
 
 	&.video {
 		padding: 0;
 	}
 
 	@extend %responsive-hero;
+
+	.video-container {
+		@extend %responsive-hero;
+	}
 }
 
 .slide {

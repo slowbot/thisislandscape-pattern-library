@@ -2,7 +2,7 @@ $(document).foundation();
 
 $(document).ready(function() {
   $('body').addClass('js');
-  $(".loading").delay(500).animate({"opacity": "1"}, 500);
+//  $(".loading").delay(500).animate({"opacity": "1"}, 500);
 
   var $menu = $('#header'),
   	  $menulink = $('#trigger-overlay');
@@ -170,4 +170,10 @@ $(function() {
       scrollTop : $(this).scrollTop()
     });
   });
-}); 
+});
+
+$(function() {
+    var BV = new $.BigVideo();
+    BV.init();
+    BV.show('http://player.vimeo.com/external/100548965.hd.mp4?s=9a82338920735dbeddd973533916a291');
+});
