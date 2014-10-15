@@ -233,8 +233,8 @@ body.stop-scrolling {
 
 		ul {
 			opacity: 0;
-			-webkit-transition: opacity 0.3s 0.5s ease-in-out;
-			transition: opacity 0.3s 0.5s ease-in-out;
+			-webkit-transition: opacity 0.3s 0 ease-in-out;
+			transition: opacity 0.3s 0 ease-in-out;
 
 			// -webkit-transform: translateY(-25%) rotateX(35deg);
 			// transform: translateY(-25%) rotateX(35deg);

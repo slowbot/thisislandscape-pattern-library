@@ -2,7 +2,7 @@ $(document).foundation();
 
 $(document).ready(function() {
   $('body').addClass('js');
-//  $(".loading").delay(500).animate({"opacity": "1"}, 500);
+  $(".loading").delay(500).animate({"opacity": "1"}, 500);
 
   var $menu = $('#header'),
   	  $menulink = $('#trigger-overlay');
