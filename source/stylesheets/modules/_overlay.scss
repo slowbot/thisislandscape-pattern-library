@@ -192,8 +192,8 @@ body.stop-scrolling {
 					color: #fff;
 					display: block;
 					padding: .325rem .5rem;
-					-webkit-transition: color 0.2s ease-in-out;
-					transition: color 0.2s ease-in-out;
+					-webkit-transition: color 0.3s ease-in-out;
+					transition: color 0.3s ease-in-out;
 
 					&:hover {
 						color: rgba(#fff, .5);
@@ -217,8 +217,8 @@ body.stop-scrolling {
 /* Effects */
 .overlay-navigation, .overlay-share {
 	opacity: 0;
-	-webkit-transition: opacity 0.5s ease-in-out, visibility 0s 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out, visibility 0s 0.5s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out, visibility 0s 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out, visibility 0s 0.3s ease-in-out;
 	visibility: hidden;
 	
 	.nav-secondary {
@@ -233,8 +233,8 @@ body.stop-scrolling {
 
 		ul {
 			opacity: 0;
-			-webkit-transition: opacity 0.5s 0.8s ease-in-out;
-			transition: opacity 0.5s 0.8s ease-in-out;
+			-webkit-transition: opacity 0.3s 0.5s ease-in-out;
+			transition: opacity 0.3s 0.5s ease-in-out;
 
 			// -webkit-transform: translateY(-25%) rotateX(35deg);
 			// transform: translateY(-25%) rotateX(35deg);
@@ -242,8 +242,8 @@ body.stop-scrolling {
 			// transition: transform 0.5s, opacity 0.5s;
 
 			li a {
-				-webkit-transition: color 0.2s ease-in-out;
-				transition: color 0.2s ease-in-out;
+				-webkit-transition: color 0.3s ease-in-out;
+				transition: color 0.3s ease-in-out;
 			}
 		}
 	}
@@ -275,14 +275,14 @@ body.stop-scrolling {
 
 	&.open {
 		opacity: 1;
-		-webkit-transition: opacity 0.5s;
-		transition: opacity 0.5s ease-in-out;
+		-webkit-transition: opacity 0.3s ease-in-out;
+		transition: opacity 0.3s ease-in-out;
 		visibility: visible;
 		
 		.nav-secondary ul {
 			opacity: 1;
-			-webkit-transition-delay: 0.2s;
-			transition-delay: 0.2s ease-in-out;
+			-webkit-transition-delay: 0.3s ease-in-out;
+			transition-delay: 0.3s ease-in-out;
 		}
 	}
 

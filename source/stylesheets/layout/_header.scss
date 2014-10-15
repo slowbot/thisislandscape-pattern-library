@@ -25,13 +25,13 @@
 }
 
 %fill-transition {
-	-webkit-transition: fill 0.2s ease-in-out;
-	transition: fill 0.2s ease-in-out;
+	-webkit-transition: fill 0.3s ease-in-out;
+	transition: fill 0.3s ease-in-out;
 }
 
 %color-transition {
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
 }
 
 .logo-svg {
@@ -104,8 +104,8 @@ header.header {
 		
 		.logo-svg {
 			opacity: 1;
-			-webkit-transition: opacity 0.2s ease-in-out;
-			transition: opacity 0.2s ease-in-out;
+			-webkit-transition: opacity 0.3s ease-in-out;
+			transition: opacity 0.3s ease-in-out;
 
 			&.stuck {
 				background-color: $primary-color;
@@ -117,8 +117,8 @@ header.header {
 				position: fixed;
 				width: 120px;
 				top: -36px;
-				-webkit-transition: top 0.2s ease-in-out;
-				transition: top 0.2s ease-in-out;
+				-webkit-transition: top 0.3s ease-in-out;
+				transition: top 0.3s ease-in-out;
 
 				.letter {
 					fill: #fff;
@@ -145,8 +145,8 @@ header.header {
 				opacity: 1;
 				position: absolute;
 				top: 0;
-				-webkit-transition: opacity 0.2s ease-in-out;
-				transition: opacity 0.2s ease-in-out;
+				-webkit-transition: opacity 0.3s ease-in-out;
+				transition: opacity 0.3s ease-in-out;
 
 				@extend %white-letters;
 
@@ -179,8 +179,8 @@ body.single-project, body.home, body.cover-article {
 			.logo-svg {
 				.letter {
 					fill: #000;
-					-webkit-transition: fill 0.2s ease-in-out;
-					transition: fill 0.2s ease-in-out;
+					-webkit-transition: fill 0.3s ease-in-out;
+					transition: fill 0.3s ease-in-out;
 				}
 
 				&:hover {
@@ -205,7 +205,6 @@ body.hero-contrast {
 			@extend %black-letters;
 		}
 		
-			
 		.scroll-to-fixed-fixed {
 			.logo-svg {
 				@extend %white-letters;
@@ -221,8 +220,15 @@ body.home.hero-contrast {
 	.overlay .scroll-arrows .arrow,
 	.overlay .nav-overlay p 
 	{
-		color: #000;
+	//	color: #000;
 		@extend %color-transition;
+	}
+
+
+	header.header, .nav-primary {
+		.logo-svg {
+			@extend %white-letters;
+		}
 	}
 
 	.overlay .nav-overlay .nav-projects li a {
