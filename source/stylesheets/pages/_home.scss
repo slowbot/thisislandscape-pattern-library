@@ -1,6 +1,6 @@
 .home {
 	background-color: $primary-color;
-	
+
 	header.header {
 		.logo {
 			display: none;
@@ -29,15 +29,14 @@
 	}
 
 	.cover {
-		background-color: $primary-color;
+		-webkit-transition: opacity 500ms ease-out;
+		transition: opacity 500ms ease-out;
 
 		@media #{$large-up} {	
 			position: fixed;
 			height: 100%;
 			width: 100%;
 			opacity: 0;
-			-webkit-transition: opacity 500ms ease-out;
-		  transition: opacity 500ms ease-out;
 		}	
 	}
 
