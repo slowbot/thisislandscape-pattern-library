@@ -1,5 +1,4 @@
 .home {
-	background-color: $primary-color;
 
 	header.header {
 		.logo {
@@ -9,7 +8,11 @@
 
 	&.page {
 		.content {
+			background-color: $primary-color;
 			margin-top: 0;
+			height: 100%;
+			width: 100%;
+			position: absolute;
 		}
 	}
 
@@ -29,15 +32,20 @@
 	}
 
 	.cover {
-		-webkit-transition: opacity 500ms ease-out;
-		transition: opacity 500ms ease-out;
+		-webkit-transition: opacity 500ms ease-out, background-image 500ms ease-out;
+		transition: opacity 500ms ease-out, background-image 500ms ease-out;
+		opacity: 0;
+		background-color: $primary-color;
+		
+    &.active {
+		  opacity: 1;
+  	}
 
-		@media #{$large-up} {	
+  	@media #{$large-up} {	
 			position: fixed;
 			height: 100%;
 			width: 100%;
-			opacity: 0;
-		}	
+		}
 	}
 
 	.footer {
