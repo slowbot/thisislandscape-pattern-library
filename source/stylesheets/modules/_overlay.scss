@@ -46,17 +46,15 @@ body.stop-scrolling {
 	.nav-overlay {
 		height: 100%;
 		position: relative;
-
-		.statement {
+		
+		
+		.statement, .statement-mobile {
 			padding: 0 .75rem;
 			
 			@media #{$medium-up} {
 				padding: 0;
 			}
 
-			@media screen and (max-height: 25em) {
-				display: none;
-			}
 
 			p {
 				@include type-scale(small);
@@ -68,6 +66,18 @@ body.stop-scrolling {
 				}
 			}
 		}
+		.statement {
+			@media screen and (max-height: 25em) {
+				display: none;
+			}
+		}
+		.statement-mobile {
+			display: none;
+			@media screen and (max-height: 25em) {
+				display: block;
+			}
+		}
+
 
 		.nav-main {
 			@include absolute(bottom 5%);
