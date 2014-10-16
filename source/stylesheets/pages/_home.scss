@@ -32,8 +32,8 @@
 	}
 
 	.cover {
-		-webkit-transition: opacity 500ms ease-out, background-image 500ms ease-out;
-		transition: opacity 500ms ease-out, background-image 500ms ease-out;
+		-webkit-transition: opacity 500ms ease-out;
+		transition: opacity 500ms ease-out;
 		opacity: 0;
 		background-color: $primary-color;
 		
