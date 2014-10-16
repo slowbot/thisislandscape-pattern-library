@@ -279,7 +279,10 @@ dl dt, dl dd {
 .flip {
     @media #{$medium-up} {
         @include transform(rotate(90deg) translateX(-1em));
-        @include transform-origin(0px 100% 0px);
+         -moz-transform-origin: 0px 100% 0px;
+        -ms-transform-origin: 0px 100% 0px;
+        -webkit-transform-origin: 0px 100% 0px;
+        transform-origin: 0px 100% 0px;
         position: absolute;
         display: block;
         width: auto;
