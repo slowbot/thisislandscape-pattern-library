@@ -14,6 +14,10 @@
 	.video-container {
 		@extend %responsive-hero;
 	}
+
+	@media #{$medium-up} {
+		@include margin-trailer(3);
+	}
 }
 
 .slide {
