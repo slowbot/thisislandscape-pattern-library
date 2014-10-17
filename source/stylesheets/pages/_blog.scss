@@ -101,11 +101,11 @@
 }
 
 .single-post {
-	// .blog-row {
-	// 	margin-bottom: 0;
+	.pager {
+		@include margin-leader(1);
 
-	// 	@media #{$medium-up} {
-	// 		margin-bottom: 0;
-	// 	}	
-	// }
+		@media #{$medium-up} {
+			@include margin-leader(1);
+		}	
+	}
 }	
