@@ -131,17 +131,17 @@ body.stop-scrolling {
 
 			li {
 				display: inline-block;
-				padding: .325rem .75rem;
+				
 
 				@media #{$large-up} {
-					padding: .5rem .825rem;
+					
 				}
 
 				a {
 					color: #fff;
 					display: block;
 					white-space: nowrap;
-					
+					padding: .325rem .75rem;
 					
 					&:hover {
 						color: rgba(#fff, .5);
@@ -153,7 +153,7 @@ body.stop-scrolling {
 
 					@media #{$large-up} {
 						@include type-scale(xxlarge);
-						
+						padding: .5rem .825rem;
 					}
 				}
 			}		
