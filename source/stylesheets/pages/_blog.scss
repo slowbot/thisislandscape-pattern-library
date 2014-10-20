@@ -15,14 +15,15 @@
 			@include margin-trailer(4);
 		}
 
-		figure {
-			margin-top: .4rem;
+		figure:first-of-type {
+			margin-top: -.2rem;
 		}
 
 		hr {
 			height: .25rem;
 			background-color: $primary-color;
 			margin-top: .4rem;
+			margin-bottom: 0;
 		}
 	}
 
