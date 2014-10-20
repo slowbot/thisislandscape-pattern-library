@@ -172,8 +172,71 @@ $(function() {
   });
 });
 
+// $(function() {
+//     var BV = new $.BigVideo();
+//     BV.init();
+//     BV.show('http://player.vimeo.com/external/100548965.hd.mp4?s=9a82338920735dbeddd973533916a291');
+// });
+var BV,
+  isTouch = Modernizr.touch,
+  $window = $(window);
+
 $(function() {
-    var BV = new $.BigVideo();
+           
+  if (!isTouch) {
+    // initialize BigVideo
+    BV = new $.BigVideo({forceAutoplay:isTouch});
     BV.init();
-    BV.show('http://player.vimeo.com/external/100548965.hd.mp4?s=9a82338920735dbeddd973533916a291');
+    showVideo();
+            
+    BV.getPlayer().addEvent('loadeddata', function() {
+      onVideoLoaded();
+    });
+
+    // fix image alignment problem
+    adjustImagePositioning();
+    // repeat fix when window gets resized
+    $window.on('resize', adjustImagePositioning);
+  }
+  
+  function showVideo() {
+    BV.show($('.wrapper .screen:nth-child(1)').attr('data-video'),{ambient:true});
+    $('.wrapper .screen .big-image').css({opacity:0});
+  } 
+  
+  function onVideoLoaded() {
+    $('.wrapper .screen:nth-child(1)').find('.big-image').animate({opacity:0},500);
+  }
 });
+
+function adjustImagePositioning() {
+  $(".big-image").each(function(){
+    var $img = $(this),img = new Image();
+    img.src = $img.attr('src');
+
+    var windowWidth = $window.width(),
+      windowHeight = $window.height(),
+      r_w = windowHeight / windowWidth,
+      i_w = img.width,
+      i_h = img.height,
+      r_i = i_h / i_w,
+      new_w, new_h, new_left, new_top;
+
+    if( r_w > r_i ) {
+      new_h   = windowHeight;
+      new_w   = windowHeight / r_i;
+    } else {
+      new_h   = windowWidth * r_i;
+      new_w   = windowWidth;
+    }
+
+    $img.css({
+      position: "absolute",
+      width   : new_w,
+      height  : new_h,
+      left    : ( windowWidth - new_w ) / 2,
+      top     : (( windowHeight - new_h ) / 2),
+      marginTop:-43
+    });
+  });
+}
