@@ -16,6 +16,10 @@
 	}
 }
 
+.clear {
+	@include clearfix;
+}
+
 .relative {
 	position: relative;
 }

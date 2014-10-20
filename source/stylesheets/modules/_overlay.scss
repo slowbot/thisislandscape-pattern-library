@@ -130,11 +130,17 @@ body.stop-scrolling {
 			}
 
 			li {
-				display: block;
+				display: inline-block;
+				
+
+				@media #{$large-up} {
+					
+				}
 
 				a {
 					color: #fff;
 					display: block;
+					white-space: nowrap;
 					padding: .325rem .75rem;
 					
 					&:hover {

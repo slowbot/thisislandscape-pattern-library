@@ -1,4 +1,4 @@
-.blog, .single-post, .archive {
+.blog, .single-post, .tag {
 	background-color: #ddebf3;
 	height: auto;
 
@@ -101,11 +101,11 @@
 }
 
 .single-post {
-	// .blog-row {
-	// 	margin-bottom: 0;
+	.pager {
+		@include margin-leader(1);
 
-	// 	@media #{$medium-up} {
-	// 		margin-bottom: 0;
-	// 	}	
-	// }
-}	
+		@media #{$medium-up} {
+			@include margin-leader(1);
+		}	
+	}
+}

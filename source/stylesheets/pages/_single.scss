@@ -1,4 +1,13 @@
 .single-project {
+  
+  .content {
+    @include margin-trailer(3);
+    overflow: hidden;
+
+    @media #{$medium-up} {
+      @include margin-trailer(5);
+    }
+  }
 
 	.leader {
 		@include margin-trailer(1.5);
@@ -140,5 +149,24 @@
       -webkit-column-count: 2;
       -webkit-column-gap: 60px;
   	}
-  }	
+  }
+
+  .pager {
+    @include margin-leader(0);
+    @include margin-trailer(0);
+
+    @media #{$medium-up} {
+      @include margin-leader(0);
+      @include margin-trailer(0);
+    } 
+  }
+
+  .footer {
+    @include margin-leader(3.5);
+    position: relative;
+
+    @media #{$medium-up} {
+      @include margin-leader(5.5);
+    }  
+  }
 }
