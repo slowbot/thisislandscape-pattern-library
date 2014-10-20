@@ -63,6 +63,10 @@
       margin-left: auto;
       margin-right: auto;
 
+      &.offering-video {
+        @extend %responsive-169;
+      }
+
       img {
         max-width: none;
         width: 100%;
