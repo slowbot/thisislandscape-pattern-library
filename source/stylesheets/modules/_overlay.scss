@@ -130,9 +130,9 @@ body.stop-scrolling {
 			}
 
 			li {
-				display: inline-block;
-				
-
+				float: left;
+       	clear: left;
+       	
 				@media #{$large-up} {
 					
 				}
