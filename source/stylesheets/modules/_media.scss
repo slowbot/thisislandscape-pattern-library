@@ -32,20 +32,7 @@ figure {
 	position: relative;
 
 	figcaption {
-		opacity: 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		
-		margin-bottom: 0;
-
-		-webkit-transition: all 0.6s ease;
-		-moz-transition:    all 0.6s ease;
-		-o-transition:      all 0.6s ease;
-
-		background-color: rgba($alert-color, .8);
+		@extend %full-overlay;
 
 		line-height: 1.40625rem;
 
@@ -72,11 +59,6 @@ figure {
   			width: 100%;
 			}	
 		}
-
-		&:hover {
-			opacity: 1;
-			cursor: pointer;
-		}
 	}
 }
 
@@ -98,4 +80,8 @@ cite {
 	    width: 100%;
 	    height: 100%;
 	}
+}
+
+.play-overlay {
+	@extend %full-overlay;
 }

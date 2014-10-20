@@ -9,6 +9,8 @@
   top:0;
   left:0;
   margin-bottom: 0;
+  background-color: #000;
+  display: none;
 }
 
 #big-video-vid,#big-video-image {
@@ -119,12 +121,23 @@
   opacity:0;
 }
 
-.vjs-control-bar {
-  opacity: 0;
+.vjs-control, .vjs-time-divider {
+  display: none;
+  color: transparent;
 }
 
 .vjs-big-play-button {
-  display:none !important;
+//  display:none;
+//  @extend %full-overlay;
+}
+
+.vjs-play-control {
+  @extend %full-overlay;
+  display: block;
+
+  &.vjs-playing {
+    background-color: transparent;
+  }
 }
 
 .wrapper {
