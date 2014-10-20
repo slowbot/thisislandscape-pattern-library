@@ -24,7 +24,7 @@
 	overflow: hidden;
 }
 
-.cover {
+.cover, .cover-out {
 	background-size: cover;
 	background-position: center;
 	background-attachment: scroll;
@@ -51,7 +51,7 @@ body.home {
 		margin-bottom: 0;
 	}
 
-	.cover {
+	.cover, .cover-out {
 		@media #{$large-up} {
 			max-height: none;
 		}	
@@ -64,7 +64,7 @@ body.home {
 			@include grid-column(14, true, true, false);
 			overflow: hidden;
 
-			.cover {
+			.cover, .cover-out {
 				margin-left: 1.125rem;
 				margin-right: 1.125rem;
 			}

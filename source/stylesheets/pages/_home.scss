@@ -30,10 +30,9 @@
 			display: none;
 		}	
 	}
-
-	.cover {
-		-webkit-transition: opacity 500ms ease-out;
-		transition: opacity 500ms ease-out;
+	.cover, .cover-out {
+		//-webkit-transition: opacity 500ms ease-out;
+		//transition: opacity 500ms ease-out;
 		opacity: 0;
 		background-color: $primary-color;
 		
@@ -43,6 +42,8 @@
 
   	@media #{$large-up} {	
 			position: fixed;
+			top: 0;
+			left: 0;
 			height: 100%;
 			width: 100%;
 		}
