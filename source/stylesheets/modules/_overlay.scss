@@ -206,7 +206,7 @@ body.stop-scrolling {
 				a {
 					@include type-scale(mediumlarger);
 					color: #fff;
-					display: block;
+					display: inline-block;
 					padding: .325rem .5rem;
 					-webkit-transition: color 0.3s ease-in-out;
 					transition: color 0.3s ease-in-out;
