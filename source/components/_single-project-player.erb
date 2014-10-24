@@ -1,0 +1,48 @@
+<div class="content">
+  <div class="single-project">
+    
+    <%= partial "partials/_figure-hero" %>
+
+    <div class="single-content row">
+      <div class="single-entry medium-14 medium-centered columns">
+        <section class="leader row">
+          <!-- <h2 class="h-sub base flip hide-for-small-only">Introduction</h2> -->
+          <div class="large-8 columns">
+            <%= partial "partials/_header-introduction" %>
+          </div>
+
+          <div class="large-8 columns">
+            <%= partial "partials/_page" %>
+          </div>
+        </section>
+
+        <section class="project-section relative">
+          <header class="flip">
+          <h3 class="h-sub base flipper">Indenity</h3>
+          </header>
+          <div id="offering" class="offering gallery-rhythm relative">
+            <%= partial "partials/_video-16x9-player" %>
+            <%= partial "partials/_figure-rhythm" %>
+          </div>
+
+          <div class="row">
+            <div class="large-11 columns">
+              <%= partial "partials/_entry" %>
+            </div>
+
+            <div class="large-5 columns">
+              <%= partial "partials/_aside-awards" %>
+            </div>
+        </section>  
+
+        <section class="project-section relative">
+          <h3 id="flip-2" class="h-sub base flip">Web</h3>
+            <div class="offering">
+            <%= partial "partials/_figure" %>
+            <%= partial "partials/_figure" %>
+            </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
