@@ -240,3 +240,5 @@ $(function() {
           });
         });
       }
+
+      vjs('100548965', {nativeControlsForTouch: false});
