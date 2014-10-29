@@ -74,6 +74,12 @@
 
       &.offering-video {
         @extend %responsive-169;
+
+        iframe {
+          @media #{$medium-up} {
+            padding: 2em;
+          }
+        }
       }
 
       img {

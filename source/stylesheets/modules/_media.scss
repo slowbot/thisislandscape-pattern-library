@@ -83,7 +83,12 @@ cite {
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
+	    background-color: transparent;
 	}
+}
+
+#big-video-wrap {
+	background-color: transparent !important;
 }
 
 .play-overlay {
