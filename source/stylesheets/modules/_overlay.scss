@@ -22,7 +22,7 @@ body.stop-scrolling {
 	@include fixed(top right bottom left);
 	background: rgba(4, 87, 167,0.9);
 	color: #fff;
-	z-index: 999;
+	z-index: 1001;
 
 	.overlay-close {
 		@include fixed(top 1em right 1em);
@@ -147,19 +147,22 @@ body.stop-scrolling {
 			li {
 				float: left;
        	clear: left;
+       	background-color: transparent;
+				-webkit-transition: background-color 0.5s;
+				transition: background-color 0.5s;
 
-				@media #{$large-up} {
-					
+				&:hover {
+					background-color: $primary-color;
 				}
 
 				a {
 					color: #fff;
-					display: block;
+					display: inline-block !important;
 					white-space: nowrap;
 					padding: .325rem .75rem;
 					
 					&:hover {
-						color: rgba(#fff, .5);
+						color: #fff;
 					}
 
 					@media #{$medium-up} {

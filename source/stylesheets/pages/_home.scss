@@ -93,26 +93,5 @@
 				transform: translateY(0) rotateX(0);
 			}
 		}
-
-		.nav-projects {
-			
-			li {
-				background-color: transparent;
-				-webkit-transition: background-color 0.5s;
-				transition: background-color 0.5s;
-
-				&:hover {
-					background-color: $primary-color;
-				}
-
-				a {
-					display: inline-block !important;
-
-					&:hover {
-						color: #fff;
-					}
-				}
-			}
-		}
 	}	
 }
