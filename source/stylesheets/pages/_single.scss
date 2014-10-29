@@ -78,6 +78,7 @@
         iframe {
           @media #{$medium-up} {
             padding: 2em;
+            background-color: #000;
           }
         }
       }

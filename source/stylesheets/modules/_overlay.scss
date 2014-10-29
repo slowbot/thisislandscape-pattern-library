@@ -20,7 +20,7 @@ body.stop-scrolling {
 }
 .overlay {
 	@include fixed(top right bottom left);
-	background: rgba(4, 87, 167,0.9);
+	background: $primary-color;
 	color: #fff;
 	z-index: 1001;
 
