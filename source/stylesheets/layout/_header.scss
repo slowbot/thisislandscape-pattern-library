@@ -221,7 +221,10 @@ body.hero-contrast {
 }	
 
 body.hero-contrast {	
-	.overlay,
+	.overlay-navigation, .overlay-share {
+		-webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out, visibilit 0.3s ease-in-out;
+		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	}
 	.overlay .nav-overlay .nav-projects li a,
 	.overlay .nav-overlay .nav-main li a,
 	.overlay .scroll-arrows .arrow,
