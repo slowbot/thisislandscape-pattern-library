@@ -140,4 +140,12 @@ body.page .content {
 			@include margin-trailer(3);
 		}	
 	}
+
+	.project-section .show-for-medium-up {
+		display: none !important;
+	}
+
+	.project-section .show-for-small-only {
+		display: block !important;
+	}	
 }
