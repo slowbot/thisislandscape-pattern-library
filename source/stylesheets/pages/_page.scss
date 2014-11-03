@@ -95,7 +95,7 @@ body.page .content {
 
 		&:last-child {
 			border-bottom: none;
-			padding-bottom: 0;
+//			padding-bottom: 0;
 		}
 
 		@media #{$medium-up} {
@@ -146,6 +146,6 @@ body.page .content {
 	}
 
 	.project-section .show-for-small-only {
-		display: block !important;
+		display: none !important;
 	}	
 }
