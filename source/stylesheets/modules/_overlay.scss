@@ -288,14 +288,15 @@ body.stop-scrolling {
 
 		@media #{$medium-up} {
 			@include absolute(top 10% right -1rem);
-			height: 80%;
+			height: auto;
+			bottom: 5%;
 			overflow-y: scroll;
 			-webkit-overflow-scrolling: touch;
 		}
 
 		@media #{$large-up} {
 			top: 10%;
-			height: 80%;
+			//height: 80%;
 		}
 
 		@media screen and (min-width: 64em) and (min-height: 46em) {
