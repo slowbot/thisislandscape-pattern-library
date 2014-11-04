@@ -133,7 +133,6 @@
 
 .vjs-play-control {
   @extend %full-overlay;
-  display: block;
 
   &.vjs-playing {
     background-color: transparent;
