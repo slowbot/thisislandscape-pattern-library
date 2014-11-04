@@ -3,6 +3,12 @@ body.stop-scrolling {
 	height: 100%;
 	position: fixed;
 }
+
+body.home.stop-scrolling {
+	height: auto;
+	position: inherit;
+}
+
 .cover {
 	.loader_image {
 		-webkit-transition: opacity 600ms ease-out;
