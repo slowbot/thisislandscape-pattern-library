@@ -68,9 +68,18 @@
   .offering {
     figure {
       background: url(../images/loading.gif) center center #efefef no-repeat;
+      background-size: 42px 42px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+
+      @media #{$medium-up} {
+        background-size: 63px 63px;
+      }
+
+      @media #{$large-up} {
+        background-size: 84px 84px;
+      }
 
       &.offering-video {
         @extend %responsive-169;
