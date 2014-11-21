@@ -307,6 +307,20 @@ dl dt, dl dd {
     }    
 }
 
+.touch {
+    .h-sub.show-for-small-only {
+        @media #{$medium-up} {
+            display: block !important;
+        }
+    }
+
+    .h-sub.show-for-medium-up {
+        @media #{$medium-up} {
+            display: none !important;
+        }
+    }
+}
+
 // .flip {
 //     position: absolute;
 //     display: block;
