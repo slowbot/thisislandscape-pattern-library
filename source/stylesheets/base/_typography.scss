@@ -276,35 +276,37 @@ dl dt, dl dd {
     }
 }
 
-.flip {
-    @media #{$medium-up} {
-        @include transform(rotate(90deg) translateX(-1em));
-         -moz-transform-origin: 0px 100% 0px;
-        -ms-transform-origin: 0px 100% 0px;
-        -webkit-transform-origin: 0px 100% 0px;
-        transform-origin: 0px 100% 0px;
-        position: absolute;
-        display: block;
-        width: auto;
-        height: auto;
-        left: 0;
-        top: 0;
-        margin: 0;
-        margin-left: -2.5em !important;
-        white-space: nowrap;
-        &.scroll-to-fixed-fixed {
-            left: auto !important;
+.no-touch {
+    .flip {
+        @media #{$medium-up} {
+            @include transform(rotate(90deg) translateX(-1em));
+             -moz-transform-origin: 0px 100% 0px;
+            -ms-transform-origin: 0px 100% 0px;
+            -webkit-transform-origin: 0px 100% 0px;
+            transform-origin: 0px 100% 0px;
+            position: absolute;
+            display: block;
+            width: auto;
+            height: auto;
+            left: 0;
+            top: 0;
+            margin: 0;
             margin-left: -2.5em !important;
+            white-space: nowrap;
+            &.scroll-to-fixed-fixed {
+                left: auto !important;
+                margin-left: -2.5em !important;
+            }
         }
-    }
 
-    @media #{$large-up} {
-        left: 0;
-        margin-left: -3em !important;
-        &.scroll-to-fixed-fixed {
+        @media #{$large-up} {
+            left: 0;
             margin-left: -3em !important;
-        }
-    }    
+            &.scroll-to-fixed-fixed {
+                margin-left: -3em !important;
+            }
+        }    
+    }
 }
 
 // .flip {
