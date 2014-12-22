@@ -65,7 +65,7 @@ body.home {
 			@include grid-column(14, true, true, false);
 			overflow: hidden;
 
-			.cover, .cover-out {
+			.cover-false {
 				margin-left: 1.125rem;
 				margin-right: 1.125rem;
 			}
