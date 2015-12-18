@@ -57,7 +57,16 @@ body.page .content {
 .client-list {
 	@include margin-trailer(1);
 }
+.page-studio-video {
+	padding-bottom: 3rem;
+	@media #{$medium-up} {
+		padding-bottom: 6rem;
+	}
 
+	@media #{$large-up} {
+		padding-bottom: 3.5rem;
+	}
+}
 .contact-info {
 	background-color: $alert-color;
 	padding: 3rem 0 2rem 0;
