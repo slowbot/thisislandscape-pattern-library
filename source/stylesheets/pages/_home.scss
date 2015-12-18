@@ -76,6 +76,17 @@
 				top: 40px;
 			}	
 		}
+		.home-gate-wrapper {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			.nav-main {
+				height: auto;
+			}
+			> .tall {
+				height: 100%;
+			}
+		}
 		.half-height {
 			position: absolute;
 			right: 0;
