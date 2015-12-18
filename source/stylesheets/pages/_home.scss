@@ -1,10 +1,49 @@
 .home {
 	&.home-gate {
 		height: 100%;
-		background: $primary-color;
+		//background: $primary-color;
 		.overlay-navigation {
 			background: $primary-color;
 			z-index: 10;
+		}
+		.hero {
+			position: absolute;
+			top: 0;
+			left: 0;
+			cursor: pointer;
+		}
+		.logo-row {
+			position: relative;
+			z-index: 10;
+		}
+		.lightbox-video {
+			cursor: pointer;
+		}
+		.svg-playhead {
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    box-sizing: content-box;
+	    padding: 15px;
+	    cursor: pointer;
+	    transform: translateX(-50%) translateY(-50%);
+	    -moz-transform: translateX(-50%) translateY(-50%);
+	    -ms-transform: translateX(-50%) translateY(-50%);
+	    -webkit-transform: translateX(-50%) translateY(-50%);
+	    transition: opacity 0.3s ease-in-out;
+	    -webkit-transition: opacity 0.3s ease-in-out;
+	    -moz-transition: opacity 0.3s ease-in-out;
+	    -ms-transition: opacity 0.3s ease-in-out;
+	    &:hover {
+	    	opacity: 0.5;
+	    }
+	    svg {
+	    	width: 100%;
+	    	height: auto;
+	    }
+		}
+		.logo-svg:hover {
+			background:transparent;
 		}
 		.nav-main {
 			@include absolute(bottom 5%);
@@ -47,34 +86,41 @@
 				}
 			}		
 		}
-		.overlay-close {
-			@include fixed(top 1em right 1em);
-			background: transparent;
-			border: none;
-			color: darken($primary-color, 10%);
-			cursor: pointer;
-			display: block;
-			font-size: 18px;
-			line-height: 20px;
-			outline: none;
-			overflow: hidden;
-			padding: 0;
-			text-align: center;
-			width: 20px;
-			z-index: 9000;
+		.modal {
+			background:black;
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			z-index: 20;
+			.overlay-close {
+				@include fixed(top 1em right 1em);
+				background: transparent;
+				border: none;
+				color: white;
+				cursor: pointer;
+				display: block;
+				font-size: 18px;
+				line-height: 20px;
+				outline: none;
+				overflow: hidden;
+				padding: 0;
+				text-align: center;
+				width: 20px;
+				z-index: 9000;
 
-			&:hover {
-				color: darken($primary-color, 15%);
+				&:hover {
+					color: #999999;
+				}
+
+				@media #{$medium-up} {
+					font-size: 32px;
+					height: 40px;
+					line-height: 40px;
+					width: 40px;
+					right: 40px;
+					top: 40px;
+				}	
 			}
-
-			@media #{$medium-up} {
-				font-size: 32px;
-				height: 40px;
-				line-height: 40px;
-				width: 40px;
-				right: 40px;
-				top: 40px;
-			}	
 		}
 		.home-gate-wrapper {
 			height: 100%;
@@ -82,6 +128,13 @@
 			position: absolute;
 			.nav-main {
 				height: auto;
+			}
+			.logo-row {
+				width: auto;
+				display: inline-block;
+				.nav-primary {
+					display: inline-block;
+				}
 			}
 			> .tall {
 				height: 100%;
@@ -135,11 +188,21 @@
 				}
 			}
 		} 
+		.video-wrapper {
+			height: 100%;
+		}
 		.video-container {
 			height: 0;
 			padding-bottom: 56.25%;
 			box-sizing: border-box;
-			position: relative;
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			-webkit-transform: translateY(-50%) translateX(-50%);
+			-ms-transform: translateY(-50%) translateX(-50%);
+			-moz-transform: translateY(-50%) translateX(-50%);
 		}
 		.video {
 			position: absolute;
@@ -148,6 +211,7 @@
 			width: 100%;
 			height: 100%;
 			video {
+				position: absolute;
 				height: 100%;
 				width: 100%;
 			}
